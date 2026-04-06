@@ -1,7 +1,7 @@
 # ez-appsec GitHub security dashboard — managed by ez-appsec
 # DO NOT EDIT — update:web will overwrite this file from the ez-appsec source.
 #
-# This workflow deploys the dashboard to GitHub Pages on every push to main.
+# This workflow aggregates vulnerability data from all projects and deploys to GitHub Pages.
 # Consuming projects push scan results here via update:vulns in github-scan.yml.
 
 name: Deploy Dashboard
@@ -29,6 +29,66 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+
+      - name: Aggregate vulnerability data into index.json
+        run: |
+          python3 - <<'PYEOF'
+          import json, sys
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          PROJECTS_DIR = Path("data/projects")
+          INDEX_FILE   = Path("data/index.json")
+          INDEX_FILE.parent.mkdir(parents=True, exist_ok=True)
+
+          if not PROJECTS_DIR.exists():
+              INDEX_FILE.write_text(json.dumps({"last_updated": None, "projects": []}, indent=2))
+              sys.exit(0)
+
+          projects = []
+          for vuln_file in sorted(PROJECTS_DIR.glob("*/vulnerabilities.json")):
+              slug = vuln_file.parent.name
+              meta_file = vuln_file.parent / "meta.json"
+              try:
+                  data = json.loads(vuln_file.read_text())
+                  if isinstance(data, list):
+                      v = data
+                  elif "vulnerabilities" in data:
+                      v = data["vulnerabilities"]
+                  else:
+                      v = []
+              except Exception as e:
+                  print(f"  SKIP {slug}: {e}"); continue
+              meta = {}
+              if meta_file.exists():
+                  try: meta = json.loads(meta_file.read_text())
+                  except Exception: pass
+              project_url = meta.get("github_url") or (
+                  f"https://github.com/{meta['project_path']}"
+                  if meta.get("project_path") else None)
+              last_updated = meta.get("last_updated") or datetime.fromtimestamp(
+                  vuln_file.stat().st_mtime, tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+              summary = {
+                  "total":    len(v),
+                  "critical": sum(1 for x in v if x.get("severity") == "critical"),
+                  "high":     sum(1 for x in v if x.get("severity") == "high"),
+                  "medium":   sum(1 for x in v if x.get("severity") == "medium"),
+                  "low":      sum(1 for x in v if x.get("severity") == "low"),
+              }
+              projects.append({
+                  "slug": slug,
+                  "name": meta.get("project_name", slug),
+                  "project_path": meta.get("project_path", slug),
+                  "github_url": project_url,
+                  "default_branch": meta.get("default_branch"),
+                  "last_updated": last_updated,
+                  "summary": summary
+              })
+              print(f"  {slug}: {summary['total']} findings")
+          now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+          INDEX_FILE.write_text(json.dumps({"last_updated": now, "projects": projects}, indent=2))
+          print(f"Wrote {INDEX_FILE} with {len(projects)} project(s).")
+          PYEOF
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
