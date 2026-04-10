@@ -1,4 +1,28 @@
 {
-  "last_updated": null,
-  "projects": []
+  "last_updated": "2026-04-10T05:31:31.819575Z",
+  "projects": [
+    {
+      "slug": "juice-shop-public",
+      "name": "juice-shop-public",
+      "path": "vulnerabilities/juice-shop-public.json",
+      "project_path": "ez-appsec/juice-shop-public",
+      "github_url": "https://github.com/ez-appsec/juice-shop-public",
+      "last_updated": "2026-04-10T05:31:31Z",
+      "summary": {
+        "total": 127,
+        "critical": 9,
+        "high": 42,
+        "medium": 41,
+        "low": 28
+      }
+    }
+  ],
+  "totals": {
+    "projects": 1,
+    "findings": 127,
+    "critical": 9,
+    "high": 42,
+    "medium": 41,
+    "low": 28
+  }
 }
