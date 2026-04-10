@@ -2,7 +2,7 @@
   "version": "15.0.0",
   "vulnerabilities": [
     {
-      "id": "3698b2d7-2e82-40ce-be8e-90f981a10e79",
+      "id": "b96876c2-1515-4269-b3f5-943d92d0a6a2",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Always set a user in the runtime stage of your Dockerfile. Without it, the container defaults to root, even if earlier build stages define a user.",
@@ -42,7 +42,7 @@
       "links": []
     },
     {
-      "id": "18b17e30-e347-4e84-ac35-215d8b9b8887",
+      "id": "94353e93-495c-442e-a897-b093ec4e2c19",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Array schema should have the field 'maxItems' set",
@@ -82,7 +82,7 @@
       "links": []
     },
     {
-      "id": "fe30f0f0-f0aa-4d6c-a0ab-965f9904043d",
+      "id": "b07f7d87-30ec-4040-80d7-a5e449743216",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Some capabilities are not needed in certain (or any) containers. Make sure that you only add capabilities that your container needs. Drop unnecessary capabilities as well.",
@@ -122,7 +122,7 @@
       "links": []
     },
     {
-      "id": "b759cb0f-a0db-4feb-a1b9-a358b177dd62",
+      "id": "a36414e5-2a56-40d3-83da-0e142b8b2381",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Some capabilities are not needed in certain (or any) containers. Make sure that you only add capabilities that your container needs. Drop unnecessary capabilities as well.",
@@ -162,7 +162,7 @@
       "links": []
     },
     {
-      "id": "377a49d2-910e-4ad9-a37b-a32289ec28e5",
+      "id": "351cde4f-91d5-42c7-a2a6-88d705a9b24e",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Global server object URL should use 'https' protocol instead of 'http'",
@@ -202,7 +202,7 @@
       "links": []
     },
     {
-      "id": "de64ba01-e367-4979-9e08-c878f9e56aa2",
+      "id": "5f65b0b3-9acd-46ec-9afc-6b5c3258002d",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Check containers periodically to see if they are running properly.",
@@ -242,7 +242,7 @@
       "links": []
     },
     {
-      "id": "589f3958-aec4-4d60-9a50-b536eb068a93",
+      "id": "cfa33411-ac75-4f3e-bc00-ffae0b315a4b",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Check containers periodically to see if they are running properly.",
@@ -282,7 +282,7 @@
       "links": []
     },
     {
-      "id": "6b879f47-90cf-4206-83dd-f9b43873ac75",
+      "id": "9d28da02-718a-4a3a-8ef7-7394936bc8dd",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Always tag the version of an image explicitly",
@@ -322,7 +322,7 @@
       "links": []
     },
     {
-      "id": "05b58901-bf25-413e-ac8e-20ddaffe822a",
+      "id": "38397b77-0958-4ee2-bb04-1ccfae08ca5f",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Always tag the version of an image explicitly",
@@ -362,7 +362,7 @@
       "links": []
     },
     {
-      "id": "6d1a0662-c600-4c67-9153-3c4ac5d32fc5",
+      "id": "51016142-7962-4934-bae2-80365cfc9c53",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Check if packages installed by npm are pinning a specific version.",
@@ -402,7 +402,7 @@
       "links": []
     },
     {
-      "id": "6b841d69-7a6e-4bbe-aff0-22c1b7675b00",
+      "id": "7221bf15-7292-487a-8373-bbe6981ddfa7",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "String schema should have 'pattern' defined.",
@@ -442,7 +442,7 @@
       "links": []
     },
     {
-      "id": "f310a8f4-0eb3-4b36-9d66-7a98a0bb7e4d",
+      "id": "2c59b177-7d74-4906-991e-05a0dc7afa85",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "String schema should have 'pattern' defined.",
@@ -482,7 +482,7 @@
       "links": []
     },
     {
-      "id": "5b405a48-7aca-4f36-b740-785ae6996669",
+      "id": "aa0ab34c-c2a9-4e6e-bca9-6d4331a9b6df",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "String schema should have 'pattern' defined.",
@@ -522,47 +522,7 @@
       "links": []
     },
     {
-      "id": "402511bc-731a-4c1b-b3aa-54269a80ff5d",
-      "category": "sast",
-      "name": "KICS: unknown",
-      "message": "String schema should have 'pattern' defined.",
-      "description": "KICS detected: unknown",
-      "cve": "",
-      "severity": "medium",
-      "confidence": "medium",
-      "solution": "Review the infrastructure configuration and apply security best practices.",
-      "scanner": {
-        "id": "kics",
-        "name": "KICS"
-      },
-      "location": {
-        "file": {
-          "file_name": "swagger.yml",
-          "similarity_id": "edac5a99f11fb123a0c86250249e08da9aeeb46fcbf167102bc8a4e35334f1bb",
-          "line": 48,
-          "issue_type": "MissingAttribute",
-          "search_key": "components.schemas.OrderLinesData.type",
-          "search_line": 48,
-          "search_value": "",
-          "expected_value": "'pattern' should be defined",
-          "actual_value": "'pattern' is undefined"
-        },
-        "start_line": 1,
-        "end_line": 1,
-        "class": "iac",
-        "method": "unknown"
-      },
-      "identifiers": [
-        {
-          "type": "kics_query",
-          "name": "unknown",
-          "value": "unknown"
-        }
-      ],
-      "links": []
-    },
-    {
-      "id": "68e9c32f-1ec5-4e2a-a6c4-7880d68a2e40",
+      "id": "bcc8da46-faf6-4151-b4dd-91820213dcc7",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "String schema should have 'pattern' defined.",
@@ -602,10 +562,10 @@
       "links": []
     },
     {
-      "id": "44117e3d-1c3e-40e5-a035-d50c01130839",
+      "id": "1f5d3a8a-2ec6-4cd9-84bc-70017cf87cbb",
       "category": "sast",
       "name": "KICS: unknown",
-      "message": "Attribute 'security_opt' should be defined.",
+      "message": "String schema should have 'pattern' defined.",
       "description": "KICS detected: unknown",
       "cve": "",
       "severity": "medium",
@@ -617,15 +577,15 @@
       },
       "location": {
         "file": {
-          "file_name": "docker-compose.test.yml",
-          "similarity_id": "57350d3fbfbe2dcd385b905606e649bbf06f8b3052b03469145a6c8da0932b0f",
-          "line": 6,
+          "file_name": "swagger.yml",
+          "similarity_id": "edac5a99f11fb123a0c86250249e08da9aeeb46fcbf167102bc8a4e35334f1bb",
+          "line": 48,
           "issue_type": "MissingAttribute",
-          "search_key": "services.app",
-          "search_line": 6,
+          "search_key": "components.schemas.OrderLinesData.type",
+          "search_line": 48,
           "search_value": "",
-          "expected_value": "Docker compose file to have 'security_opt' attribute",
-          "actual_value": "Docker compose file does not have 'security_opt' attribute"
+          "expected_value": "'pattern' should be defined",
+          "actual_value": "'pattern' is undefined"
         },
         "start_line": 1,
         "end_line": 1,
@@ -642,7 +602,7 @@
       "links": []
     },
     {
-      "id": "9b53d36d-6177-4ce7-9bf0-3a628309abb3",
+      "id": "ba013e03-4ccc-4f6f-bd07-791868d8ef75",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Attribute 'security_opt' should be defined.",
@@ -682,7 +642,47 @@
       "links": []
     },
     {
-      "id": "ef55d597-37f2-409b-aef7-34a6831cb356",
+      "id": "d53ec706-9a78-411e-bd65-b658ea1ee386",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "Attribute 'security_opt' should be defined.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "docker-compose.test.yml",
+          "similarity_id": "57350d3fbfbe2dcd385b905606e649bbf06f8b3052b03469145a6c8da0932b0f",
+          "line": 6,
+          "issue_type": "MissingAttribute",
+          "search_key": "services.app",
+          "search_line": 6,
+          "search_value": "",
+          "expected_value": "Docker compose file to have 'security_opt' attribute",
+          "actual_value": "Docker compose file does not have 'security_opt' attribute"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "44bebd53-c1a7-4042-ae94-83d9105ef6ee",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Package version pinning reduces the range of versions that can be installed, reducing the chances of failure due to unanticipated changes",
@@ -722,7 +722,7 @@
       "links": []
     },
     {
-      "id": "c1d262f0-9b9d-466e-bdf1-bc95353ccf75",
+      "id": "256e5497-4af4-4627-86f1-9d5896ba935b",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "It is considered a best practice for every executable in a container to be owned by the root user even if it is executed by a non-root user, only execution permissions are required on the file, not ownership",
@@ -762,7 +762,7 @@
       "links": []
     },
     {
-      "id": "afb41426-6dd1-4f36-b39b-920f6b6ad371",
+      "id": "85b3a4ef-aeff-4bf4-9038-cb8cb697b99a",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Operations responses should have a default response defined",
@@ -802,7 +802,7 @@
       "links": []
     },
     {
-      "id": "6a93c8d4-e460-43a9-961d-61d5515a0c7d",
+      "id": "133c6191-29e0-4f99-a68a-9d8742a50476",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Ensure that HEALTHCHECK is being used. The HEALTHCHECK instruction tells Docker how to test a container to check that it is still working",
@@ -842,7 +842,7 @@
       "links": []
     },
     {
-      "id": "2db07853-93c2-4892-ad41-7289b35b5662",
+      "id": "86d941f0-0459-4c9a-94ed-7c66b563f9ce",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Ensure that HEALTHCHECK is being used. The HEALTHCHECK instruction tells Docker how to test a container to check that it is still working",
@@ -882,47 +882,7 @@
       "links": []
     },
     {
-      "id": "db05fff2-33cc-4c88-bfd0-3901eed0dba6",
-      "category": "sast",
-      "name": "KICS: unknown",
-      "message": "String schema should have 'maxLength' defined.",
-      "description": "KICS detected: unknown",
-      "cve": "",
-      "severity": "low",
-      "confidence": "medium",
-      "solution": "Review the infrastructure configuration and apply security best practices.",
-      "scanner": {
-        "id": "kics",
-        "name": "KICS"
-      },
-      "location": {
-        "file": {
-          "file_name": "swagger.yml",
-          "similarity_id": "e048b87f4d26762ce27e3655b8e836e7fae456950be0cc23a67a235ed3ccb5f5",
-          "line": 38,
-          "issue_type": "MissingAttribute",
-          "search_key": "components.schemas.OrderConfirmation.properties.cid.type",
-          "search_line": 38,
-          "search_value": "",
-          "expected_value": "'maxLength' should be defined",
-          "actual_value": "'maxLength' is undefined"
-        },
-        "start_line": 1,
-        "end_line": 1,
-        "class": "iac",
-        "method": "unknown"
-      },
-      "identifiers": [
-        {
-          "type": "kics_query",
-          "name": "unknown",
-          "value": "unknown"
-        }
-      ],
-      "links": []
-    },
-    {
-      "id": "d3178385-2433-4fd5-82d3-2e9995ab800a",
+      "id": "2cf40782-4d80-4a6a-9b31-21b5c97bf40f",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "String schema should have 'maxLength' defined.",
@@ -962,7 +922,7 @@
       "links": []
     },
     {
-      "id": "5ba4a20b-5006-442d-8b4f-058022cfaab4",
+      "id": "f9801a0e-4bfc-4512-b736-24d1782f8874",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "String schema should have 'maxLength' defined.",
@@ -978,11 +938,11 @@
       "location": {
         "file": {
           "file_name": "swagger.yml",
-          "similarity_id": "02bd5411c533ddcc6ab8b2359019ed86dc1bb6a68e55262f08bec9e657655f83",
-          "line": 48,
+          "similarity_id": "e048b87f4d26762ce27e3655b8e836e7fae456950be0cc23a67a235ed3ccb5f5",
+          "line": 38,
           "issue_type": "MissingAttribute",
-          "search_key": "components.schemas.OrderLinesData.type",
-          "search_line": 48,
+          "search_key": "components.schemas.OrderConfirmation.properties.cid.type",
+          "search_line": 38,
           "search_value": "",
           "expected_value": "'maxLength' should be defined",
           "actual_value": "'maxLength' is undefined"
@@ -1002,7 +962,7 @@
       "links": []
     },
     {
-      "id": "6fed2eff-84f3-4f4b-84bd-36714b1a45ff",
+      "id": "09d2cc5b-61d1-449f-b8a3-5f13e51d3571",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "String schema should have 'maxLength' defined.",
@@ -1042,7 +1002,47 @@
       "links": []
     },
     {
-      "id": "86446a4e-d04e-4930-8f34-feb081484fea",
+      "id": "2f2c8877-754f-4e58-9970-631dd5bc3a75",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "String schema should have 'maxLength' defined.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "low",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "swagger.yml",
+          "similarity_id": "02bd5411c533ddcc6ab8b2359019ed86dc1bb6a68e55262f08bec9e657655f83",
+          "line": 48,
+          "issue_type": "MissingAttribute",
+          "search_key": "components.schemas.OrderLinesData.type",
+          "search_line": 48,
+          "search_value": "",
+          "expected_value": "'maxLength' should be defined",
+          "actual_value": "'maxLength' is undefined"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "d8fb1db3-08b5-4d29-b79e-485a98e5bc10",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "String schema should have 'maxLength' defined.",
@@ -1082,7 +1082,7 @@
       "links": []
     },
     {
-      "id": "8b3e086d-5b3c-4058-91e3-ad64b17dbbf7",
+      "id": "a4ccad78-9911-4825-bbc6-58594892542b",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Numeric schema (type set to 'integer' or 'number') should have 'format' defined.",
@@ -1122,7 +1122,7 @@
       "links": []
     },
     {
-      "id": "10ee830a-b2a0-46e1-be81-c0b3e901ad8f",
+      "id": "16dc2ae7-dd02-4bb9-92c1-76df6ecb88dd",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Numeric schema (type set to 'integer' or 'number') should have 'format' defined.",
@@ -1162,47 +1162,7 @@
       "links": []
     },
     {
-      "id": "afe1496e-efe1-4e0c-9fcd-162f4d7fe8d3",
-      "category": "sast",
-      "name": "KICS: unknown",
-      "message": "Numeric schema (type set to 'integer' or 'number') should have 'maximum' defined.",
-      "description": "KICS detected: unknown",
-      "cve": "",
-      "severity": "low",
-      "confidence": "medium",
-      "solution": "Review the infrastructure configuration and apply security best practices.",
-      "scanner": {
-        "id": "kics",
-        "name": "KICS"
-      },
-      "location": {
-        "file": {
-          "file_name": "swagger.yml",
-          "similarity_id": "c8bed2ddf92b5be7c8466e9e9ca56e2105de201b912ec8ec28d79f7577af5cfc",
-          "line": 42,
-          "issue_type": "MissingAttribute",
-          "search_key": "components.schemas.OrderLine.properties.productId.type",
-          "search_line": -1,
-          "search_value": "",
-          "expected_value": "Numeric schema should have 'maximum' defined",
-          "actual_value": "Numeric schema does not have 'maximum' defined"
-        },
-        "start_line": 1,
-        "end_line": 1,
-        "class": "iac",
-        "method": "unknown"
-      },
-      "identifiers": [
-        {
-          "type": "kics_query",
-          "name": "unknown",
-          "value": "unknown"
-        }
-      ],
-      "links": []
-    },
-    {
-      "id": "d3149655-b85a-489a-90f0-41bb79de9d24",
+      "id": "e2a42056-7972-4964-8ff9-00164c6089c1",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Numeric schema (type set to 'integer' or 'number') should have 'maximum' defined.",
@@ -1242,7 +1202,47 @@
       "links": []
     },
     {
-      "id": "114e2734-6329-44e2-b9ec-549562bab2c0",
+      "id": "052a3345-c9dd-433b-841a-264566b048d1",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "Numeric schema (type set to 'integer' or 'number') should have 'maximum' defined.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "low",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "swagger.yml",
+          "similarity_id": "c8bed2ddf92b5be7c8466e9e9ca56e2105de201b912ec8ec28d79f7577af5cfc",
+          "line": 42,
+          "issue_type": "MissingAttribute",
+          "search_key": "components.schemas.OrderLine.properties.productId.type",
+          "search_line": -1,
+          "search_value": "",
+          "expected_value": "Numeric schema should have 'maximum' defined",
+          "actual_value": "Numeric schema does not have 'maximum' defined"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "0498d752-09ab-4c3a-8dcc-6cfeca750eb8",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Numeric schema (type set to 'integer' or 'number') should have 'minimum' defined.",
@@ -1282,7 +1282,7 @@
       "links": []
     },
     {
-      "id": "da54f462-ee7c-47d1-b9ca-8fcc71f3cc8f",
+      "id": "cf290ded-5afa-4128-97b2-7d2a4dfb212f",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "500, 429 and 400 responses should be defined for all operations, except head operation. 415 response should be defined for the post, put, and patch operations. 404 response should be defined for the get, put, head, delete operations. 200 response should be defined for options operation. 401 and 403 response should be defined for all operations when the security field is defined.",
@@ -1322,167 +1322,7 @@
       "links": []
     },
     {
-      "id": "926e6fbf-423f-4122-a68d-013838cf18e8",
-      "category": "sast",
-      "name": "KICS: unknown",
-      "message": "500, 429 and 400 responses should be defined for all operations, except head operation. 415 response should be defined for the post, put, and patch operations. 404 response should be defined for the get, put, head, delete operations. 200 response should be defined for options operation. 401 and 403 response should be defined for all operations when the security field is defined.",
-      "description": "KICS detected: unknown",
-      "cve": "",
-      "severity": "low",
-      "confidence": "medium",
-      "solution": "Review the infrastructure configuration and apply security best practices.",
-      "scanner": {
-        "id": "kics",
-        "name": "KICS"
-      },
-      "location": {
-        "file": {
-          "file_name": "swagger.yml",
-          "similarity_id": "a60fb07e9c521c05a28de8dd0f9d1172e04b46350026e5f9ea3753a333da1da8",
-          "line": 24,
-          "issue_type": "MissingAttribute",
-          "search_key": "paths.{{/orders}}.{{post}}.responses",
-          "search_line": 24,
-          "search_value": "400 response",
-          "expected_value": "400 response should be set",
-          "actual_value": "400 response is undefined"
-        },
-        "start_line": 1,
-        "end_line": 1,
-        "class": "iac",
-        "method": "unknown"
-      },
-      "identifiers": [
-        {
-          "type": "kics_query",
-          "name": "unknown",
-          "value": "unknown"
-        }
-      ],
-      "links": []
-    },
-    {
-      "id": "ea3f17c5-bb83-4646-8b0e-9395917b8093",
-      "category": "sast",
-      "name": "KICS: unknown",
-      "message": "500, 429 and 400 responses should be defined for all operations, except head operation. 415 response should be defined for the post, put, and patch operations. 404 response should be defined for the get, put, head, delete operations. 200 response should be defined for options operation. 401 and 403 response should be defined for all operations when the security field is defined.",
-      "description": "KICS detected: unknown",
-      "cve": "",
-      "severity": "low",
-      "confidence": "medium",
-      "solution": "Review the infrastructure configuration and apply security best practices.",
-      "scanner": {
-        "id": "kics",
-        "name": "KICS"
-      },
-      "location": {
-        "file": {
-          "file_name": "swagger.yml",
-          "similarity_id": "3e49558e55bda34614224ab0455b8469e2a0d4ae0b6bc5fe044ea02c189dcbcd",
-          "line": 24,
-          "issue_type": "MissingAttribute",
-          "search_key": "paths.{{/orders}}.{{post}}.responses",
-          "search_line": 24,
-          "search_value": "403 response",
-          "expected_value": "403 response should be set when security field is defined",
-          "actual_value": "403 response is undefined when security field is defined"
-        },
-        "start_line": 1,
-        "end_line": 1,
-        "class": "iac",
-        "method": "unknown"
-      },
-      "identifiers": [
-        {
-          "type": "kics_query",
-          "name": "unknown",
-          "value": "unknown"
-        }
-      ],
-      "links": []
-    },
-    {
-      "id": "536a4e0b-a233-4814-a4a7-80d35fde495d",
-      "category": "sast",
-      "name": "KICS: unknown",
-      "message": "500, 429 and 400 responses should be defined for all operations, except head operation. 415 response should be defined for the post, put, and patch operations. 404 response should be defined for the get, put, head, delete operations. 200 response should be defined for options operation. 401 and 403 response should be defined for all operations when the security field is defined.",
-      "description": "KICS detected: unknown",
-      "cve": "",
-      "severity": "low",
-      "confidence": "medium",
-      "solution": "Review the infrastructure configuration and apply security best practices.",
-      "scanner": {
-        "id": "kics",
-        "name": "KICS"
-      },
-      "location": {
-        "file": {
-          "file_name": "swagger.yml",
-          "similarity_id": "f7acc997810afc3bd42e3fdc66617d866862b4e79e624802cd602477116fe37d",
-          "line": 24,
-          "issue_type": "MissingAttribute",
-          "search_key": "paths.{{/orders}}.{{post}}.responses",
-          "search_line": 24,
-          "search_value": "415 response",
-          "expected_value": "415 response should be set",
-          "actual_value": "415 response is undefined"
-        },
-        "start_line": 1,
-        "end_line": 1,
-        "class": "iac",
-        "method": "unknown"
-      },
-      "identifiers": [
-        {
-          "type": "kics_query",
-          "name": "unknown",
-          "value": "unknown"
-        }
-      ],
-      "links": []
-    },
-    {
-      "id": "952f9a93-6529-49e0-b75c-1d4fed935b45",
-      "category": "sast",
-      "name": "KICS: unknown",
-      "message": "500, 429 and 400 responses should be defined for all operations, except head operation. 415 response should be defined for the post, put, and patch operations. 404 response should be defined for the get, put, head, delete operations. 200 response should be defined for options operation. 401 and 403 response should be defined for all operations when the security field is defined.",
-      "description": "KICS detected: unknown",
-      "cve": "",
-      "severity": "low",
-      "confidence": "medium",
-      "solution": "Review the infrastructure configuration and apply security best practices.",
-      "scanner": {
-        "id": "kics",
-        "name": "KICS"
-      },
-      "location": {
-        "file": {
-          "file_name": "swagger.yml",
-          "similarity_id": "3af993f5858db7ca728dee7598f6faa8e0abd168dc93cfe3d5572c0c279ddd20",
-          "line": 24,
-          "issue_type": "MissingAttribute",
-          "search_key": "paths.{{/orders}}.{{post}}.responses",
-          "search_line": 24,
-          "search_value": "401 response",
-          "expected_value": "401 response should be set when security field is defined",
-          "actual_value": "401 response is undefined when security field is defined"
-        },
-        "start_line": 1,
-        "end_line": 1,
-        "class": "iac",
-        "method": "unknown"
-      },
-      "identifiers": [
-        {
-          "type": "kics_query",
-          "name": "unknown",
-          "value": "unknown"
-        }
-      ],
-      "links": []
-    },
-    {
-      "id": "63671c56-6d34-4241-b970-a32588aeb562",
+      "id": "f5361426-79e1-4a77-97bd-59806e4a73c5",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "500, 429 and 400 responses should be defined for all operations, except head operation. 415 response should be defined for the post, put, and patch operations. 404 response should be defined for the get, put, head, delete operations. 200 response should be defined for options operation. 401 and 403 response should be defined for all operations when the security field is defined.",
@@ -1522,10 +1362,10 @@
       "links": []
     },
     {
-      "id": "6aa77575-1a26-49a0-906f-150dbf5ebbf5",
+      "id": "4cfe0644-09d1-4e97-b2ac-7fcac1678da8",
       "category": "sast",
       "name": "KICS: unknown",
-      "message": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
+      "message": "500, 429 and 400 responses should be defined for all operations, except head operation. 415 response should be defined for the post, put, and patch operations. 404 response should be defined for the get, put, head, delete operations. 200 response should be defined for options operation. 401 and 403 response should be defined for all operations when the security field is defined.",
       "description": "KICS detected: unknown",
       "cve": "",
       "severity": "low",
@@ -1537,15 +1377,15 @@
       },
       "location": {
         "file": {
-          "file_name": ".github/workflows/ci.yml",
-          "similarity_id": "5c8a4eed5e55828a54a42e0d111e2ffc21b248745a94bebe23b3979c0728348d",
-          "line": 161,
-          "issue_type": "IncorrectValue",
-          "search_key": "uses={{coverallsapp/github-action@v2}}",
-          "search_line": 161,
-          "search_value": "",
-          "expected_value": "Action pinned to a full length commit SHA.",
-          "actual_value": "Action is not pinned to a full length commit SHA."
+          "file_name": "swagger.yml",
+          "similarity_id": "3af993f5858db7ca728dee7598f6faa8e0abd168dc93cfe3d5572c0c279ddd20",
+          "line": 24,
+          "issue_type": "MissingAttribute",
+          "search_key": "paths.{{/orders}}.{{post}}.responses",
+          "search_line": 24,
+          "search_value": "401 response",
+          "expected_value": "401 response should be set when security field is defined",
+          "actual_value": "401 response is undefined when security field is defined"
         },
         "start_line": 1,
         "end_line": 1,
@@ -1562,10 +1402,10 @@
       "links": []
     },
     {
-      "id": "73053dae-e7ad-4970-925b-b9939652acfa",
+      "id": "b5eac011-fbd4-46d4-9ba1-9fb9fd648048",
       "category": "sast",
       "name": "KICS: unknown",
-      "message": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
+      "message": "500, 429 and 400 responses should be defined for all operations, except head operation. 415 response should be defined for the post, put, and patch operations. 404 response should be defined for the get, put, head, delete operations. 200 response should be defined for options operation. 401 and 403 response should be defined for all operations when the security field is defined.",
       "description": "KICS detected: unknown",
       "cve": "",
       "severity": "low",
@@ -1577,15 +1417,15 @@
       },
       "location": {
         "file": {
-          "file_name": ".github/workflows/ez-appsec-scan.yml",
-          "similarity_id": "81e53edf2c391adf3a2bf84800c506d76d80932c9459e2c1be342c5567482f87",
-          "line": 78,
-          "issue_type": "IncorrectValue",
-          "search_key": "uses={{github/codeql-action/upload-sarif@v3}}",
-          "search_line": 78,
-          "search_value": "",
-          "expected_value": "Action pinned to a full length commit SHA.",
-          "actual_value": "Action is not pinned to a full length commit SHA."
+          "file_name": "swagger.yml",
+          "similarity_id": "f7acc997810afc3bd42e3fdc66617d866862b4e79e624802cd602477116fe37d",
+          "line": 24,
+          "issue_type": "MissingAttribute",
+          "search_key": "paths.{{/orders}}.{{post}}.responses",
+          "search_line": 24,
+          "search_value": "415 response",
+          "expected_value": "415 response should be set",
+          "actual_value": "415 response is undefined"
         },
         "start_line": 1,
         "end_line": 1,
@@ -1602,7 +1442,87 @@
       "links": []
     },
     {
-      "id": "890821f6-34bd-4286-a07a-d72f0acd51a4",
+      "id": "0e232803-2266-4ea1-b917-390976a8b45b",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "500, 429 and 400 responses should be defined for all operations, except head operation. 415 response should be defined for the post, put, and patch operations. 404 response should be defined for the get, put, head, delete operations. 200 response should be defined for options operation. 401 and 403 response should be defined for all operations when the security field is defined.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "low",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "swagger.yml",
+          "similarity_id": "a60fb07e9c521c05a28de8dd0f9d1172e04b46350026e5f9ea3753a333da1da8",
+          "line": 24,
+          "issue_type": "MissingAttribute",
+          "search_key": "paths.{{/orders}}.{{post}}.responses",
+          "search_line": 24,
+          "search_value": "400 response",
+          "expected_value": "400 response should be set",
+          "actual_value": "400 response is undefined"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "13400812-f260-485c-85a0-6a644c1ee7b4",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "500, 429 and 400 responses should be defined for all operations, except head operation. 415 response should be defined for the post, put, and patch operations. 404 response should be defined for the get, put, head, delete operations. 200 response should be defined for options operation. 401 and 403 response should be defined for all operations when the security field is defined.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "low",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "swagger.yml",
+          "similarity_id": "3e49558e55bda34614224ab0455b8469e2a0d4ae0b6bc5fe044ea02c189dcbcd",
+          "line": 24,
+          "issue_type": "MissingAttribute",
+          "search_key": "paths.{{/orders}}.{{post}}.responses",
+          "search_line": 24,
+          "search_value": "403 response",
+          "expected_value": "403 response should be set when security field is defined",
+          "actual_value": "403 response is undefined when security field is defined"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "725ba7e0-0b95-436b-ac01-151ae2bdcfcd",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
@@ -1642,7 +1562,7 @@
       "links": []
     },
     {
-      "id": "fca962a8-6a81-4298-bb17-35e6ea2c99a5",
+      "id": "786fa931-db03-4c22-97cb-b45ec07601af",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
@@ -1657,12 +1577,12 @@
       },
       "location": {
         "file": {
-          "file_name": ".github/workflows/codeql-analysis.yml",
-          "similarity_id": "20d571631ac8bc7f496c29700db64efdc73fe02da92d2705fb9f1e4a0489b643",
-          "line": 34,
+          "file_name": ".github/workflows/ci.yml",
+          "similarity_id": "5c8a4eed5e55828a54a42e0d111e2ffc21b248745a94bebe23b3979c0728348d",
+          "line": 161,
           "issue_type": "IncorrectValue",
-          "search_key": "uses={{github/codeql-action/autobuild@v3}}",
-          "search_line": 34,
+          "search_key": "uses={{coverallsapp/github-action@v2}}",
+          "search_line": 161,
           "search_value": "",
           "expected_value": "Action pinned to a full length commit SHA.",
           "actual_value": "Action is not pinned to a full length commit SHA."
@@ -1682,7 +1602,7 @@
       "links": []
     },
     {
-      "id": "1fe57d85-de2d-4d6a-a0c5-23d8a2994e89",
+      "id": "a990e1ff-ea5a-42cb-80dd-22b5b0601fd8",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
@@ -1722,7 +1642,87 @@
       "links": []
     },
     {
-      "id": "7857df06-d362-43ad-96b1-4c648ebb1e21",
+      "id": "f8e2e631-7f4b-4aa3-9f9d-8cbd4d67ca94",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "low",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": ".github/workflows/ez-appsec-scan.yml",
+          "similarity_id": "81e53edf2c391adf3a2bf84800c506d76d80932c9459e2c1be342c5567482f87",
+          "line": 78,
+          "issue_type": "IncorrectValue",
+          "search_key": "uses={{github/codeql-action/upload-sarif@v3}}",
+          "search_line": 78,
+          "search_value": "",
+          "expected_value": "Action pinned to a full length commit SHA.",
+          "actual_value": "Action is not pinned to a full length commit SHA."
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "cc0c5e1b-aa9c-4781-a0fa-0c4d499464d5",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "low",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": ".github/workflows/codeql-analysis.yml",
+          "similarity_id": "20d571631ac8bc7f496c29700db64efdc73fe02da92d2705fb9f1e4a0489b643",
+          "line": 34,
+          "issue_type": "IncorrectValue",
+          "search_key": "uses={{github/codeql-action/autobuild@v3}}",
+          "search_line": 34,
+          "search_value": "",
+          "expected_value": "Action pinned to a full length commit SHA.",
+          "actual_value": "Action is not pinned to a full length commit SHA."
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "ca0ce2b0-9de7-4d3a-98a8-0c402f396227",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "When installing packages, use the '--no-cache' switch to avoid the need to use '--update' and remove '/var/cache/apk/*'",
@@ -1762,7 +1762,7 @@
       "links": []
     },
     {
-      "id": "0cee065b-be8e-438b-869a-254b60cbea22",
+      "id": "aee08ec7-88cf-4d09-b75d-9e1ca8fadf43",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "All array fields should not be empty",
@@ -1802,7 +1802,7 @@
       "links": []
     },
     {
-      "id": "a3256459-06eb-4e7a-ac37-0bf1711f7279",
+      "id": "77fbb90f-df87-452e-8835-87385c6da929",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "OpenAPI Object should contain all of its required fields",
@@ -1842,7 +1842,7 @@
       "links": []
     },
     {
-      "id": "d3f25ff1-1845-4d0a-9616-8a774769778d",
+      "id": "5421a316-bdf0-4408-a72a-dfbc212fc21d",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "The Server URL should be an absolute URL",
@@ -1882,47 +1882,7 @@
       "links": []
     },
     {
-      "id": "dd132312-1294-45db-bbd3-11783aaf1284",
-      "category": "sast",
-      "name": "KICS: unknown",
-      "message": "Schema Object define type should not use a keyword of another type",
-      "description": "KICS detected: unknown",
-      "cve": "",
-      "severity": "info",
-      "confidence": "medium",
-      "solution": "Review the infrastructure configuration and apply security best practices.",
-      "scanner": {
-        "id": "kics",
-        "name": "KICS"
-      },
-      "location": {
-        "file": {
-          "file_name": "swagger.yml",
-          "similarity_id": "e9fe9634eb56e5eb32866fb939dc6dce4f334e1e1474e7a53d3ee0f4000a5112",
-          "line": 38,
-          "issue_type": "IncorrectValue",
-          "search_key": "components.schemas.OrderConfirmation.properties.orderNo.uniqueItems",
-          "search_line": 38,
-          "search_value": "",
-          "expected_value": "There shouldn't be any invalid keywords",
-          "actual_value": "Keyword uniqueItems is not valid for type string"
-        },
-        "start_line": 1,
-        "end_line": 1,
-        "class": "iac",
-        "method": "unknown"
-      },
-      "identifiers": [
-        {
-          "type": "kics_query",
-          "name": "unknown",
-          "value": "unknown"
-        }
-      ],
-      "links": []
-    },
-    {
-      "id": "b34f8d87-122e-42a3-b91d-3f4c2a0f0d8b",
+      "id": "41e6ba58-3a43-46f1-b1e1-c238c03188cf",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Schema Object define type should not use a keyword of another type",
@@ -1962,7 +1922,7 @@
       "links": []
     },
     {
-      "id": "6ab19540-9af7-4405-99a1-ad4dcc26b6fa",
+      "id": "9c1ab385-739b-4e00-9aa6-6ba90bfd8691",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Schema Object define type should not use a keyword of another type",
@@ -2002,7 +1962,47 @@
       "links": []
     },
     {
-      "id": "9f996291-a7b5-4495-ac72-7bace3df0898",
+      "id": "b364aa55-6a2f-4a5d-9090-5e5c3110df93",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "Schema Object define type should not use a keyword of another type",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "info",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "swagger.yml",
+          "similarity_id": "e9fe9634eb56e5eb32866fb939dc6dce4f334e1e1474e7a53d3ee0f4000a5112",
+          "line": 38,
+          "issue_type": "IncorrectValue",
+          "search_key": "components.schemas.OrderConfirmation.properties.orderNo.uniqueItems",
+          "search_line": 38,
+          "search_value": "",
+          "expected_value": "There shouldn't be any invalid keywords",
+          "actual_value": "Keyword uniqueItems is not valid for type string"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "425521ad-43de-4dd2-b57f-43435cd8dc85",
       "category": "sast",
       "name": "Dependency: vm2 - GHSA-whpj-8f3w-67p5",
       "message": "Vulnerable package: vm2 3.9.17",
@@ -2039,7 +2039,7 @@
       ]
     },
     {
-      "id": "6275e386-ee86-4339-b717-807e35c65c91",
+      "id": "ed5784fe-8db4-444a-9ccb-cb48c49af22b",
       "category": "sast",
       "name": "Dependency: vm2 - GHSA-g644-9gfx-q4q4",
       "message": "Vulnerable package: vm2 3.9.17",
@@ -2076,7 +2076,7 @@
       ]
     },
     {
-      "id": "b1265141-a8b8-460d-8d4c-8d671a13f5eb",
+      "id": "e734cd5d-3455-4ad4-ad6f-656323aa4ed2",
       "category": "sast",
       "name": "Dependency: jsonwebtoken - GHSA-c7hr-j4mj-j2w6",
       "message": "Vulnerable package: jsonwebtoken 0.1.0",
@@ -2113,7 +2113,7 @@
       ]
     },
     {
-      "id": "a68e608a-dc74-4daf-a49f-38ffe9a3cacf",
+      "id": "bb7e1099-9f07-451c-8c07-c9c10f4cfdeb",
       "category": "sast",
       "name": "Dependency: jsonwebtoken - GHSA-c7hr-j4mj-j2w6",
       "message": "Vulnerable package: jsonwebtoken 0.4.0",
@@ -2150,7 +2150,7 @@
       ]
     },
     {
-      "id": "99b9918e-df5f-450f-a8f8-666ed2349a7d",
+      "id": "8ebf4e44-17b8-445d-94c0-b30d60b4442a",
       "category": "sast",
       "name": "Dependency: vm2 - GHSA-cchq-frgv-rjh5",
       "message": "Vulnerable package: vm2 3.9.17",
@@ -2187,7 +2187,7 @@
       ]
     },
     {
-      "id": "f202e06a-85f7-4d46-9923-f1f817f18f61",
+      "id": "5484da73-7172-4927-b007-e34edecf7643",
       "category": "sast",
       "name": "Dependency: lodash - GHSA-35jh-r3h4-6jhm",
       "message": "Vulnerable package: lodash 2.4.2",
@@ -2224,7 +2224,7 @@
       ]
     },
     {
-      "id": "30902383-709f-402d-abf6-772fafacf1f5",
+      "id": "e70b71ae-3ef8-4dc6-ad2b-4dd5c8c5336f",
       "category": "sast",
       "name": "Dependency: lodash - GHSA-jf85-cpcp-j695",
       "message": "Vulnerable package: lodash 2.4.2",
@@ -2261,7 +2261,7 @@
       ]
     },
     {
-      "id": "da2aa405-54cd-43d6-ac13-a2d08904dfaf",
+      "id": "ef700e76-6a9f-456c-acdc-b6c7ee686d55",
       "category": "sast",
       "name": "Dependency: lodash.set - GHSA-p6mc-m468-83gw",
       "message": "Vulnerable package: lodash.set 4.3.2",
@@ -2298,7 +2298,7 @@
       ]
     },
     {
-      "id": "423b4246-b3aa-46cd-9216-8872a4851871",
+      "id": "2f7cb2e2-2f3e-4d1b-a44d-eb8ff4f34729",
       "category": "sast",
       "name": "Dependency: moment - GHSA-8hfj-j24r-96c4",
       "message": "Vulnerable package: moment 2.0.0",
@@ -2335,7 +2335,7 @@
       ]
     },
     {
-      "id": "4e4774d4-ab0d-47f2-9505-37c13e463d04",
+      "id": "6788b870-1e27-4c30-8aac-5b3f9f2299fb",
       "category": "sast",
       "name": "Dependency: moment - GHSA-87vv-r9j6-g5qv",
       "message": "Vulnerable package: moment 2.0.0",
@@ -2372,7 +2372,7 @@
       ]
     },
     {
-      "id": "b19833b3-10d9-41b7-8134-7b8906ce083b",
+      "id": "b2cb26e4-47a7-4b43-b534-78a632deb989",
       "category": "sast",
       "name": "Dependency: engine.io - GHSA-r7qp-cfhv-p84w",
       "message": "Vulnerable package: engine.io 4.1.2",
@@ -2409,7 +2409,7 @@
       ]
     },
     {
-      "id": "a6cb5799-7f6e-480c-bf43-f8cfe76f63bf",
+      "id": "78ab2624-3ec3-41ac-9ce6-8c31d4d903ee",
       "category": "sast",
       "name": "Dependency: sanitize-html - GHSA-rm97-x556-q36h",
       "message": "Vulnerable package: sanitize-html 1.4.2",
@@ -2446,7 +2446,7 @@
       ]
     },
     {
-      "id": "39ce7dfa-6964-4900-af37-c8f590d47fb8",
+      "id": "7ef5ead9-0db3-4c05-ad39-d1c2c552fa39",
       "category": "sast",
       "name": "Dependency: crypto-js - GHSA-xwcq-pm8m-c4vf",
       "message": "Vulnerable package: crypto-js 3.3.0",
@@ -2483,7 +2483,7 @@
       ]
     },
     {
-      "id": "1c1cc79d-1140-4071-8035-1c5913704ba7",
+      "id": "fbad207e-a86c-4157-852f-f79c64ed7652",
       "category": "sast",
       "name": "Dependency: ws - GHSA-3h5v-q93c-6h6q",
       "message": "Vulnerable package: ws 7.4.6",
@@ -2520,7 +2520,7 @@
       ]
     },
     {
-      "id": "99d11c71-a17a-405a-9786-c99a4b845111",
+      "id": "22289f7a-f025-46e2-97e2-fd03bc841358",
       "category": "sast",
       "name": "Dependency: got - GHSA-pfrx-2q88-qq97",
       "message": "Vulnerable package: got 8.3.2",
@@ -2557,118 +2557,7 @@
       ]
     },
     {
-      "id": "518d2683-1405-4beb-8aaf-22634a370fe4",
-      "category": "sast",
-      "name": "Dependency: sanitize-html - GHSA-cgfm-xwp7-2cvr",
-      "message": "Vulnerable package: sanitize-html 1.4.2",
-      "description": "Sanitize-html Vulnerable To REDoS Attacks",
-      "cve": "",
-      "severity": "high",
-      "confidence": "high",
-      "solution": "Update sanitize-html to a version that fixes GHSA-cgfm-xwp7-2cvr.",
-      "scanner": {
-        "id": "grype",
-        "name": "Grype"
-      },
-      "location": {
-        "file": "dependency",
-        "dependency": {
-          "package": {
-            "name": "sanitize-html"
-          },
-          "version": "1.4.2"
-        }
-      },
-      "identifiers": [
-        {
-          "type": "cve",
-          "name": "GHSA-cgfm-xwp7-2cvr",
-          "value": "GHSA-cgfm-xwp7-2cvr",
-          "url": "https://github.com/advisories/GHSA-cgfm-xwp7-2cvr"
-        }
-      ],
-      "links": [
-        {
-          "url": "https://github.com/advisories/GHSA-cgfm-xwp7-2cvr"
-        }
-      ]
-    },
-    {
-      "id": "e9e54629-7b69-423c-afa1-9499fa2ffad4",
-      "category": "sast",
-      "name": "Dependency: moment - GHSA-446m-mv8f-q348",
-      "message": "Vulnerable package: moment 2.0.0",
-      "description": "Regular Expression Denial of Service in moment",
-      "cve": "",
-      "severity": "high",
-      "confidence": "high",
-      "solution": "Update moment to a version that fixes GHSA-446m-mv8f-q348.",
-      "scanner": {
-        "id": "grype",
-        "name": "Grype"
-      },
-      "location": {
-        "file": "dependency",
-        "dependency": {
-          "package": {
-            "name": "moment"
-          },
-          "version": "2.0.0"
-        }
-      },
-      "identifiers": [
-        {
-          "type": "cve",
-          "name": "GHSA-446m-mv8f-q348",
-          "value": "GHSA-446m-mv8f-q348",
-          "url": "https://github.com/advisories/GHSA-446m-mv8f-q348"
-        }
-      ],
-      "links": [
-        {
-          "url": "https://github.com/advisories/GHSA-446m-mv8f-q348"
-        }
-      ]
-    },
-    {
-      "id": "19117bc3-a0ee-4769-9aa7-95ff9d260f13",
-      "category": "sast",
-      "name": "Dependency: vm2 - GHSA-p5gc-c584-jj6v",
-      "message": "Vulnerable package: vm2 3.9.17",
-      "description": "vm2 vulnerable to Inspect Manipulation",
-      "cve": "",
-      "severity": "medium",
-      "confidence": "high",
-      "solution": "Update vm2 to a version that fixes GHSA-p5gc-c584-jj6v.",
-      "scanner": {
-        "id": "grype",
-        "name": "Grype"
-      },
-      "location": {
-        "file": "dependency",
-        "dependency": {
-          "package": {
-            "name": "vm2"
-          },
-          "version": "3.9.17"
-        }
-      },
-      "identifiers": [
-        {
-          "type": "cve",
-          "name": "GHSA-p5gc-c584-jj6v",
-          "value": "GHSA-p5gc-c584-jj6v",
-          "url": "https://github.com/advisories/GHSA-p5gc-c584-jj6v"
-        }
-      ],
-      "links": [
-        {
-          "url": "https://github.com/advisories/GHSA-p5gc-c584-jj6v"
-        }
-      ]
-    },
-    {
-      "id": "48c3572e-91a5-4233-8bb8-05df26fcf075",
+      "id": "4a2ead5b-1860-4963-9981-f41b4af63084",
       "category": "sast",
       "name": "Dependency: tar - GHSA-f5x3-32g6-xq36",
       "message": "Vulnerable package: tar 4.4.19",
@@ -2705,7 +2594,7 @@
       ]
     },
     {
-      "id": "c68f1a9c-e6d0-4e12-9a85-0863bdc5070d",
+      "id": "e0f0a6a4-92ea-4a45-8136-b4f2d0999abb",
       "category": "sast",
       "name": "Dependency: lodash - GHSA-4xc9-xhrj-v574",
       "message": "Vulnerable package: lodash 2.4.2",
@@ -2742,7 +2631,118 @@
       ]
     },
     {
-      "id": "e7f9116c-328f-46b7-a9b4-0ab60393f34a",
+      "id": "c0e83c03-15f1-4145-9f47-3af0dc8f1aa8",
+      "category": "sast",
+      "name": "Dependency: sanitize-html - GHSA-cgfm-xwp7-2cvr",
+      "message": "Vulnerable package: sanitize-html 1.4.2",
+      "description": "Sanitize-html Vulnerable To REDoS Attacks",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update sanitize-html to a version that fixes GHSA-cgfm-xwp7-2cvr.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "sanitize-html"
+          },
+          "version": "1.4.2"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-cgfm-xwp7-2cvr",
+          "value": "GHSA-cgfm-xwp7-2cvr",
+          "url": "https://github.com/advisories/GHSA-cgfm-xwp7-2cvr"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-cgfm-xwp7-2cvr"
+        }
+      ]
+    },
+    {
+      "id": "a85cc23e-189c-4614-921a-076c15a436f7",
+      "category": "sast",
+      "name": "Dependency: moment - GHSA-446m-mv8f-q348",
+      "message": "Vulnerable package: moment 2.0.0",
+      "description": "Regular Expression Denial of Service in moment",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update moment to a version that fixes GHSA-446m-mv8f-q348.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "moment"
+          },
+          "version": "2.0.0"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-446m-mv8f-q348",
+          "value": "GHSA-446m-mv8f-q348",
+          "url": "https://github.com/advisories/GHSA-446m-mv8f-q348"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-446m-mv8f-q348"
+        }
+      ]
+    },
+    {
+      "id": "d8bfce9a-dd33-4316-976c-9849fb3344c0",
+      "category": "sast",
+      "name": "Dependency: vm2 - GHSA-p5gc-c584-jj6v",
+      "message": "Vulnerable package: vm2 3.9.17",
+      "description": "vm2 vulnerable to Inspect Manipulation",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "high",
+      "solution": "Update vm2 to a version that fixes GHSA-p5gc-c584-jj6v.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "vm2"
+          },
+          "version": "3.9.17"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-p5gc-c584-jj6v",
+          "value": "GHSA-p5gc-c584-jj6v",
+          "url": "https://github.com/advisories/GHSA-p5gc-c584-jj6v"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-p5gc-c584-jj6v"
+        }
+      ]
+    },
+    {
+      "id": "ce61a834-ff2e-46c7-a1fb-e306065fef5e",
       "category": "sast",
       "name": "Dependency: multer - GHSA-g5hg-p3ph-g8qg",
       "message": "Vulnerable package: multer 1.4.5-lts.2",
@@ -2779,7 +2779,7 @@
       ]
     },
     {
-      "id": "0cc20620-b729-4cc8-b7ef-2b858b15ea73",
+      "id": "9226071f-20aa-4ffc-945e-53ef0451239c",
       "category": "sast",
       "name": "Dependency: sanitize-html - GHSA-3j7m-hmh3-9jmp",
       "message": "Vulnerable package: sanitize-html 1.4.2",
@@ -2816,7 +2816,7 @@
       ]
     },
     {
-      "id": "2c6bc571-7bf3-4b49-81cb-2de7b2e8fa8a",
+      "id": "1bc0a569-fd88-44ad-bb33-0fbae363ab4b",
       "category": "sast",
       "name": "Dependency: notevil - GHSA-8g4m-cjm2-96wq",
       "message": "Vulnerable package: notevil 1.3.3",
@@ -2853,7 +2853,7 @@
       ]
     },
     {
-      "id": "a58f8dfb-8074-46ec-af57-6d01fbe8fe33",
+      "id": "76852bd7-739a-4042-a247-550ce48c079c",
       "category": "sast",
       "name": "Dependency: braces - GHSA-grv7-fg5c-xmjg",
       "message": "Vulnerable package: braces 2.3.2",
@@ -2890,7 +2890,7 @@
       ]
     },
     {
-      "id": "a4a77845-8d88-4354-9127-c74c98f6faa1",
+      "id": "bb37b23f-ab60-449f-bf71-1870c8964a86",
       "category": "sast",
       "name": "Dependency: express-jwt - GHSA-6g6m-m6h5-w9gf",
       "message": "Vulnerable package: express-jwt 0.1.3",
@@ -2927,7 +2927,7 @@
       ]
     },
     {
-      "id": "20cac4bc-f8b3-4230-963b-4676fc7f0134",
+      "id": "8b0d20a0-9ec8-4c3c-9730-cca5c658a087",
       "category": "sast",
       "name": "Dependency: sanitize-html - GHSA-mjxr-4v3x-q3m4",
       "message": "Vulnerable package: sanitize-html 1.4.2",
@@ -2964,7 +2964,7 @@
       ]
     },
     {
-      "id": "6696d3b3-52fa-4bc5-805f-88870af111d6",
+      "id": "69d543bf-0332-4177-b1d1-e4d7952ba0c4",
       "category": "sast",
       "name": "Dependency: sanitize-html - GHSA-rjqq-98f6-6j3r",
       "message": "Vulnerable package: sanitize-html 1.4.2",
@@ -3001,7 +3001,7 @@
       ]
     },
     {
-      "id": "b731fddc-14dd-423e-abee-9f09e7b76b34",
+      "id": "cf8966ec-6259-44ea-90b6-099cdc07f65f",
       "category": "sast",
       "name": "Dependency: http-cache-semantics - GHSA-rc47-6667-2j5j",
       "message": "Vulnerable package: http-cache-semantics 3.8.1",
@@ -3038,7 +3038,7 @@
       ]
     },
     {
-      "id": "baf0780f-9c82-4dc5-8ff5-9c05d2d891a5",
+      "id": "19c40f0a-097d-4a01-af85-e646df8e6083",
       "category": "sast",
       "name": "Dependency: lodash - GHSA-fvqr-27wr-82fm",
       "message": "Vulnerable package: lodash 2.4.2",
@@ -3075,7 +3075,7 @@
       ]
     },
     {
-      "id": "d338271e-0499-40d5-90b8-927b81b520d9",
+      "id": "c11d224e-0121-4e8d-a894-ce13d8319cd8",
       "category": "sast",
       "name": "Dependency: sanitize-html - GHSA-xc6g-ggrc-qq4r",
       "message": "Vulnerable package: sanitize-html 1.4.2",
@@ -3112,7 +3112,7 @@
       ]
     },
     {
-      "id": "28a07e06-9974-4ad3-b8ca-5c4256e7467d",
+      "id": "3ec61651-4501-4d24-9110-0503ee1ba1c7",
       "category": "sast",
       "name": "Dependency: multer - GHSA-44fp-w29j-9vj5",
       "message": "Vulnerable package: multer 1.4.5-lts.2",
@@ -3149,7 +3149,7 @@
       ]
     },
     {
-      "id": "a7de5dde-6a27-45a6-922f-ac9ce5be7b6a",
+      "id": "a6476fd5-4e91-4fe8-a5db-27322c16b27d",
       "category": "sast",
       "name": "Dependency: socket.io-parser - GHSA-cqmj-92xf-r6r9",
       "message": "Vulnerable package: socket.io-parser 4.0.5",
@@ -3186,7 +3186,7 @@
       ]
     },
     {
-      "id": "2f9aa4f0-c025-4ac9-ae6b-35bb81d33d0b",
+      "id": "d3b4a459-c38b-4d77-aaf7-a3696a0be784",
       "category": "sast",
       "name": "Dependency: socket.io - GHSA-25hc-qcg6-38wj",
       "message": "Vulnerable package: socket.io 3.1.2",
@@ -3223,7 +3223,7 @@
       ]
     },
     {
-      "id": "0c93fa09-2b52-45bf-b65d-ce06cc57caa9",
+      "id": "3f5ca1d9-d546-428a-a744-268024a96479",
       "category": "sast",
       "name": "Dependency: socket.io-parser - GHSA-677m-j7p3-52f9",
       "message": "Vulnerable package: socket.io-parser 4.0.5",
@@ -3260,7 +3260,7 @@
       ]
     },
     {
-      "id": "b104657a-a7b3-4b3c-96eb-a97530e364c7",
+      "id": "08cde34e-7bd0-41ac-b586-7fe424cc1f3c",
       "category": "sast",
       "name": "Dependency: lodash - GHSA-r5fr-rjxr-66jc",
       "message": "Vulnerable package: lodash 4.17.23",
@@ -3297,7 +3297,7 @@
       ]
     },
     {
-      "id": "2ff5b437-d209-4b50-ab30-70d749e7c879",
+      "id": "0f431553-f819-4141-905b-67bdce70cb39",
       "category": "sast",
       "name": "Dependency: micromatch - GHSA-952p-6rrq-rcjv",
       "message": "Vulnerable package: micromatch 3.1.10",
@@ -3334,7 +3334,7 @@
       ]
     },
     {
-      "id": "8e66a1a9-9ef7-41f3-a14e-080b84d5e36c",
+      "id": "c6456dbe-e1b6-418a-a7f4-4b5ae92aefca",
       "category": "sast",
       "name": "Dependency: cookie - GHSA-pxg6-pf52-xh8x",
       "message": "Vulnerable package: cookie 0.4.2",
@@ -3371,7 +3371,7 @@
       ]
     },
     {
-      "id": "4ae308cd-6a71-466f-b3b5-e755278a8e76",
+      "id": "ba951520-8159-4747-a40e-67202849634f",
       "category": "sast",
       "name": "Dependency: jsonwebtoken - GHSA-8cf7-32gw-wr33",
       "message": "Vulnerable package: jsonwebtoken 0.1.0",
@@ -3408,7 +3408,7 @@
       ]
     },
     {
-      "id": "cab6cefb-cb46-434b-921c-c5514a453532",
+      "id": "b31720df-4948-4dc5-bfca-35a987209523",
       "category": "sast",
       "name": "Dependency: jsonwebtoken - GHSA-8cf7-32gw-wr33",
       "message": "Vulnerable package: jsonwebtoken 0.4.0",
@@ -3445,7 +3445,7 @@
       ]
     },
     {
-      "id": "24ce588b-8a0d-4d61-98f6-8d8f906816e5",
+      "id": "8fa1a8f7-2a52-4fcd-ac02-2001c74c3b2c",
       "category": "sast",
       "name": "Dependency: multer - GHSA-5528-5vmv-3xc2",
       "message": "Vulnerable package: multer 1.4.5-lts.2",
@@ -3482,7 +3482,7 @@
       ]
     },
     {
-      "id": "e99bd6f5-e739-4dab-8e24-4fc5f347c794",
+      "id": "f578c0b8-0e38-4219-a8cc-f65ac22d64d7",
       "category": "sast",
       "name": "Dependency: vm2 - GHSA-99p7-6v5w-7xg8",
       "message": "Vulnerable package: vm2 3.9.17",
@@ -3519,7 +3519,7 @@
       ]
     },
     {
-      "id": "7662c478-d767-4130-b3f9-2e6f55556d8f",
+      "id": "a3698683-5a71-4344-a51d-c6716cda07f5",
       "category": "sast",
       "name": "Dependency: lodash - GHSA-f23m-r3pf-42rh",
       "message": "Vulnerable package: lodash 2.4.2",
@@ -3556,7 +3556,7 @@
       ]
     },
     {
-      "id": "e4425a0d-0592-443b-99c4-43bd8c6921ae",
+      "id": "e981d4bf-da2e-4c4f-b213-9fbd0edc46c3",
       "category": "sast",
       "name": "Dependency: lodash - GHSA-f23m-r3pf-42rh",
       "message": "Vulnerable package: lodash 4.17.23",
@@ -3593,7 +3593,7 @@
       ]
     },
     {
-      "id": "449424f9-6b30-4ca1-aa9f-62d41b3f1276",
+      "id": "ceb2f1fe-36c0-4057-af49-26e3fe87195c",
       "category": "sast",
       "name": "Dependency: multer - GHSA-4pg4-qvpc-4q3h",
       "message": "Vulnerable package: multer 1.4.5-lts.2",
@@ -3630,7 +3630,7 @@
       ]
     },
     {
-      "id": "13dca971-c3b0-46d8-a5e3-0fcca98f57be",
+      "id": "201106b9-999f-4110-8872-22266a81e546",
       "category": "sast",
       "name": "Dependency: jsonwebtoken - GHSA-hjrf-2m68-5959",
       "message": "Vulnerable package: jsonwebtoken 0.1.0",
@@ -3667,7 +3667,7 @@
       ]
     },
     {
-      "id": "56972060-ad93-45df-a2e6-68d344c15268",
+      "id": "d34e8701-5ade-47d7-8c97-534538a9866f",
       "category": "sast",
       "name": "Dependency: jsonwebtoken - GHSA-hjrf-2m68-5959",
       "message": "Vulnerable package: jsonwebtoken 0.4.0",
@@ -3704,7 +3704,7 @@
       ]
     },
     {
-      "id": "89edb8b2-2cf6-4c58-ad42-0f16d723c9a5",
+      "id": "d155f580-3c62-46d8-b3f7-8233e0c3213b",
       "category": "sast",
       "name": "Dependency: sanitize-html - GHSA-qhxp-v273-g94h",
       "message": "Vulnerable package: sanitize-html 1.4.2",
@@ -3741,7 +3741,81 @@
       ]
     },
     {
-      "id": "d9bb7c98-9651-485a-8b7f-149ce27eddad",
+      "id": "79aa5f12-d2f6-4f08-9396-b9506cd8b0b2",
+      "category": "sast",
+      "name": "Dependency: minimatch - GHSA-7r86-cg39-jmmj",
+      "message": "Vulnerable package: minimatch 3.0.5",
+      "description": "minimatch has ReDoS: matchOne() combinatorial backtracking via multiple non-adjacent GLOBSTAR segments",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update minimatch to a version that fixes GHSA-7r86-cg39-jmmj.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "minimatch"
+          },
+          "version": "3.0.5"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-7r86-cg39-jmmj",
+          "value": "GHSA-7r86-cg39-jmmj",
+          "url": "https://github.com/advisories/GHSA-7r86-cg39-jmmj"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-7r86-cg39-jmmj"
+        }
+      ]
+    },
+    {
+      "id": "4eaf279a-9dd2-4efe-bf7f-87c8766fbded",
+      "category": "sast",
+      "name": "Dependency: minimatch - GHSA-7r86-cg39-jmmj",
+      "message": "Vulnerable package: minimatch 3.0.8",
+      "description": "minimatch has ReDoS: matchOne() combinatorial backtracking via multiple non-adjacent GLOBSTAR segments",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update minimatch to a version that fixes GHSA-7r86-cg39-jmmj.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "minimatch"
+          },
+          "version": "3.0.8"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-7r86-cg39-jmmj",
+          "value": "GHSA-7r86-cg39-jmmj",
+          "url": "https://github.com/advisories/GHSA-7r86-cg39-jmmj"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-7r86-cg39-jmmj"
+        }
+      ]
+    },
+    {
+      "id": "b64352e0-a169-4c6d-9ded-9cd8e19c2f73",
       "category": "sast",
       "name": "Dependency: minimatch - GHSA-3ppc-4f35-3m26",
       "message": "Vulnerable package: minimatch 3.0.5",
@@ -3778,7 +3852,7 @@
       ]
     },
     {
-      "id": "f75b9f0d-52d2-4157-b409-db2d8eacb164",
+      "id": "34804aa9-0dcd-4188-829e-c7f5910e5e34",
       "category": "sast",
       "name": "Dependency: minimatch - GHSA-3ppc-4f35-3m26",
       "message": "Vulnerable package: minimatch 3.0.8",
@@ -3815,7 +3889,81 @@
       ]
     },
     {
-      "id": "f1158d57-cdd4-40f1-91b1-26de47dbe975",
+      "id": "5455db3c-337a-4f21-8ceb-32fa124bb664",
+      "category": "sast",
+      "name": "Dependency: minimatch - GHSA-23c5-xmqv-rm74",
+      "message": "Vulnerable package: minimatch 3.0.5",
+      "description": "minimatch ReDoS: nested *() extglobs generate catastrophically backtracking regular expressions",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update minimatch to a version that fixes GHSA-23c5-xmqv-rm74.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "minimatch"
+          },
+          "version": "3.0.5"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-23c5-xmqv-rm74",
+          "value": "GHSA-23c5-xmqv-rm74",
+          "url": "https://github.com/advisories/GHSA-23c5-xmqv-rm74"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-23c5-xmqv-rm74"
+        }
+      ]
+    },
+    {
+      "id": "acc517ad-80b6-4db1-ad43-8c4ca810e505",
+      "category": "sast",
+      "name": "Dependency: minimatch - GHSA-23c5-xmqv-rm74",
+      "message": "Vulnerable package: minimatch 3.0.8",
+      "description": "minimatch ReDoS: nested *() extglobs generate catastrophically backtracking regular expressions",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update minimatch to a version that fixes GHSA-23c5-xmqv-rm74.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "minimatch"
+          },
+          "version": "3.0.8"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-23c5-xmqv-rm74",
+          "value": "GHSA-23c5-xmqv-rm74",
+          "url": "https://github.com/advisories/GHSA-23c5-xmqv-rm74"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-23c5-xmqv-rm74"
+        }
+      ]
+    },
+    {
+      "id": "f9db344b-b42a-4428-bd72-5fbc72a863fe",
       "category": "sast",
       "name": "Dependency: tar - GHSA-34x7-hfp2-rc4v",
       "message": "Vulnerable package: tar 4.4.19",
@@ -3852,7 +4000,7 @@
       ]
     },
     {
-      "id": "39eddf28-1eda-406c-b2fb-cc824eaf8fe1",
+      "id": "ae0fadc0-76f4-4046-954e-fe6afe4fa99c",
       "category": "sast",
       "name": "Dependency: tar - GHSA-34x7-hfp2-rc4v",
       "message": "Vulnerable package: tar 6.2.1",
@@ -3889,81 +4037,7 @@
       ]
     },
     {
-      "id": "e34b52d5-b49d-4dae-abeb-b8d75012d990",
-      "category": "sast",
-      "name": "Dependency: minimatch - GHSA-7r86-cg39-jmmj",
-      "message": "Vulnerable package: minimatch 3.0.5",
-      "description": "minimatch has ReDoS: matchOne() combinatorial backtracking via multiple non-adjacent GLOBSTAR segments",
-      "cve": "",
-      "severity": "high",
-      "confidence": "high",
-      "solution": "Update minimatch to a version that fixes GHSA-7r86-cg39-jmmj.",
-      "scanner": {
-        "id": "grype",
-        "name": "Grype"
-      },
-      "location": {
-        "file": "dependency",
-        "dependency": {
-          "package": {
-            "name": "minimatch"
-          },
-          "version": "3.0.5"
-        }
-      },
-      "identifiers": [
-        {
-          "type": "cve",
-          "name": "GHSA-7r86-cg39-jmmj",
-          "value": "GHSA-7r86-cg39-jmmj",
-          "url": "https://github.com/advisories/GHSA-7r86-cg39-jmmj"
-        }
-      ],
-      "links": [
-        {
-          "url": "https://github.com/advisories/GHSA-7r86-cg39-jmmj"
-        }
-      ]
-    },
-    {
-      "id": "98d4c18f-7888-427f-9d66-e5cc61caccae",
-      "category": "sast",
-      "name": "Dependency: minimatch - GHSA-7r86-cg39-jmmj",
-      "message": "Vulnerable package: minimatch 3.0.8",
-      "description": "minimatch has ReDoS: matchOne() combinatorial backtracking via multiple non-adjacent GLOBSTAR segments",
-      "cve": "",
-      "severity": "high",
-      "confidence": "high",
-      "solution": "Update minimatch to a version that fixes GHSA-7r86-cg39-jmmj.",
-      "scanner": {
-        "id": "grype",
-        "name": "Grype"
-      },
-      "location": {
-        "file": "dependency",
-        "dependency": {
-          "package": {
-            "name": "minimatch"
-          },
-          "version": "3.0.8"
-        }
-      },
-      "identifiers": [
-        {
-          "type": "cve",
-          "name": "GHSA-7r86-cg39-jmmj",
-          "value": "GHSA-7r86-cg39-jmmj",
-          "url": "https://github.com/advisories/GHSA-7r86-cg39-jmmj"
-        }
-      ],
-      "links": [
-        {
-          "url": "https://github.com/advisories/GHSA-7r86-cg39-jmmj"
-        }
-      ]
-    },
-    {
-      "id": "fa93c649-f55d-4e5c-81dc-da766a85eb74",
+      "id": "f3fa9f9c-f706-48e3-9752-c4370af5e5e3",
       "category": "sast",
       "name": "Dependency: multer - GHSA-v52c-386h-88mc",
       "message": "Vulnerable package: multer 1.4.5-lts.2",
@@ -4000,7 +4074,7 @@
       ]
     },
     {
-      "id": "5f6969b4-1e01-41a3-86b3-dfa9da5f1df5",
+      "id": "b96363fa-b313-48ca-94b0-02f7d03092f1",
       "category": "sast",
       "name": "Dependency: multer - GHSA-xf7r-hgr6-v32p",
       "message": "Vulnerable package: multer 1.4.5-lts.2",
@@ -4037,7 +4111,7 @@
       ]
     },
     {
-      "id": "b92cc38e-9b3b-49c0-a9f7-95eb4b28c373",
+      "id": "d57ad6ee-ef9b-4e86-8715-625df3b58fe1",
       "category": "sast",
       "name": "Dependency: file-type - GHSA-5v7r-6r5c-r473",
       "message": "Vulnerable package: file-type 16.5.4",
@@ -4074,81 +4148,7 @@
       ]
     },
     {
-      "id": "837d5059-d45f-481f-a7da-b1f0ba3ac633",
-      "category": "sast",
-      "name": "Dependency: minimatch - GHSA-23c5-xmqv-rm74",
-      "message": "Vulnerable package: minimatch 3.0.5",
-      "description": "minimatch ReDoS: nested *() extglobs generate catastrophically backtracking regular expressions",
-      "cve": "",
-      "severity": "high",
-      "confidence": "high",
-      "solution": "Update minimatch to a version that fixes GHSA-23c5-xmqv-rm74.",
-      "scanner": {
-        "id": "grype",
-        "name": "Grype"
-      },
-      "location": {
-        "file": "dependency",
-        "dependency": {
-          "package": {
-            "name": "minimatch"
-          },
-          "version": "3.0.5"
-        }
-      },
-      "identifiers": [
-        {
-          "type": "cve",
-          "name": "GHSA-23c5-xmqv-rm74",
-          "value": "GHSA-23c5-xmqv-rm74",
-          "url": "https://github.com/advisories/GHSA-23c5-xmqv-rm74"
-        }
-      ],
-      "links": [
-        {
-          "url": "https://github.com/advisories/GHSA-23c5-xmqv-rm74"
-        }
-      ]
-    },
-    {
-      "id": "75817ed5-d3b5-49f0-b118-86bf97917066",
-      "category": "sast",
-      "name": "Dependency: minimatch - GHSA-23c5-xmqv-rm74",
-      "message": "Vulnerable package: minimatch 3.0.8",
-      "description": "minimatch ReDoS: nested *() extglobs generate catastrophically backtracking regular expressions",
-      "cve": "",
-      "severity": "high",
-      "confidence": "high",
-      "solution": "Update minimatch to a version that fixes GHSA-23c5-xmqv-rm74.",
-      "scanner": {
-        "id": "grype",
-        "name": "Grype"
-      },
-      "location": {
-        "file": "dependency",
-        "dependency": {
-          "package": {
-            "name": "minimatch"
-          },
-          "version": "3.0.8"
-        }
-      },
-      "identifiers": [
-        {
-          "type": "cve",
-          "name": "GHSA-23c5-xmqv-rm74",
-          "value": "GHSA-23c5-xmqv-rm74",
-          "url": "https://github.com/advisories/GHSA-23c5-xmqv-rm74"
-        }
-      ],
-      "links": [
-        {
-          "url": "https://github.com/advisories/GHSA-23c5-xmqv-rm74"
-        }
-      ]
-    },
-    {
-      "id": "35a84b42-228d-4651-b0e9-3a9d1130f71a",
+      "id": "602f2878-868c-4c82-bcbb-7619acbb810f",
       "category": "sast",
       "name": "Dependency: multer - GHSA-fjgf-rc76-4x9p",
       "message": "Vulnerable package: multer 1.4.5-lts.2",
@@ -4185,7 +4185,7 @@
       ]
     },
     {
-      "id": "af7a0f6f-18d7-4045-8682-333285b8a873",
+      "id": "c2cbad91-f2cd-464b-8b2d-135cd285bede",
       "category": "sast",
       "name": "Dependency: jsonwebtoken - GHSA-qwph-4952-7xr6",
       "message": "Vulnerable package: jsonwebtoken 0.1.0",
@@ -4222,7 +4222,7 @@
       ]
     },
     {
-      "id": "69c58b04-73a9-49c7-bdcf-de92ad00371b",
+      "id": "80c3214f-308f-4fdc-bcd5-64dbeb5ffe78",
       "category": "sast",
       "name": "Dependency: jsonwebtoken - GHSA-qwph-4952-7xr6",
       "message": "Vulnerable package: jsonwebtoken 0.4.0",
@@ -4259,7 +4259,7 @@
       ]
     },
     {
-      "id": "0abd88e2-3208-40bf-a179-eeffd7f89eae",
+      "id": "c58eda42-151f-481c-9bf9-6fd74fb8ed56",
       "category": "sast",
       "name": "Dependency: jws - GHSA-869p-cjfg-cm3x",
       "message": "Vulnerable package: jws 0.2.6",
@@ -4296,7 +4296,7 @@
       ]
     },
     {
-      "id": "143ecccb-65c8-41ca-9b65-3adfbd539bb2",
+      "id": "a8f2be1a-581f-455c-a1f1-6ac7edba7f89",
       "category": "sast",
       "name": "Dependency: tar - GHSA-r6q2-hw4h-h46w",
       "message": "Vulnerable package: tar 4.4.19",
@@ -4333,7 +4333,7 @@
       ]
     },
     {
-      "id": "3530d745-31fb-4d1e-94a7-d91055593aa0",
+      "id": "b42f87ac-5727-4e5a-a8c9-a9ec4ab5ec73",
       "category": "sast",
       "name": "Dependency: tar - GHSA-r6q2-hw4h-h46w",
       "message": "Vulnerable package: tar 6.2.1",
@@ -4370,7 +4370,7 @@
       ]
     },
     {
-      "id": "e6218565-1a4e-47a2-9bec-f35e1f887156",
+      "id": "f6693b2a-8994-475f-932e-504d9f2ec54b",
       "category": "sast",
       "name": "Dependency: tar - GHSA-8qq5-rm4j-mr97",
       "message": "Vulnerable package: tar 4.4.19",
@@ -4407,7 +4407,7 @@
       ]
     },
     {
-      "id": "f84ba786-0468-4599-8709-7fa266210557",
+      "id": "a8b94210-ac78-4a92-a33a-270f88452015",
       "category": "sast",
       "name": "Dependency: tar - GHSA-8qq5-rm4j-mr97",
       "message": "Vulnerable package: tar 6.2.1",
@@ -4444,7 +4444,7 @@
       ]
     },
     {
-      "id": "5d39df12-2003-45cb-b40d-d62591a7e3b0",
+      "id": "56d72f3b-c9b6-4f65-8311-bd1a0897d2af",
       "category": "sast",
       "name": "Dependency: tar - GHSA-9ppj-qmqm-q256",
       "message": "Vulnerable package: tar 4.4.19",
@@ -4481,7 +4481,7 @@
       ]
     },
     {
-      "id": "5f9efef5-84a3-4d0a-8e26-befcef344570",
+      "id": "cef9e726-641a-4e1d-af4d-321bd906d1d0",
       "category": "sast",
       "name": "Dependency: tar - GHSA-9ppj-qmqm-q256",
       "message": "Vulnerable package: tar 6.2.1",
@@ -4518,7 +4518,7 @@
       ]
     },
     {
-      "id": "df8c1ed8-d8bc-4e5e-a889-00276bc11c00",
+      "id": "189fc4e1-a429-4e06-a015-58d90a27efd6",
       "category": "sast",
       "name": "Dependency: tar - GHSA-83g3-92jg-28cx",
       "message": "Vulnerable package: tar 4.4.19",
@@ -4555,7 +4555,7 @@
       ]
     },
     {
-      "id": "cea72676-afdc-4686-8c01-79bb88365c98",
+      "id": "50ca5979-8c5e-414b-b0d2-4bb59e33e919",
       "category": "sast",
       "name": "Dependency: tar - GHSA-83g3-92jg-28cx",
       "message": "Vulnerable package: tar 6.2.1",
@@ -4592,7 +4592,7 @@
       ]
     },
     {
-      "id": "80bfdb10-b6d8-42ce-b2bd-0567971deccb",
+      "id": "603ae9a7-7308-42b9-bd08-9ae69e2eeb8f",
       "category": "sast",
       "name": "Dependency: @tootallnate/once - GHSA-vpq2-c234-7xj6",
       "message": "Vulnerable package: @tootallnate/once 1.1.2",
@@ -4629,7 +4629,7 @@
       ]
     },
     {
-      "id": "ee2fdf75-fb1b-4887-bf38-b702ea474975",
+      "id": "d3f1387d-8693-4c73-af1a-9fde3c90330e",
       "category": "sast",
       "name": "Dependency: @tootallnate/once - GHSA-vpq2-c234-7xj6",
       "message": "Vulnerable package: @tootallnate/once 2.0.0",
@@ -4666,7 +4666,7 @@
       ]
     },
     {
-      "id": "4119d8c2-add7-41b7-8fe6-9deb28df2b9b",
+      "id": "d1384a03-ecca-4ce6-8308-6483ebd9418d",
       "category": "sast",
       "name": "Dependency: tar - GHSA-qffp-2rhf-9h96",
       "message": "Vulnerable package: tar 4.4.19",
@@ -4703,7 +4703,7 @@
       ]
     },
     {
-      "id": "05edd3b1-3ccc-4c5e-8b22-dab3925aab9e",
+      "id": "e7ae6c96-b790-45e1-a246-6f1aaadb53cf",
       "category": "sast",
       "name": "Dependency: tar - GHSA-qffp-2rhf-9h96",
       "message": "Vulnerable package: tar 6.2.1",
@@ -4740,7 +4740,7 @@
       ]
     },
     {
-      "id": "7fbe745c-6cd1-4c41-9282-10402f3c5ec2",
+      "id": "4ba106fc-ee8a-4a1e-b5c6-7b8fb5b249b5",
       "category": "sast",
       "name": "Dependency: marsdb - GHSA-5mrr-rgp6-x4gr",
       "message": "Vulnerable package: marsdb 0.6.11",
@@ -4777,7 +4777,7 @@
       ]
     },
     {
-      "id": "ee155cdc-2731-4989-9674-724339bbb89f",
+      "id": "e6de6692-2557-456f-a139-786fd05adf2c",
       "category": "sast",
       "name": "Dependency: jws - GHSA-gjcw-v447-2w7q",
       "message": "Vulnerable package: jws 0.2.6",
@@ -4814,7 +4814,7 @@
       ]
     },
     {
-      "id": "90bd4428-9e74-422a-9fde-98da801c3278",
+      "id": "c715f368-d307-4f2e-9c55-97cc746ce38d",
       "category": "sast",
       "name": "Dependency: base64url - GHSA-rvg8-pwq2-xj7q",
       "message": "Vulnerable package: base64url 0.0.6",
@@ -4855,5 +4855,5 @@
   "project_name": "juice-shop-public",
   "project_path": "ez-appsec/juice-shop-public",
   "github_url": "https://github.com/ez-appsec/juice-shop-public",
-  "scan_date": "2026-04-10T05:31:31Z"
+  "scan_date": "2026-04-10T18:49:07Z"
 }
