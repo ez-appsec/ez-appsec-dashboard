@@ -1,0 +1,4859 @@
+{
+  "version": "15.0.0",
+  "vulnerabilities": [
+    {
+      "id": "f61a8996-7db0-4a23-9a98-ddf579e13552",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "Always set a user in the runtime stage of your Dockerfile. Without it, the container defaults to root, even if earlier build stages define a user.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "high",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "test/smoke/Dockerfile",
+          "similarity_id": "ab5ef6056cfc15a457f5ac752c7506ce24640de95783183b01bdda75996dce42",
+          "line": 1,
+          "issue_type": "MissingAttribute",
+          "search_key": "FROM={{alpine}}",
+          "search_line": -1,
+          "search_value": "",
+          "expected_value": "The 'Dockerfile' should contain the 'USER' instruction",
+          "actual_value": "The 'Dockerfile' does not contain any 'USER' instruction"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "7107a3ab-3686-4591-a071-dee72716be2c",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "Array schema should have the field 'maxItems' set",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "swagger.yml",
+          "similarity_id": "5564c24efbf88c4572c400807bac09ee9e1fb50be586ab6b69ca160be2ec4995",
+          "line": 43,
+          "issue_type": "MissingAttribute",
+          "search_key": "components.schemas.OrderLines.type",
+          "search_line": 43,
+          "search_value": "",
+          "expected_value": "Array schema has 'maxItems' set",
+          "actual_value": "Array schema has 'maxItems' undefined"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "046d3376-74a6-4158-a2b3-d43757a8d663",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "Some capabilities are not needed in certain (or any) containers. Make sure that you only add capabilities that your container needs. Drop unnecessary capabilities as well.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "docker-compose.test.yml",
+          "similarity_id": "20cbfb8f37ac50bc8a973f7949712cc53cf6b3c0ef77674265163ce4e064ab16",
+          "line": 2,
+          "issue_type": "MissingAttribute",
+          "search_key": "services.sut",
+          "search_line": 2,
+          "search_value": "",
+          "expected_value": "Docker compose file to have 'cap_drop' attribute",
+          "actual_value": "Docker compose file doesn't have 'cap_drop' attribute. Make sure your container only has necessary capabilities."
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "2fc1054f-dea5-49f7-a42e-d085c05a5aaa",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "Some capabilities are not needed in certain (or any) containers. Make sure that you only add capabilities that your container needs. Drop unnecessary capabilities as well.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "docker-compose.test.yml",
+          "similarity_id": "c3738fb8b516079ff93c2de7b665711e287a2c094988ac126d6ba8bb06403ec6",
+          "line": 6,
+          "issue_type": "MissingAttribute",
+          "search_key": "services.app",
+          "search_line": 6,
+          "search_value": "",
+          "expected_value": "Docker compose file to have 'cap_drop' attribute",
+          "actual_value": "Docker compose file doesn't have 'cap_drop' attribute. Make sure your container only has necessary capabilities."
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "c647f1fe-841b-484a-8a66-f1b5b7714936",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "Global server object URL should use 'https' protocol instead of 'http'",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "swagger.yml",
+          "similarity_id": "5128cd326c9bab7762470fa55eb0b0bb45182d872e3d0c2590a7fb8530ae1786",
+          "line": 4,
+          "issue_type": "IncorrectValue",
+          "search_key": "servers.url./b2b/v2",
+          "search_line": -1,
+          "search_value": "",
+          "expected_value": "Global servers' URL should use HTTPS protocol",
+          "actual_value": "Global servers' URL are not using HTTPS protocol"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "2178b6c0-37c8-4839-be54-63af7da55513",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "Check containers periodically to see if they are running properly.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "docker-compose.test.yml",
+          "similarity_id": "fde3e433a41677eae07686e7eb405405e2fb2456a83ef38890b81ecf8dfc269a",
+          "line": 6,
+          "issue_type": "MissingAttribute",
+          "search_key": "services.app",
+          "search_line": 6,
+          "search_value": "",
+          "expected_value": "Healthcheck should be defined.",
+          "actual_value": "Healthcheck is not defined."
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "21874809-5b3f-41c2-a70e-a0eccd4029b2",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "Check containers periodically to see if they are running properly.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "docker-compose.test.yml",
+          "similarity_id": "eabc9cbcfdd3fea8fab72db6d152fd77f9afd0e0508e62380cdf2bdbbc7a226b",
+          "line": 2,
+          "issue_type": "MissingAttribute",
+          "search_key": "services.sut",
+          "search_line": 2,
+          "search_value": "",
+          "expected_value": "Healthcheck should be defined.",
+          "actual_value": "Healthcheck is not defined."
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "079f7e22-1ef6-4da5-99bb-17ef1c258c18",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "Always tag the version of an image explicitly",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "Dockerfile",
+          "similarity_id": "a834216647cb87d1bb585aec51c9fe27fc2312816cd70f7713f3ea9c7f90d315",
+          "line": 23,
+          "issue_type": "MissingAttribute",
+          "search_key": "FROM={{gcr.io/distroless/nodejs24-debian13}}",
+          "search_line": -1,
+          "search_value": "",
+          "expected_value": "FROM gcr.io/distroless/nodejs24-debian13:'version'",
+          "actual_value": "FROM gcr.io/distroless/nodejs24-debian13'"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "1aff3cfb-38b1-4d85-bcbb-a2791cc502fa",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "Always tag the version of an image explicitly",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "test/smoke/Dockerfile",
+          "similarity_id": "e80c2be029050cfd43161418586f90e40bd13290878b6f973b930d8219a124d8",
+          "line": 1,
+          "issue_type": "MissingAttribute",
+          "search_key": "FROM={{alpine}}",
+          "search_line": -1,
+          "search_value": "",
+          "expected_value": "FROM alpine:'version'",
+          "actual_value": "FROM alpine'"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "eb6f2e12-0ed3-47a8-b0ff-6b492daf7c59",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "Check if packages installed by npm are pinning a specific version.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "Dockerfile",
+          "similarity_id": "2ffb12647a9a18289ee3045d94b2fc5a33a16c6eddca6abea3f45f8017e7860f",
+          "line": 4,
+          "issue_type": "IncorrectValue",
+          "search_key": "FROM={{node:24 AS installer}}.{{RUN npm i -g typescript ts-node}}",
+          "search_line": -1,
+          "search_value": "",
+          "expected_value": "'RUN npm i -g typescript ts-node' uses npm install with a pinned version",
+          "actual_value": "'RUN npm i -g typescript ts-node' does not uses npm install with a pinned version"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "2b8d93d6-5205-4617-9fc9-19e407aa948b",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "String schema should have 'pattern' defined.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "swagger.yml",
+          "similarity_id": "0fb6e941cc759173d6ea7829ef8080e9a3feb6c92c954ef3697a161e7cd523c9",
+          "line": 38,
+          "issue_type": "MissingAttribute",
+          "search_key": "components.schemas.OrderConfirmation.properties.cid.type",
+          "search_line": 38,
+          "search_value": "",
+          "expected_value": "'pattern' should be defined",
+          "actual_value": "'pattern' is undefined"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "ac6e7a78-c364-4550-9ebb-03b9ad819019",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "String schema should have 'pattern' defined.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "swagger.yml",
+          "similarity_id": "0fb6e941cc759173d6ea7829ef8080e9a3feb6c92c954ef3697a161e7cd523c9",
+          "line": 38,
+          "issue_type": "MissingAttribute",
+          "search_key": "components.schemas.OrderConfirmation.properties.orderNo.type",
+          "search_line": 38,
+          "search_value": "",
+          "expected_value": "'pattern' should be defined",
+          "actual_value": "'pattern' is undefined"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "5241c741-c342-41de-84b2-53a3600e6d43",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "String schema should have 'pattern' defined.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "swagger.yml",
+          "similarity_id": "f41908727424b9ef7f2a9773da5fe0a014cf2a0ab766070e4d1620ca624d7034",
+          "line": 35,
+          "issue_type": "MissingAttribute",
+          "search_key": "components.schemas.Order.properties.cid.type",
+          "search_line": 35,
+          "search_value": "",
+          "expected_value": "'pattern' should be defined",
+          "actual_value": "'pattern' is undefined"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "86aea9eb-5a66-4550-9d07-bc82faba682e",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "String schema should have 'pattern' defined.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "swagger.yml",
+          "similarity_id": "118a2d144baef19eff39b7f0f07a6da54df5367a15d935f9b9d1e175cec85cb5",
+          "line": 42,
+          "issue_type": "MissingAttribute",
+          "search_key": "components.schemas.OrderLine.properties.customerReference.type",
+          "search_line": 42,
+          "search_value": "",
+          "expected_value": "'pattern' should be defined",
+          "actual_value": "'pattern' is undefined"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "fcddd363-ae0f-430e-95de-486e99e86776",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "String schema should have 'pattern' defined.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "swagger.yml",
+          "similarity_id": "edac5a99f11fb123a0c86250249e08da9aeeb46fcbf167102bc8a4e35334f1bb",
+          "line": 48,
+          "issue_type": "MissingAttribute",
+          "search_key": "components.schemas.OrderLinesData.type",
+          "search_line": 48,
+          "search_value": "",
+          "expected_value": "'pattern' should be defined",
+          "actual_value": "'pattern' is undefined"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "d9992617-f73a-42ad-9fbc-0272b567277f",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "Attribute 'security_opt' should be defined.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "docker-compose.test.yml",
+          "similarity_id": "c945500924694b5c551ece8d250540a3ef22dfdae31e2c8e8c530c7c25cf1fec",
+          "line": 2,
+          "issue_type": "MissingAttribute",
+          "search_key": "services.sut",
+          "search_line": 2,
+          "search_value": "",
+          "expected_value": "Docker compose file to have 'security_opt' attribute",
+          "actual_value": "Docker compose file does not have 'security_opt' attribute"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "8eca39e1-2c22-4515-ac58-fe8549b10f2e",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "Attribute 'security_opt' should be defined.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "docker-compose.test.yml",
+          "similarity_id": "57350d3fbfbe2dcd385b905606e649bbf06f8b3052b03469145a6c8da0932b0f",
+          "line": 6,
+          "issue_type": "MissingAttribute",
+          "search_key": "services.app",
+          "search_line": 6,
+          "search_value": "",
+          "expected_value": "Docker compose file to have 'security_opt' attribute",
+          "actual_value": "Docker compose file does not have 'security_opt' attribute"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "7af35f45-a293-4aa2-a18d-1279779efeb3",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "Package version pinning reduces the range of versions that can be installed, reducing the chances of failure due to unanticipated changes",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "test/smoke/Dockerfile",
+          "similarity_id": "5f9984c7d7aafbfb02b255c80600445c80b70bbe1d953af688e453a6869ac4fe",
+          "line": 3,
+          "issue_type": "IncorrectValue",
+          "search_key": "FROM={{alpine}}.{{RUN apk add curl}}",
+          "search_line": -1,
+          "search_value": "",
+          "expected_value": "RUN instruction with 'apk add <package>' should use package pinning form 'apk add <package>=<version>'",
+          "actual_value": "RUN instruction apk add curl does not use package pinning form"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "d766a247-5857-4118-abf8-95727c8e4e2a",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "It is considered a best practice for every executable in a container to be owned by the root user even if it is executed by a non-root user, only execution permissions are required on the file, not ownership",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "low",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "Dockerfile",
+          "similarity_id": "9b21e750f4e535dd0ca5f5de78717500ca0cc7e57fc3a91ed7b839379d389e27",
+          "line": 39,
+          "issue_type": "IncorrectValue",
+          "search_key": "FROM={{gcr.io/distroless/nodejs24-debian13}}.{{COPY --from=installer --chown=65532:0 /juice-shop .}}",
+          "search_line": -1,
+          "search_value": "",
+          "expected_value": "The 'Dockerfile' shouldn\u00b4t contain the 'chown' flag",
+          "actual_value": "The 'Dockerfile' contains the 'chown' flag"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "6d97c467-0653-4d4d-bf4a-84141295bacf",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "Operations responses should have a default response defined",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "low",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "swagger.yml",
+          "similarity_id": "9f5445ff3049cd4c706815838943ecfc8aa7521300da1d4ab5f33047cd14a4db",
+          "line": 24,
+          "issue_type": "MissingAttribute",
+          "search_key": "paths.{{/orders}}.{{post}}.responses",
+          "search_line": -1,
+          "search_value": "",
+          "expected_value": "Default field should be defined on responses",
+          "actual_value": "Default field is not defined on responses"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "7bb45540-6cab-4f2f-a57b-790708ad8246",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "Ensure that HEALTHCHECK is being used. The HEALTHCHECK instruction tells Docker how to test a container to check that it is still working",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "low",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "test/smoke/Dockerfile",
+          "similarity_id": "f1fa44d91d068a9a14dd78563a05284ca43166ee8df986e3e7c6b231a903e626",
+          "line": 1,
+          "issue_type": "MissingAttribute",
+          "search_key": "FROM={{alpine}}",
+          "search_line": -1,
+          "search_value": "",
+          "expected_value": "Dockerfile should contain instruction 'HEALTHCHECK'",
+          "actual_value": "Dockerfile doesn't contain instruction 'HEALTHCHECK'"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "9e3f5d5a-18c9-4b74-a2ec-11dbd6f92b43",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "Ensure that HEALTHCHECK is being used. The HEALTHCHECK instruction tells Docker how to test a container to check that it is still working",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "low",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "Dockerfile",
+          "similarity_id": "3951702e4cb0c4d312ee5e76c035eea1ddf738079cccc78f225648f3347ba948",
+          "line": 23,
+          "issue_type": "MissingAttribute",
+          "search_key": "FROM={{gcr.io/distroless/nodejs24-debian13}}",
+          "search_line": -1,
+          "search_value": "",
+          "expected_value": "Dockerfile should contain instruction 'HEALTHCHECK'",
+          "actual_value": "Dockerfile doesn't contain instruction 'HEALTHCHECK'"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "5c6ee536-2a7e-4b90-817c-7a1f8cac7a8a",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "String schema should have 'maxLength' defined.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "low",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "swagger.yml",
+          "similarity_id": "e048b87f4d26762ce27e3655b8e836e7fae456950be0cc23a67a235ed3ccb5f5",
+          "line": 38,
+          "issue_type": "MissingAttribute",
+          "search_key": "components.schemas.OrderConfirmation.properties.orderNo.type",
+          "search_line": 38,
+          "search_value": "",
+          "expected_value": "'maxLength' should be defined",
+          "actual_value": "'maxLength' is undefined"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "89fbad6e-46ad-462c-8353-68f7a606c0a5",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "String schema should have 'maxLength' defined.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "low",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "swagger.yml",
+          "similarity_id": "02bd5411c533ddcc6ab8b2359019ed86dc1bb6a68e55262f08bec9e657655f83",
+          "line": 48,
+          "issue_type": "MissingAttribute",
+          "search_key": "components.schemas.OrderLinesData.type",
+          "search_line": 48,
+          "search_value": "",
+          "expected_value": "'maxLength' should be defined",
+          "actual_value": "'maxLength' is undefined"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "139b8080-8688-493d-8394-76c45a91571f",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "String schema should have 'maxLength' defined.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "low",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "swagger.yml",
+          "similarity_id": "2397fb818de2c93487857da0db56f3ccbb0652c103d870c4dc5b724a1ba0b37e",
+          "line": 42,
+          "issue_type": "MissingAttribute",
+          "search_key": "components.schemas.OrderLine.properties.customerReference.type",
+          "search_line": 42,
+          "search_value": "",
+          "expected_value": "'maxLength' should be defined",
+          "actual_value": "'maxLength' is undefined"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "7f69ecec-17cd-4c38-a8e1-99460e5b61e7",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "String schema should have 'maxLength' defined.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "low",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "swagger.yml",
+          "similarity_id": "195cf7d5d78e84dbfe0bf6993b1110b6be1233d5ea9173b24f0e0689977af060",
+          "line": 35,
+          "issue_type": "MissingAttribute",
+          "search_key": "components.schemas.Order.properties.cid.type",
+          "search_line": 35,
+          "search_value": "",
+          "expected_value": "'maxLength' should be defined",
+          "actual_value": "'maxLength' is undefined"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "6f965a27-86df-4b68-893b-6a929434e1a4",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "String schema should have 'maxLength' defined.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "low",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "swagger.yml",
+          "similarity_id": "e048b87f4d26762ce27e3655b8e836e7fae456950be0cc23a67a235ed3ccb5f5",
+          "line": 38,
+          "issue_type": "MissingAttribute",
+          "search_key": "components.schemas.OrderConfirmation.properties.cid.type",
+          "search_line": 38,
+          "search_value": "",
+          "expected_value": "'maxLength' should be defined",
+          "actual_value": "'maxLength' is undefined"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "a0f67e11-eff1-4bc4-858f-f7cb2d9600aa",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "Numeric schema (type set to 'integer' or 'number') should have 'format' defined.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "low",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "swagger.yml",
+          "similarity_id": "4b5bb705168215d1e22a2f37e121469a3a75ab63326cbde7a931b78dce8c3040",
+          "line": 42,
+          "issue_type": "MissingAttribute",
+          "search_key": "components.schemas.OrderLine.properties.productId.type",
+          "search_line": -1,
+          "search_value": "",
+          "expected_value": "Numeric schema should have 'format' defined",
+          "actual_value": "Numeric schema does not have 'format' defined"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "0fd6f51e-7b7a-4807-963e-b45e2d77fe82",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "Numeric schema (type set to 'integer' or 'number') should have 'format' defined.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "low",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "swagger.yml",
+          "similarity_id": "31c555a715cdc3904868b7788c251b66adf3afcc21f86fe40c9c40e441c167b7",
+          "line": 42,
+          "issue_type": "MissingAttribute",
+          "search_key": "components.schemas.OrderLine.properties.quantity.type",
+          "search_line": -1,
+          "search_value": "",
+          "expected_value": "Numeric schema should have 'format' defined",
+          "actual_value": "Numeric schema does not have 'format' defined"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "dfabf97a-99ce-405d-a567-daf4156fe550",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "Numeric schema (type set to 'integer' or 'number') should have 'maximum' defined.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "low",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "swagger.yml",
+          "similarity_id": "89db243417e1a96fdfaefe07e959b77962d060ffb13cb980e82f2241d82a8b47",
+          "line": 42,
+          "issue_type": "MissingAttribute",
+          "search_key": "components.schemas.OrderLine.properties.quantity.type",
+          "search_line": -1,
+          "search_value": "",
+          "expected_value": "Numeric schema should have 'maximum' defined",
+          "actual_value": "Numeric schema does not have 'maximum' defined"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "b11ecd9a-56d1-4b5f-9bc5-50fd23f50267",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "Numeric schema (type set to 'integer' or 'number') should have 'maximum' defined.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "low",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "swagger.yml",
+          "similarity_id": "c8bed2ddf92b5be7c8466e9e9ca56e2105de201b912ec8ec28d79f7577af5cfc",
+          "line": 42,
+          "issue_type": "MissingAttribute",
+          "search_key": "components.schemas.OrderLine.properties.productId.type",
+          "search_line": -1,
+          "search_value": "",
+          "expected_value": "Numeric schema should have 'maximum' defined",
+          "actual_value": "Numeric schema does not have 'maximum' defined"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "c3731eee-3d92-489c-a534-b5626358176f",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "Numeric schema (type set to 'integer' or 'number') should have 'minimum' defined.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "low",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "swagger.yml",
+          "similarity_id": "a847b7925cd3900334190f3cbb753efa7749ab41b86b7529d9adc3499791276d",
+          "line": 42,
+          "issue_type": "MissingAttribute",
+          "search_key": "components.schemas.OrderLine.properties.productId.type",
+          "search_line": -1,
+          "search_value": "",
+          "expected_value": "Numeric schema should have 'minimum' defined",
+          "actual_value": "Numeric schema does not have 'minimum' defined"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "adc49bf6-c2a1-4179-b223-19158d333c94",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "500, 429 and 400 responses should be defined for all operations, except head operation. 415 response should be defined for the post, put, and patch operations. 404 response should be defined for the get, put, head, delete operations. 200 response should be defined for options operation. 401 and 403 response should be defined for all operations when the security field is defined.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "low",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "swagger.yml",
+          "similarity_id": "a60fb07e9c521c05a28de8dd0f9d1172e04b46350026e5f9ea3753a333da1da8",
+          "line": 24,
+          "issue_type": "MissingAttribute",
+          "search_key": "paths.{{/orders}}.{{post}}.responses",
+          "search_line": 24,
+          "search_value": "400 response",
+          "expected_value": "400 response should be set",
+          "actual_value": "400 response is undefined"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "e3d21b6a-b64f-4b56-b2d5-cbff06c4c64c",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "500, 429 and 400 responses should be defined for all operations, except head operation. 415 response should be defined for the post, put, and patch operations. 404 response should be defined for the get, put, head, delete operations. 200 response should be defined for options operation. 401 and 403 response should be defined for all operations when the security field is defined.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "low",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "swagger.yml",
+          "similarity_id": "3af993f5858db7ca728dee7598f6faa8e0abd168dc93cfe3d5572c0c279ddd20",
+          "line": 24,
+          "issue_type": "MissingAttribute",
+          "search_key": "paths.{{/orders}}.{{post}}.responses",
+          "search_line": 24,
+          "search_value": "401 response",
+          "expected_value": "401 response should be set when security field is defined",
+          "actual_value": "401 response is undefined when security field is defined"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "6a23f1a3-2296-4824-9d7e-794bc658274a",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "500, 429 and 400 responses should be defined for all operations, except head operation. 415 response should be defined for the post, put, and patch operations. 404 response should be defined for the get, put, head, delete operations. 200 response should be defined for options operation. 401 and 403 response should be defined for all operations when the security field is defined.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "low",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "swagger.yml",
+          "similarity_id": "f7acc997810afc3bd42e3fdc66617d866862b4e79e624802cd602477116fe37d",
+          "line": 24,
+          "issue_type": "MissingAttribute",
+          "search_key": "paths.{{/orders}}.{{post}}.responses",
+          "search_line": 24,
+          "search_value": "415 response",
+          "expected_value": "415 response should be set",
+          "actual_value": "415 response is undefined"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "13a13303-7be2-4d5b-ab58-0cfc6bb986eb",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "500, 429 and 400 responses should be defined for all operations, except head operation. 415 response should be defined for the post, put, and patch operations. 404 response should be defined for the get, put, head, delete operations. 200 response should be defined for options operation. 401 and 403 response should be defined for all operations when the security field is defined.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "low",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "swagger.yml",
+          "similarity_id": "3e49558e55bda34614224ab0455b8469e2a0d4ae0b6bc5fe044ea02c189dcbcd",
+          "line": 24,
+          "issue_type": "MissingAttribute",
+          "search_key": "paths.{{/orders}}.{{post}}.responses",
+          "search_line": 24,
+          "search_value": "403 response",
+          "expected_value": "403 response should be set when security field is defined",
+          "actual_value": "403 response is undefined when security field is defined"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "7e67d23b-c5d2-4004-a2c8-0ae93b66e49f",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "500, 429 and 400 responses should be defined for all operations, except head operation. 415 response should be defined for the post, put, and patch operations. 404 response should be defined for the get, put, head, delete operations. 200 response should be defined for options operation. 401 and 403 response should be defined for all operations when the security field is defined.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "low",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "swagger.yml",
+          "similarity_id": "8c90fee3eeae45c48c19223adf9bc872b62397dcc5312422a7cb2849238e904e",
+          "line": 24,
+          "issue_type": "MissingAttribute",
+          "search_key": "paths.{{/orders}}.{{post}}.responses",
+          "search_line": 24,
+          "search_value": "429 response",
+          "expected_value": "429 response should be set",
+          "actual_value": "429 response is undefined"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "f950b061-d8d6-41c8-8a7f-efaa3ae43884",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "500, 429 and 400 responses should be defined for all operations, except head operation. 415 response should be defined for the post, put, and patch operations. 404 response should be defined for the get, put, head, delete operations. 200 response should be defined for options operation. 401 and 403 response should be defined for all operations when the security field is defined.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "low",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "swagger.yml",
+          "similarity_id": "b587e822ef641087cfe5d6dd0ddeb201aa6e2eaeb4d77f8619f2b62c16375d5b",
+          "line": 24,
+          "issue_type": "MissingAttribute",
+          "search_key": "paths.{{/orders}}.{{post}}.responses",
+          "search_line": 24,
+          "search_value": "500 response",
+          "expected_value": "500 response should be set",
+          "actual_value": "500 response is undefined"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "9425f0e8-307e-4ea9-9d7c-db789fbfe48e",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "low",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": ".github/workflows/codeql-analysis.yml",
+          "similarity_id": "d975f59878a6667d7a2a86e4e6ac80acb1b30f7fdbff55728ca33a3089838708",
+          "line": 36,
+          "issue_type": "IncorrectValue",
+          "search_key": "uses={{github/codeql-action/analyze@v3}}",
+          "search_line": 36,
+          "search_value": "",
+          "expected_value": "Action pinned to a full length commit SHA.",
+          "actual_value": "Action is not pinned to a full length commit SHA."
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "b42758e1-597b-414f-9f2a-afb6f44adb0e",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "low",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": ".github/workflows/ez-appsec-scan.yml",
+          "similarity_id": "54185de07246620d4930c1866f394a7c41ab5455e071d4641fe198b78d0bd0a0",
+          "line": 96,
+          "issue_type": "IncorrectValue",
+          "search_key": "uses={{github/codeql-action/upload-sarif@v3}}",
+          "search_line": 96,
+          "search_value": "",
+          "expected_value": "Action pinned to a full length commit SHA.",
+          "actual_value": "Action is not pinned to a full length commit SHA."
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "79dbb2d5-d95c-4edf-8eb1-ba73d5de8f55",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "low",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": ".github/workflows/codeql-analysis.yml",
+          "similarity_id": "20d571631ac8bc7f496c29700db64efdc73fe02da92d2705fb9f1e4a0489b643",
+          "line": 34,
+          "issue_type": "IncorrectValue",
+          "search_key": "uses={{github/codeql-action/autobuild@v3}}",
+          "search_line": 34,
+          "search_value": "",
+          "expected_value": "Action pinned to a full length commit SHA.",
+          "actual_value": "Action is not pinned to a full length commit SHA."
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "43ee435b-e218-4b22-83e3-6f0c811d6c94",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "low",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": ".github/workflows/codeql-analysis.yml",
+          "similarity_id": "37eb5edb33c0fe2540297ad629380c8f1cb8188eb3aeb366f2921421c26c55ad",
+          "line": 23,
+          "issue_type": "IncorrectValue",
+          "search_key": "uses={{github/codeql-action/init@v3}}",
+          "search_line": 23,
+          "search_value": "",
+          "expected_value": "Action pinned to a full length commit SHA.",
+          "actual_value": "Action is not pinned to a full length commit SHA."
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "80189a7e-b9b6-44d1-b65d-116282576225",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "low",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": ".github/workflows/ci.yml",
+          "similarity_id": "5c8a4eed5e55828a54a42e0d111e2ffc21b248745a94bebe23b3979c0728348d",
+          "line": 161,
+          "issue_type": "IncorrectValue",
+          "search_key": "uses={{coverallsapp/github-action@v2}}",
+          "search_line": 161,
+          "search_value": "",
+          "expected_value": "Action pinned to a full length commit SHA.",
+          "actual_value": "Action is not pinned to a full length commit SHA."
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "2e4d6904-c6cb-4ff3-ad96-1056ca7db03e",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "When installing packages, use the '--no-cache' switch to avoid the need to use '--update' and remove '/var/cache/apk/*'",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "info",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "test/smoke/Dockerfile",
+          "similarity_id": "b40e6799ffb0d7110d87e797f9463819282756c106d927448471397120ffecc9",
+          "line": 3,
+          "issue_type": "IncorrectValue",
+          "search_key": "FROM={{alpine}}.{{RUN apk add curl}}",
+          "search_line": -1,
+          "search_value": "",
+          "expected_value": "'RUN' should not contain 'apk add' command without '--no-cache' switch",
+          "actual_value": "'RUN' contains 'apk add' command without '--no-cache' switch"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "b6db1542-b53d-4b70-a65d-938b7ae2cf89",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "All array fields should not be empty",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "info",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "swagger.yml",
+          "similarity_id": "0de638bef15996ca4f28b83bc1a63ef6ed92ae301d21eb024cd5c1605f0cc0d8",
+          "line": 52,
+          "issue_type": "IncorrectValue",
+          "search_key": "security.bearerAuth",
+          "search_line": -1,
+          "search_value": "",
+          "expected_value": "The array should not be empty",
+          "actual_value": "The array is empty"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "2baad033-4156-4ea8-8209-543503fd1f6e",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "OpenAPI Object should contain all of its required fields",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "info",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "swagger.yml",
+          "similarity_id": "6b231a09063bf9e664f05a84270ff045868e85c2812936536ddf33a05fcdfc1b",
+          "line": 22,
+          "issue_type": "IncorrectValue",
+          "search_key": "paths.{{/orders}}.post.tags",
+          "search_line": 22,
+          "search_value": "",
+          "expected_value": "tags has all required fields",
+          "actual_value": "tags is missing required fields"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "f460f338-3d55-449f-ae79-090c215f4d6c",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "The Server URL should be an absolute URL",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "info",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "swagger.yml",
+          "similarity_id": "b52c9965bf9a9ad8f0799188786fbd354edb6bd502f71a7443efea789ce616a8",
+          "line": 4,
+          "issue_type": "IncorrectValue",
+          "search_key": "servers.url=/b2b/v2",
+          "search_line": 4,
+          "search_value": "",
+          "expected_value": "servers.{{0}}.url has an absolute URL",
+          "actual_value": "servers.{{0}}.url does not have an absolute URL"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "fdd574f3-c2d0-46af-b085-17fbef94b106",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "Schema Object define type should not use a keyword of another type",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "info",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "swagger.yml",
+          "similarity_id": "4876ff1c454cef44c754d183fb37a06ca7826ce3bf3b5ade3a60512c4a1c3702",
+          "line": 35,
+          "issue_type": "IncorrectValue",
+          "search_key": "components.schemas.Order.properties.cid.uniqueItems",
+          "search_line": 35,
+          "search_value": "",
+          "expected_value": "There shouldn't be any invalid keywords",
+          "actual_value": "Keyword uniqueItems is not valid for type string"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "63774d8a-594f-4b0a-b045-a426598207c9",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "Schema Object define type should not use a keyword of another type",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "info",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "swagger.yml",
+          "similarity_id": "568e46cbcebe1a5957f7b838e780130bf7bfdd850885d206a8f5d7f9114af5be",
+          "line": 38,
+          "issue_type": "IncorrectValue",
+          "search_key": "components.schemas.OrderConfirmation.properties.cid.uniqueItems",
+          "search_line": 38,
+          "search_value": "",
+          "expected_value": "There shouldn't be any invalid keywords",
+          "actual_value": "Keyword uniqueItems is not valid for type string"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "4673aa5f-824c-46ac-989a-95e094a0eef6",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "Schema Object define type should not use a keyword of another type",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "info",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "swagger.yml",
+          "similarity_id": "e9fe9634eb56e5eb32866fb939dc6dce4f334e1e1474e7a53d3ee0f4000a5112",
+          "line": 38,
+          "issue_type": "IncorrectValue",
+          "search_key": "components.schemas.OrderConfirmation.properties.orderNo.uniqueItems",
+          "search_line": 38,
+          "search_value": "",
+          "expected_value": "There shouldn't be any invalid keywords",
+          "actual_value": "Keyword uniqueItems is not valid for type string"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "6f500984-ee4a-4c0f-9384-e1df76062353",
+      "category": "sast",
+      "name": "Dependency: vm2 - GHSA-whpj-8f3w-67p5",
+      "message": "Vulnerable package: vm2 3.9.17",
+      "description": "vm2 Sandbox Escape vulnerability",
+      "cve": "",
+      "severity": "critical",
+      "confidence": "high",
+      "solution": "Update vm2 to a version that fixes GHSA-whpj-8f3w-67p5.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "vm2"
+          },
+          "version": "3.9.17"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-whpj-8f3w-67p5",
+          "value": "GHSA-whpj-8f3w-67p5",
+          "url": "https://github.com/advisories/GHSA-whpj-8f3w-67p5"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-whpj-8f3w-67p5"
+        }
+      ]
+    },
+    {
+      "id": "8f510022-c8a7-4b9f-bb54-e0cf56953d5a",
+      "category": "sast",
+      "name": "Dependency: vm2 - GHSA-g644-9gfx-q4q4",
+      "message": "Vulnerable package: vm2 3.9.17",
+      "description": "vm2 Sandbox Escape vulnerability",
+      "cve": "",
+      "severity": "critical",
+      "confidence": "high",
+      "solution": "Update vm2 to a version that fixes GHSA-g644-9gfx-q4q4.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "vm2"
+          },
+          "version": "3.9.17"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-g644-9gfx-q4q4",
+          "value": "GHSA-g644-9gfx-q4q4",
+          "url": "https://github.com/advisories/GHSA-g644-9gfx-q4q4"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-g644-9gfx-q4q4"
+        }
+      ]
+    },
+    {
+      "id": "3978cc48-633f-4d76-9ec7-562119647fde",
+      "category": "sast",
+      "name": "Dependency: jsonwebtoken - GHSA-c7hr-j4mj-j2w6",
+      "message": "Vulnerable package: jsonwebtoken 0.1.0",
+      "description": "Verification Bypass in jsonwebtoken",
+      "cve": "",
+      "severity": "critical",
+      "confidence": "high",
+      "solution": "Update jsonwebtoken to a version that fixes GHSA-c7hr-j4mj-j2w6.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "jsonwebtoken"
+          },
+          "version": "0.1.0"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-c7hr-j4mj-j2w6",
+          "value": "GHSA-c7hr-j4mj-j2w6",
+          "url": "https://github.com/advisories/GHSA-c7hr-j4mj-j2w6"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-c7hr-j4mj-j2w6"
+        }
+      ]
+    },
+    {
+      "id": "96784feb-7b0e-4343-83dc-4f0445df368f",
+      "category": "sast",
+      "name": "Dependency: jsonwebtoken - GHSA-c7hr-j4mj-j2w6",
+      "message": "Vulnerable package: jsonwebtoken 0.4.0",
+      "description": "Verification Bypass in jsonwebtoken",
+      "cve": "",
+      "severity": "critical",
+      "confidence": "high",
+      "solution": "Update jsonwebtoken to a version that fixes GHSA-c7hr-j4mj-j2w6.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "jsonwebtoken"
+          },
+          "version": "0.4.0"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-c7hr-j4mj-j2w6",
+          "value": "GHSA-c7hr-j4mj-j2w6",
+          "url": "https://github.com/advisories/GHSA-c7hr-j4mj-j2w6"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-c7hr-j4mj-j2w6"
+        }
+      ]
+    },
+    {
+      "id": "03f56c2b-7cc5-49ff-884b-e7d63b23c1b9",
+      "category": "sast",
+      "name": "Dependency: vm2 - GHSA-cchq-frgv-rjh5",
+      "message": "Vulnerable package: vm2 3.9.17",
+      "description": "vm2 Sandbox Escape vulnerability",
+      "cve": "",
+      "severity": "critical",
+      "confidence": "high",
+      "solution": "Update vm2 to a version that fixes GHSA-cchq-frgv-rjh5.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "vm2"
+          },
+          "version": "3.9.17"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-cchq-frgv-rjh5",
+          "value": "GHSA-cchq-frgv-rjh5",
+          "url": "https://github.com/advisories/GHSA-cchq-frgv-rjh5"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-cchq-frgv-rjh5"
+        }
+      ]
+    },
+    {
+      "id": "3e84472a-6073-4c7a-951e-0b59e583dff7",
+      "category": "sast",
+      "name": "Dependency: lodash - GHSA-35jh-r3h4-6jhm",
+      "message": "Vulnerable package: lodash 2.4.2",
+      "description": "Command Injection in lodash",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update lodash to a version that fixes GHSA-35jh-r3h4-6jhm.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "lodash"
+          },
+          "version": "2.4.2"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-35jh-r3h4-6jhm",
+          "value": "GHSA-35jh-r3h4-6jhm",
+          "url": "https://github.com/advisories/GHSA-35jh-r3h4-6jhm"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-35jh-r3h4-6jhm"
+        }
+      ]
+    },
+    {
+      "id": "db65db17-47eb-472d-bf01-36dc49b81c3c",
+      "category": "sast",
+      "name": "Dependency: lodash - GHSA-jf85-cpcp-j695",
+      "message": "Vulnerable package: lodash 2.4.2",
+      "description": "Prototype Pollution in lodash",
+      "cve": "",
+      "severity": "critical",
+      "confidence": "high",
+      "solution": "Update lodash to a version that fixes GHSA-jf85-cpcp-j695.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "lodash"
+          },
+          "version": "2.4.2"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-jf85-cpcp-j695",
+          "value": "GHSA-jf85-cpcp-j695",
+          "url": "https://github.com/advisories/GHSA-jf85-cpcp-j695"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-jf85-cpcp-j695"
+        }
+      ]
+    },
+    {
+      "id": "ee4618eb-bc2a-4f24-abea-9fbf01573035",
+      "category": "sast",
+      "name": "Dependency: lodash.set - GHSA-p6mc-m468-83gw",
+      "message": "Vulnerable package: lodash.set 4.3.2",
+      "description": "Prototype Pollution in lodash",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update lodash.set to a version that fixes GHSA-p6mc-m468-83gw.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "lodash.set"
+          },
+          "version": "4.3.2"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-p6mc-m468-83gw",
+          "value": "GHSA-p6mc-m468-83gw",
+          "url": "https://github.com/advisories/GHSA-p6mc-m468-83gw"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-p6mc-m468-83gw"
+        }
+      ]
+    },
+    {
+      "id": "984f35cb-0338-4f9d-a95c-d06d064fb7ca",
+      "category": "sast",
+      "name": "Dependency: moment - GHSA-8hfj-j24r-96c4",
+      "message": "Vulnerable package: moment 2.0.0",
+      "description": "Path Traversal: 'dir/../../filename' in moment.locale",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update moment to a version that fixes GHSA-8hfj-j24r-96c4.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "moment"
+          },
+          "version": "2.0.0"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-8hfj-j24r-96c4",
+          "value": "GHSA-8hfj-j24r-96c4",
+          "url": "https://github.com/advisories/GHSA-8hfj-j24r-96c4"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-8hfj-j24r-96c4"
+        }
+      ]
+    },
+    {
+      "id": "8614b0b5-7916-42e6-91db-74c4100cf07d",
+      "category": "sast",
+      "name": "Dependency: moment - GHSA-87vv-r9j6-g5qv",
+      "message": "Vulnerable package: moment 2.0.0",
+      "description": "Regular Expression Denial of Service in moment",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "high",
+      "solution": "Update moment to a version that fixes GHSA-87vv-r9j6-g5qv.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "moment"
+          },
+          "version": "2.0.0"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-87vv-r9j6-g5qv",
+          "value": "GHSA-87vv-r9j6-g5qv",
+          "url": "https://github.com/advisories/GHSA-87vv-r9j6-g5qv"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-87vv-r9j6-g5qv"
+        }
+      ]
+    },
+    {
+      "id": "ddaa9218-a6fd-446d-933b-762a5a2b58ff",
+      "category": "sast",
+      "name": "Dependency: engine.io - GHSA-r7qp-cfhv-p84w",
+      "message": "Vulnerable package: engine.io 4.1.2",
+      "description": "Uncaught exception in engine.io",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "high",
+      "solution": "Update engine.io to a version that fixes GHSA-r7qp-cfhv-p84w.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "engine.io"
+          },
+          "version": "4.1.2"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-r7qp-cfhv-p84w",
+          "value": "GHSA-r7qp-cfhv-p84w",
+          "url": "https://github.com/advisories/GHSA-r7qp-cfhv-p84w"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-r7qp-cfhv-p84w"
+        }
+      ]
+    },
+    {
+      "id": "1862d8fa-6f75-44bc-81fb-e27fb1494941",
+      "category": "sast",
+      "name": "Dependency: sanitize-html - GHSA-rm97-x556-q36h",
+      "message": "Vulnerable package: sanitize-html 1.4.2",
+      "description": "sanitize-html Information Exposure vulnerability",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "high",
+      "solution": "Update sanitize-html to a version that fixes GHSA-rm97-x556-q36h.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "sanitize-html"
+          },
+          "version": "1.4.2"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-rm97-x556-q36h",
+          "value": "GHSA-rm97-x556-q36h",
+          "url": "https://github.com/advisories/GHSA-rm97-x556-q36h"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-rm97-x556-q36h"
+        }
+      ]
+    },
+    {
+      "id": "8726d855-af8b-4183-a31c-9588a9cdb068",
+      "category": "sast",
+      "name": "Dependency: crypto-js - GHSA-xwcq-pm8m-c4vf",
+      "message": "Vulnerable package: crypto-js 3.3.0",
+      "description": "crypto-js PBKDF2 1,000 times weaker than specified in 1993 and 1.3M times weaker than current standard",
+      "cve": "",
+      "severity": "critical",
+      "confidence": "high",
+      "solution": "Update crypto-js to a version that fixes GHSA-xwcq-pm8m-c4vf.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "crypto-js"
+          },
+          "version": "3.3.0"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-xwcq-pm8m-c4vf",
+          "value": "GHSA-xwcq-pm8m-c4vf",
+          "url": "https://github.com/advisories/GHSA-xwcq-pm8m-c4vf"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-xwcq-pm8m-c4vf"
+        }
+      ]
+    },
+    {
+      "id": "2f217e0f-8d49-4a01-894a-81141b34640f",
+      "category": "sast",
+      "name": "Dependency: ws - GHSA-3h5v-q93c-6h6q",
+      "message": "Vulnerable package: ws 7.4.6",
+      "description": "ws affected by a DoS when handling a request with many HTTP headers",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update ws to a version that fixes GHSA-3h5v-q93c-6h6q.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "ws"
+          },
+          "version": "7.4.6"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-3h5v-q93c-6h6q",
+          "value": "GHSA-3h5v-q93c-6h6q",
+          "url": "https://github.com/advisories/GHSA-3h5v-q93c-6h6q"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-3h5v-q93c-6h6q"
+        }
+      ]
+    },
+    {
+      "id": "a89c2b37-476e-48b0-b1ef-7e11a44ea147",
+      "category": "sast",
+      "name": "Dependency: got - GHSA-pfrx-2q88-qq97",
+      "message": "Vulnerable package: got 8.3.2",
+      "description": "Got allows a redirect to a UNIX socket",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "high",
+      "solution": "Update got to a version that fixes GHSA-pfrx-2q88-qq97.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "got"
+          },
+          "version": "8.3.2"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-pfrx-2q88-qq97",
+          "value": "GHSA-pfrx-2q88-qq97",
+          "url": "https://github.com/advisories/GHSA-pfrx-2q88-qq97"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-pfrx-2q88-qq97"
+        }
+      ]
+    },
+    {
+      "id": "0acf7ef9-f53f-4c4f-b6e7-cce33cadd95e",
+      "category": "sast",
+      "name": "Dependency: tar - GHSA-f5x3-32g6-xq36",
+      "message": "Vulnerable package: tar 4.4.19",
+      "description": "Denial of service while parsing a tar file due to lack of folders count validation",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "high",
+      "solution": "Update tar to a version that fixes GHSA-f5x3-32g6-xq36.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "tar"
+          },
+          "version": "4.4.19"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-f5x3-32g6-xq36",
+          "value": "GHSA-f5x3-32g6-xq36",
+          "url": "https://github.com/advisories/GHSA-f5x3-32g6-xq36"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-f5x3-32g6-xq36"
+        }
+      ]
+    },
+    {
+      "id": "c3e979bc-8036-46d8-8fc5-4abe50401880",
+      "category": "sast",
+      "name": "Dependency: lodash - GHSA-4xc9-xhrj-v574",
+      "message": "Vulnerable package: lodash 2.4.2",
+      "description": "Prototype Pollution in lodash",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update lodash to a version that fixes GHSA-4xc9-xhrj-v574.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "lodash"
+          },
+          "version": "2.4.2"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-4xc9-xhrj-v574",
+          "value": "GHSA-4xc9-xhrj-v574",
+          "url": "https://github.com/advisories/GHSA-4xc9-xhrj-v574"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-4xc9-xhrj-v574"
+        }
+      ]
+    },
+    {
+      "id": "6b337a2e-6151-48fa-8fd2-0bbe00163b44",
+      "category": "sast",
+      "name": "Dependency: sanitize-html - GHSA-cgfm-xwp7-2cvr",
+      "message": "Vulnerable package: sanitize-html 1.4.2",
+      "description": "Sanitize-html Vulnerable To REDoS Attacks",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update sanitize-html to a version that fixes GHSA-cgfm-xwp7-2cvr.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "sanitize-html"
+          },
+          "version": "1.4.2"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-cgfm-xwp7-2cvr",
+          "value": "GHSA-cgfm-xwp7-2cvr",
+          "url": "https://github.com/advisories/GHSA-cgfm-xwp7-2cvr"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-cgfm-xwp7-2cvr"
+        }
+      ]
+    },
+    {
+      "id": "64128886-0e47-44d4-95bf-8f04915d6c56",
+      "category": "sast",
+      "name": "Dependency: moment - GHSA-446m-mv8f-q348",
+      "message": "Vulnerable package: moment 2.0.0",
+      "description": "Regular Expression Denial of Service in moment",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update moment to a version that fixes GHSA-446m-mv8f-q348.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "moment"
+          },
+          "version": "2.0.0"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-446m-mv8f-q348",
+          "value": "GHSA-446m-mv8f-q348",
+          "url": "https://github.com/advisories/GHSA-446m-mv8f-q348"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-446m-mv8f-q348"
+        }
+      ]
+    },
+    {
+      "id": "cd76cf43-c851-4176-984f-261bbc243681",
+      "category": "sast",
+      "name": "Dependency: vm2 - GHSA-p5gc-c584-jj6v",
+      "message": "Vulnerable package: vm2 3.9.17",
+      "description": "vm2 vulnerable to Inspect Manipulation",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "high",
+      "solution": "Update vm2 to a version that fixes GHSA-p5gc-c584-jj6v.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "vm2"
+          },
+          "version": "3.9.17"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-p5gc-c584-jj6v",
+          "value": "GHSA-p5gc-c584-jj6v",
+          "url": "https://github.com/advisories/GHSA-p5gc-c584-jj6v"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-p5gc-c584-jj6v"
+        }
+      ]
+    },
+    {
+      "id": "74874027-e685-4b7c-b13c-bc41d82a8bf5",
+      "category": "sast",
+      "name": "Dependency: multer - GHSA-g5hg-p3ph-g8qg",
+      "message": "Vulnerable package: multer 1.4.5-lts.2",
+      "description": "Multer vulnerable to Denial of Service via unhandled exception",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update multer to a version that fixes GHSA-g5hg-p3ph-g8qg.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "multer"
+          },
+          "version": "1.4.5-lts.2"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-g5hg-p3ph-g8qg",
+          "value": "GHSA-g5hg-p3ph-g8qg",
+          "url": "https://github.com/advisories/GHSA-g5hg-p3ph-g8qg"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-g5hg-p3ph-g8qg"
+        }
+      ]
+    },
+    {
+      "id": "3fc17a84-810f-425e-bbbb-3377e44030ee",
+      "category": "sast",
+      "name": "Dependency: sanitize-html - GHSA-3j7m-hmh3-9jmp",
+      "message": "Vulnerable package: sanitize-html 1.4.2",
+      "description": "Cross-Site Scripting in sanitize-html",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "high",
+      "solution": "Update sanitize-html to a version that fixes GHSA-3j7m-hmh3-9jmp.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "sanitize-html"
+          },
+          "version": "1.4.2"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-3j7m-hmh3-9jmp",
+          "value": "GHSA-3j7m-hmh3-9jmp",
+          "url": "https://github.com/advisories/GHSA-3j7m-hmh3-9jmp"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-3j7m-hmh3-9jmp"
+        }
+      ]
+    },
+    {
+      "id": "8e67fafc-d918-42d9-9bd0-6a410fe4deb2",
+      "category": "sast",
+      "name": "Dependency: notevil - GHSA-8g4m-cjm2-96wq",
+      "message": "Vulnerable package: notevil 1.3.3",
+      "description": "Sandbox escape in notevil and argencoders-notevil",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "high",
+      "solution": "Update notevil to a version that fixes GHSA-8g4m-cjm2-96wq.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "notevil"
+          },
+          "version": "1.3.3"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-8g4m-cjm2-96wq",
+          "value": "GHSA-8g4m-cjm2-96wq",
+          "url": "https://github.com/advisories/GHSA-8g4m-cjm2-96wq"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-8g4m-cjm2-96wq"
+        }
+      ]
+    },
+    {
+      "id": "7b3b751f-de6e-4060-ad88-c0e1a9b524f2",
+      "category": "sast",
+      "name": "Dependency: braces - GHSA-grv7-fg5c-xmjg",
+      "message": "Vulnerable package: braces 2.3.2",
+      "description": "Uncontrolled resource consumption in braces",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update braces to a version that fixes GHSA-grv7-fg5c-xmjg.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "braces"
+          },
+          "version": "2.3.2"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-grv7-fg5c-xmjg",
+          "value": "GHSA-grv7-fg5c-xmjg",
+          "url": "https://github.com/advisories/GHSA-grv7-fg5c-xmjg"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-grv7-fg5c-xmjg"
+        }
+      ]
+    },
+    {
+      "id": "6b4a86c4-ab93-405c-86cd-e3488f04e30e",
+      "category": "sast",
+      "name": "Dependency: express-jwt - GHSA-6g6m-m6h5-w9gf",
+      "message": "Vulnerable package: express-jwt 0.1.3",
+      "description": "Authorization bypass in express-jwt",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update express-jwt to a version that fixes GHSA-6g6m-m6h5-w9gf.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "express-jwt"
+          },
+          "version": "0.1.3"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-6g6m-m6h5-w9gf",
+          "value": "GHSA-6g6m-m6h5-w9gf",
+          "url": "https://github.com/advisories/GHSA-6g6m-m6h5-w9gf"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-6g6m-m6h5-w9gf"
+        }
+      ]
+    },
+    {
+      "id": "9d595e02-3fd1-49a4-a57c-7c6b1c2a0a30",
+      "category": "sast",
+      "name": "Dependency: sanitize-html - GHSA-mjxr-4v3x-q3m4",
+      "message": "Vulnerable package: sanitize-html 1.4.2",
+      "description": "Improper Input Validation in sanitize-html",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "high",
+      "solution": "Update sanitize-html to a version that fixes GHSA-mjxr-4v3x-q3m4.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "sanitize-html"
+          },
+          "version": "1.4.2"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-mjxr-4v3x-q3m4",
+          "value": "GHSA-mjxr-4v3x-q3m4",
+          "url": "https://github.com/advisories/GHSA-mjxr-4v3x-q3m4"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-mjxr-4v3x-q3m4"
+        }
+      ]
+    },
+    {
+      "id": "87467071-e373-409c-ac7b-fe487cce5579",
+      "category": "sast",
+      "name": "Dependency: sanitize-html - GHSA-rjqq-98f6-6j3r",
+      "message": "Vulnerable package: sanitize-html 1.4.2",
+      "description": "Improper Input Validation in sanitize-html",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "high",
+      "solution": "Update sanitize-html to a version that fixes GHSA-rjqq-98f6-6j3r.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "sanitize-html"
+          },
+          "version": "1.4.2"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-rjqq-98f6-6j3r",
+          "value": "GHSA-rjqq-98f6-6j3r",
+          "url": "https://github.com/advisories/GHSA-rjqq-98f6-6j3r"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-rjqq-98f6-6j3r"
+        }
+      ]
+    },
+    {
+      "id": "9b0c70b6-bb8a-4c0b-9d0b-e7cea422528e",
+      "category": "sast",
+      "name": "Dependency: http-cache-semantics - GHSA-rc47-6667-2j5j",
+      "message": "Vulnerable package: http-cache-semantics 3.8.1",
+      "description": "http-cache-semantics vulnerable to Regular Expression Denial of Service",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update http-cache-semantics to a version that fixes GHSA-rc47-6667-2j5j.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "http-cache-semantics"
+          },
+          "version": "3.8.1"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-rc47-6667-2j5j",
+          "value": "GHSA-rc47-6667-2j5j",
+          "url": "https://github.com/advisories/GHSA-rc47-6667-2j5j"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-rc47-6667-2j5j"
+        }
+      ]
+    },
+    {
+      "id": "41148aa3-ffc3-44ac-9c44-bf0f02380877",
+      "category": "sast",
+      "name": "Dependency: lodash - GHSA-fvqr-27wr-82fm",
+      "message": "Vulnerable package: lodash 2.4.2",
+      "description": "Prototype Pollution in lodash",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "high",
+      "solution": "Update lodash to a version that fixes GHSA-fvqr-27wr-82fm.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "lodash"
+          },
+          "version": "2.4.2"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-fvqr-27wr-82fm",
+          "value": "GHSA-fvqr-27wr-82fm",
+          "url": "https://github.com/advisories/GHSA-fvqr-27wr-82fm"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-fvqr-27wr-82fm"
+        }
+      ]
+    },
+    {
+      "id": "dc8351c5-4cc9-4b50-8366-02e90643747a",
+      "category": "sast",
+      "name": "Dependency: sanitize-html - GHSA-xc6g-ggrc-qq4r",
+      "message": "Vulnerable package: sanitize-html 1.4.2",
+      "description": "Cross-Site Scripting in sanitize-html",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "high",
+      "solution": "Update sanitize-html to a version that fixes GHSA-xc6g-ggrc-qq4r.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "sanitize-html"
+          },
+          "version": "1.4.2"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-xc6g-ggrc-qq4r",
+          "value": "GHSA-xc6g-ggrc-qq4r",
+          "url": "https://github.com/advisories/GHSA-xc6g-ggrc-qq4r"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-xc6g-ggrc-qq4r"
+        }
+      ]
+    },
+    {
+      "id": "afa2a04f-3ce1-48dc-883b-dd0a4c42019e",
+      "category": "sast",
+      "name": "Dependency: multer - GHSA-44fp-w29j-9vj5",
+      "message": "Vulnerable package: multer 1.4.5-lts.2",
+      "description": "Multer vulnerable to Denial of Service via memory leaks from unclosed streams",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update multer to a version that fixes GHSA-44fp-w29j-9vj5.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "multer"
+          },
+          "version": "1.4.5-lts.2"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-44fp-w29j-9vj5",
+          "value": "GHSA-44fp-w29j-9vj5",
+          "url": "https://github.com/advisories/GHSA-44fp-w29j-9vj5"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-44fp-w29j-9vj5"
+        }
+      ]
+    },
+    {
+      "id": "3f94c38e-b4e0-4f85-b8ee-a5da62cb45cc",
+      "category": "sast",
+      "name": "Dependency: socket.io-parser - GHSA-cqmj-92xf-r6r9",
+      "message": "Vulnerable package: socket.io-parser 4.0.5",
+      "description": "Insufficient validation when decoding a Socket.IO packet",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "high",
+      "solution": "Update socket.io-parser to a version that fixes GHSA-cqmj-92xf-r6r9.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "socket.io-parser"
+          },
+          "version": "4.0.5"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-cqmj-92xf-r6r9",
+          "value": "GHSA-cqmj-92xf-r6r9",
+          "url": "https://github.com/advisories/GHSA-cqmj-92xf-r6r9"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-cqmj-92xf-r6r9"
+        }
+      ]
+    },
+    {
+      "id": "26ab92fd-7f73-44ff-8fb8-a168b426040b",
+      "category": "sast",
+      "name": "Dependency: socket.io - GHSA-25hc-qcg6-38wj",
+      "message": "Vulnerable package: socket.io 3.1.2",
+      "description": "socket.io has an unhandled 'error' event",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "high",
+      "solution": "Update socket.io to a version that fixes GHSA-25hc-qcg6-38wj.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "socket.io"
+          },
+          "version": "3.1.2"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-25hc-qcg6-38wj",
+          "value": "GHSA-25hc-qcg6-38wj",
+          "url": "https://github.com/advisories/GHSA-25hc-qcg6-38wj"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-25hc-qcg6-38wj"
+        }
+      ]
+    },
+    {
+      "id": "0373e373-bbd1-42e3-8ad9-94a9ada2c8fb",
+      "category": "sast",
+      "name": "Dependency: socket.io-parser - GHSA-677m-j7p3-52f9",
+      "message": "Vulnerable package: socket.io-parser 4.0.5",
+      "description": "socket.io allows an unbounded number of binary attachments",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update socket.io-parser to a version that fixes GHSA-677m-j7p3-52f9.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "socket.io-parser"
+          },
+          "version": "4.0.5"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-677m-j7p3-52f9",
+          "value": "GHSA-677m-j7p3-52f9",
+          "url": "https://github.com/advisories/GHSA-677m-j7p3-52f9"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-677m-j7p3-52f9"
+        }
+      ]
+    },
+    {
+      "id": "8947db4b-6ca4-44f2-b0bb-29ebd2df5e12",
+      "category": "sast",
+      "name": "Dependency: lodash - GHSA-r5fr-rjxr-66jc",
+      "message": "Vulnerable package: lodash 4.17.23",
+      "description": "lodash vulnerable to Code Injection via `_.template` imports key names",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update lodash to a version that fixes GHSA-r5fr-rjxr-66jc.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "lodash"
+          },
+          "version": "4.17.23"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-r5fr-rjxr-66jc",
+          "value": "GHSA-r5fr-rjxr-66jc",
+          "url": "https://github.com/advisories/GHSA-r5fr-rjxr-66jc"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-r5fr-rjxr-66jc"
+        }
+      ]
+    },
+    {
+      "id": "ccae6344-4f86-4ca5-a928-188c95741943",
+      "category": "sast",
+      "name": "Dependency: micromatch - GHSA-952p-6rrq-rcjv",
+      "message": "Vulnerable package: micromatch 3.1.10",
+      "description": "Regular Expression Denial of Service (ReDoS) in micromatch",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "high",
+      "solution": "Update micromatch to a version that fixes GHSA-952p-6rrq-rcjv.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "micromatch"
+          },
+          "version": "3.1.10"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-952p-6rrq-rcjv",
+          "value": "GHSA-952p-6rrq-rcjv",
+          "url": "https://github.com/advisories/GHSA-952p-6rrq-rcjv"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-952p-6rrq-rcjv"
+        }
+      ]
+    },
+    {
+      "id": "d917ca5b-8bdb-4223-b395-6089c0ad1bc0",
+      "category": "sast",
+      "name": "Dependency: cookie - GHSA-pxg6-pf52-xh8x",
+      "message": "Vulnerable package: cookie 0.4.2",
+      "description": "cookie accepts cookie name, path, and domain with out of bounds characters",
+      "cve": "",
+      "severity": "low",
+      "confidence": "high",
+      "solution": "Update cookie to a version that fixes GHSA-pxg6-pf52-xh8x.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "cookie"
+          },
+          "version": "0.4.2"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-pxg6-pf52-xh8x",
+          "value": "GHSA-pxg6-pf52-xh8x",
+          "url": "https://github.com/advisories/GHSA-pxg6-pf52-xh8x"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-pxg6-pf52-xh8x"
+        }
+      ]
+    },
+    {
+      "id": "3b0833b0-0c39-49c1-8a94-f1f3d4142d38",
+      "category": "sast",
+      "name": "Dependency: jsonwebtoken - GHSA-8cf7-32gw-wr33",
+      "message": "Vulnerable package: jsonwebtoken 0.1.0",
+      "description": "jsonwebtoken unrestricted key type could lead to legacy keys usage",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update jsonwebtoken to a version that fixes GHSA-8cf7-32gw-wr33.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "jsonwebtoken"
+          },
+          "version": "0.1.0"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-8cf7-32gw-wr33",
+          "value": "GHSA-8cf7-32gw-wr33",
+          "url": "https://github.com/advisories/GHSA-8cf7-32gw-wr33"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-8cf7-32gw-wr33"
+        }
+      ]
+    },
+    {
+      "id": "7f65ba18-dace-4098-ab75-861b924464ac",
+      "category": "sast",
+      "name": "Dependency: jsonwebtoken - GHSA-8cf7-32gw-wr33",
+      "message": "Vulnerable package: jsonwebtoken 0.4.0",
+      "description": "jsonwebtoken unrestricted key type could lead to legacy keys usage",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update jsonwebtoken to a version that fixes GHSA-8cf7-32gw-wr33.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "jsonwebtoken"
+          },
+          "version": "0.4.0"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-8cf7-32gw-wr33",
+          "value": "GHSA-8cf7-32gw-wr33",
+          "url": "https://github.com/advisories/GHSA-8cf7-32gw-wr33"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-8cf7-32gw-wr33"
+        }
+      ]
+    },
+    {
+      "id": "5a123da5-adab-416c-b1fb-e1ee1bbf211d",
+      "category": "sast",
+      "name": "Dependency: multer - GHSA-5528-5vmv-3xc2",
+      "message": "Vulnerable package: multer 1.4.5-lts.2",
+      "description": "Multer Vulnerable to Denial of Service via Uncontrolled Recursion",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update multer to a version that fixes GHSA-5528-5vmv-3xc2.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "multer"
+          },
+          "version": "1.4.5-lts.2"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-5528-5vmv-3xc2",
+          "value": "GHSA-5528-5vmv-3xc2",
+          "url": "https://github.com/advisories/GHSA-5528-5vmv-3xc2"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-5528-5vmv-3xc2"
+        }
+      ]
+    },
+    {
+      "id": "8f22282d-e2a5-4421-bd82-46372078104b",
+      "category": "sast",
+      "name": "Dependency: vm2 - GHSA-99p7-6v5w-7xg8",
+      "message": "Vulnerable package: vm2 3.9.17",
+      "description": "vm2 has a Sandbox Escape",
+      "cve": "",
+      "severity": "critical",
+      "confidence": "high",
+      "solution": "Update vm2 to a version that fixes GHSA-99p7-6v5w-7xg8.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "vm2"
+          },
+          "version": "3.9.17"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-99p7-6v5w-7xg8",
+          "value": "GHSA-99p7-6v5w-7xg8",
+          "url": "https://github.com/advisories/GHSA-99p7-6v5w-7xg8"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-99p7-6v5w-7xg8"
+        }
+      ]
+    },
+    {
+      "id": "b7ffac80-10fe-4b79-9425-c50796d96225",
+      "category": "sast",
+      "name": "Dependency: lodash - GHSA-f23m-r3pf-42rh",
+      "message": "Vulnerable package: lodash 2.4.2",
+      "description": "lodash vulnerable to Prototype Pollution via array path bypass in `_.unset` and `_.omit`",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "high",
+      "solution": "Update lodash to a version that fixes GHSA-f23m-r3pf-42rh.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "lodash"
+          },
+          "version": "2.4.2"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-f23m-r3pf-42rh",
+          "value": "GHSA-f23m-r3pf-42rh",
+          "url": "https://github.com/advisories/GHSA-f23m-r3pf-42rh"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-f23m-r3pf-42rh"
+        }
+      ]
+    },
+    {
+      "id": "4742e358-71d8-4f8a-9ae4-d6afe6be26ea",
+      "category": "sast",
+      "name": "Dependency: lodash - GHSA-f23m-r3pf-42rh",
+      "message": "Vulnerable package: lodash 4.17.23",
+      "description": "lodash vulnerable to Prototype Pollution via array path bypass in `_.unset` and `_.omit`",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "high",
+      "solution": "Update lodash to a version that fixes GHSA-f23m-r3pf-42rh.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "lodash"
+          },
+          "version": "4.17.23"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-f23m-r3pf-42rh",
+          "value": "GHSA-f23m-r3pf-42rh",
+          "url": "https://github.com/advisories/GHSA-f23m-r3pf-42rh"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-f23m-r3pf-42rh"
+        }
+      ]
+    },
+    {
+      "id": "90e06e7c-b618-4804-b924-df973eb0c282",
+      "category": "sast",
+      "name": "Dependency: multer - GHSA-4pg4-qvpc-4q3h",
+      "message": "Vulnerable package: multer 1.4.5-lts.2",
+      "description": "Multer vulnerable to Denial of Service from maliciously crafted requests",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update multer to a version that fixes GHSA-4pg4-qvpc-4q3h.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "multer"
+          },
+          "version": "1.4.5-lts.2"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-4pg4-qvpc-4q3h",
+          "value": "GHSA-4pg4-qvpc-4q3h",
+          "url": "https://github.com/advisories/GHSA-4pg4-qvpc-4q3h"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-4pg4-qvpc-4q3h"
+        }
+      ]
+    },
+    {
+      "id": "b436c4e7-8fe6-4467-95fb-e39429a900f7",
+      "category": "sast",
+      "name": "Dependency: jsonwebtoken - GHSA-hjrf-2m68-5959",
+      "message": "Vulnerable package: jsonwebtoken 0.1.0",
+      "description": "jsonwebtoken's insecure implementation of key retrieval function could lead to Forgeable Public/Private Tokens from RSA to HMAC",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "high",
+      "solution": "Update jsonwebtoken to a version that fixes GHSA-hjrf-2m68-5959.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "jsonwebtoken"
+          },
+          "version": "0.1.0"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-hjrf-2m68-5959",
+          "value": "GHSA-hjrf-2m68-5959",
+          "url": "https://github.com/advisories/GHSA-hjrf-2m68-5959"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-hjrf-2m68-5959"
+        }
+      ]
+    },
+    {
+      "id": "7dacd812-0d71-43ee-9366-3ba302029882",
+      "category": "sast",
+      "name": "Dependency: jsonwebtoken - GHSA-hjrf-2m68-5959",
+      "message": "Vulnerable package: jsonwebtoken 0.4.0",
+      "description": "jsonwebtoken's insecure implementation of key retrieval function could lead to Forgeable Public/Private Tokens from RSA to HMAC",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "high",
+      "solution": "Update jsonwebtoken to a version that fixes GHSA-hjrf-2m68-5959.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "jsonwebtoken"
+          },
+          "version": "0.4.0"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-hjrf-2m68-5959",
+          "value": "GHSA-hjrf-2m68-5959",
+          "url": "https://github.com/advisories/GHSA-hjrf-2m68-5959"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-hjrf-2m68-5959"
+        }
+      ]
+    },
+    {
+      "id": "84fb3a9b-2ab3-434a-898d-542c7ff6d57f",
+      "category": "sast",
+      "name": "Dependency: sanitize-html - GHSA-qhxp-v273-g94h",
+      "message": "Vulnerable package: sanitize-html 1.4.2",
+      "description": "sanitize-html is vulnerable to XSS through incomprehensive sanitization",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "high",
+      "solution": "Update sanitize-html to a version that fixes GHSA-qhxp-v273-g94h.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "sanitize-html"
+          },
+          "version": "1.4.2"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-qhxp-v273-g94h",
+          "value": "GHSA-qhxp-v273-g94h",
+          "url": "https://github.com/advisories/GHSA-qhxp-v273-g94h"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-qhxp-v273-g94h"
+        }
+      ]
+    },
+    {
+      "id": "ff32c4ca-e515-46d4-b2ac-cde6765bd5d0",
+      "category": "sast",
+      "name": "Dependency: minimatch - GHSA-7r86-cg39-jmmj",
+      "message": "Vulnerable package: minimatch 3.0.5",
+      "description": "minimatch has ReDoS: matchOne() combinatorial backtracking via multiple non-adjacent GLOBSTAR segments",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update minimatch to a version that fixes GHSA-7r86-cg39-jmmj.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "minimatch"
+          },
+          "version": "3.0.5"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-7r86-cg39-jmmj",
+          "value": "GHSA-7r86-cg39-jmmj",
+          "url": "https://github.com/advisories/GHSA-7r86-cg39-jmmj"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-7r86-cg39-jmmj"
+        }
+      ]
+    },
+    {
+      "id": "c43db2d3-ee1b-48ea-be89-ceb3bb424316",
+      "category": "sast",
+      "name": "Dependency: minimatch - GHSA-7r86-cg39-jmmj",
+      "message": "Vulnerable package: minimatch 3.0.8",
+      "description": "minimatch has ReDoS: matchOne() combinatorial backtracking via multiple non-adjacent GLOBSTAR segments",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update minimatch to a version that fixes GHSA-7r86-cg39-jmmj.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "minimatch"
+          },
+          "version": "3.0.8"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-7r86-cg39-jmmj",
+          "value": "GHSA-7r86-cg39-jmmj",
+          "url": "https://github.com/advisories/GHSA-7r86-cg39-jmmj"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-7r86-cg39-jmmj"
+        }
+      ]
+    },
+    {
+      "id": "dcd451c4-b562-462b-92a9-b7dd18461578",
+      "category": "sast",
+      "name": "Dependency: minimatch - GHSA-3ppc-4f35-3m26",
+      "message": "Vulnerable package: minimatch 3.0.5",
+      "description": "minimatch has a ReDoS via repeated wildcards with non-matching literal in pattern",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update minimatch to a version that fixes GHSA-3ppc-4f35-3m26.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "minimatch"
+          },
+          "version": "3.0.5"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-3ppc-4f35-3m26",
+          "value": "GHSA-3ppc-4f35-3m26",
+          "url": "https://github.com/advisories/GHSA-3ppc-4f35-3m26"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-3ppc-4f35-3m26"
+        }
+      ]
+    },
+    {
+      "id": "4b852f91-d2fb-4b80-acea-2362063b0d06",
+      "category": "sast",
+      "name": "Dependency: minimatch - GHSA-3ppc-4f35-3m26",
+      "message": "Vulnerable package: minimatch 3.0.8",
+      "description": "minimatch has a ReDoS via repeated wildcards with non-matching literal in pattern",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update minimatch to a version that fixes GHSA-3ppc-4f35-3m26.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "minimatch"
+          },
+          "version": "3.0.8"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-3ppc-4f35-3m26",
+          "value": "GHSA-3ppc-4f35-3m26",
+          "url": "https://github.com/advisories/GHSA-3ppc-4f35-3m26"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-3ppc-4f35-3m26"
+        }
+      ]
+    },
+    {
+      "id": "b3a6e162-bf6c-4f44-a727-9ee1db3cc68c",
+      "category": "sast",
+      "name": "Dependency: minimatch - GHSA-23c5-xmqv-rm74",
+      "message": "Vulnerable package: minimatch 3.0.5",
+      "description": "minimatch ReDoS: nested *() extglobs generate catastrophically backtracking regular expressions",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update minimatch to a version that fixes GHSA-23c5-xmqv-rm74.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "minimatch"
+          },
+          "version": "3.0.5"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-23c5-xmqv-rm74",
+          "value": "GHSA-23c5-xmqv-rm74",
+          "url": "https://github.com/advisories/GHSA-23c5-xmqv-rm74"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-23c5-xmqv-rm74"
+        }
+      ]
+    },
+    {
+      "id": "0fd60537-2350-46f2-8cea-720a0c7fc728",
+      "category": "sast",
+      "name": "Dependency: minimatch - GHSA-23c5-xmqv-rm74",
+      "message": "Vulnerable package: minimatch 3.0.8",
+      "description": "minimatch ReDoS: nested *() extglobs generate catastrophically backtracking regular expressions",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update minimatch to a version that fixes GHSA-23c5-xmqv-rm74.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "minimatch"
+          },
+          "version": "3.0.8"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-23c5-xmqv-rm74",
+          "value": "GHSA-23c5-xmqv-rm74",
+          "url": "https://github.com/advisories/GHSA-23c5-xmqv-rm74"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-23c5-xmqv-rm74"
+        }
+      ]
+    },
+    {
+      "id": "feb544b1-fbbb-4d38-843d-e54cd9f42304",
+      "category": "sast",
+      "name": "Dependency: tar - GHSA-34x7-hfp2-rc4v",
+      "message": "Vulnerable package: tar 4.4.19",
+      "description": "node-tar Vulnerable to Arbitrary File Creation/Overwrite via Hardlink Path Traversal",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update tar to a version that fixes GHSA-34x7-hfp2-rc4v.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "tar"
+          },
+          "version": "4.4.19"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-34x7-hfp2-rc4v",
+          "value": "GHSA-34x7-hfp2-rc4v",
+          "url": "https://github.com/advisories/GHSA-34x7-hfp2-rc4v"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-34x7-hfp2-rc4v"
+        }
+      ]
+    },
+    {
+      "id": "f3a289d9-eadf-4762-97da-dca9d3642ee9",
+      "category": "sast",
+      "name": "Dependency: tar - GHSA-34x7-hfp2-rc4v",
+      "message": "Vulnerable package: tar 6.2.1",
+      "description": "node-tar Vulnerable to Arbitrary File Creation/Overwrite via Hardlink Path Traversal",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update tar to a version that fixes GHSA-34x7-hfp2-rc4v.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "tar"
+          },
+          "version": "6.2.1"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-34x7-hfp2-rc4v",
+          "value": "GHSA-34x7-hfp2-rc4v",
+          "url": "https://github.com/advisories/GHSA-34x7-hfp2-rc4v"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-34x7-hfp2-rc4v"
+        }
+      ]
+    },
+    {
+      "id": "c3853b98-befb-426f-8a13-3ab0b755bd72",
+      "category": "sast",
+      "name": "Dependency: multer - GHSA-v52c-386h-88mc",
+      "message": "Vulnerable package: multer 1.4.5-lts.2",
+      "description": "Multer vulnerable to Denial of Service via resource exhaustion",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update multer to a version that fixes GHSA-v52c-386h-88mc.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "multer"
+          },
+          "version": "1.4.5-lts.2"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-v52c-386h-88mc",
+          "value": "GHSA-v52c-386h-88mc",
+          "url": "https://github.com/advisories/GHSA-v52c-386h-88mc"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-v52c-386h-88mc"
+        }
+      ]
+    },
+    {
+      "id": "c7776741-4d94-421d-a72c-88c81d5169c6",
+      "category": "sast",
+      "name": "Dependency: multer - GHSA-xf7r-hgr6-v32p",
+      "message": "Vulnerable package: multer 1.4.5-lts.2",
+      "description": "Multer vulnerable to Denial of Service via incomplete cleanup",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update multer to a version that fixes GHSA-xf7r-hgr6-v32p.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "multer"
+          },
+          "version": "1.4.5-lts.2"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-xf7r-hgr6-v32p",
+          "value": "GHSA-xf7r-hgr6-v32p",
+          "url": "https://github.com/advisories/GHSA-xf7r-hgr6-v32p"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-xf7r-hgr6-v32p"
+        }
+      ]
+    },
+    {
+      "id": "582e2dc7-4446-4d41-a657-bbb821cd1125",
+      "category": "sast",
+      "name": "Dependency: file-type - GHSA-5v7r-6r5c-r473",
+      "message": "Vulnerable package: file-type 16.5.4",
+      "description": "file-type affected by infinite loop in ASF parser on malformed input with zero-size sub-header",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "high",
+      "solution": "Update file-type to a version that fixes GHSA-5v7r-6r5c-r473.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "file-type"
+          },
+          "version": "16.5.4"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-5v7r-6r5c-r473",
+          "value": "GHSA-5v7r-6r5c-r473",
+          "url": "https://github.com/advisories/GHSA-5v7r-6r5c-r473"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-5v7r-6r5c-r473"
+        }
+      ]
+    },
+    {
+      "id": "e7e3fc0a-1020-4c73-a3cf-41428da83b53",
+      "category": "sast",
+      "name": "Dependency: multer - GHSA-fjgf-rc76-4x9p",
+      "message": "Vulnerable package: multer 1.4.5-lts.2",
+      "description": "Multer vulnerable to Denial of Service via unhandled exception from malformed request",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update multer to a version that fixes GHSA-fjgf-rc76-4x9p.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "multer"
+          },
+          "version": "1.4.5-lts.2"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-fjgf-rc76-4x9p",
+          "value": "GHSA-fjgf-rc76-4x9p",
+          "url": "https://github.com/advisories/GHSA-fjgf-rc76-4x9p"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-fjgf-rc76-4x9p"
+        }
+      ]
+    },
+    {
+      "id": "0c49e482-d4b2-44eb-8c76-1c7d0ec6c47c",
+      "category": "sast",
+      "name": "Dependency: jsonwebtoken - GHSA-qwph-4952-7xr6",
+      "message": "Vulnerable package: jsonwebtoken 0.1.0",
+      "description": "jsonwebtoken vulnerable to signature validation bypass due to insecure default algorithm in jwt.verify()",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "high",
+      "solution": "Update jsonwebtoken to a version that fixes GHSA-qwph-4952-7xr6.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "jsonwebtoken"
+          },
+          "version": "0.1.0"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-qwph-4952-7xr6",
+          "value": "GHSA-qwph-4952-7xr6",
+          "url": "https://github.com/advisories/GHSA-qwph-4952-7xr6"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-qwph-4952-7xr6"
+        }
+      ]
+    },
+    {
+      "id": "73b2fd91-ff2c-472f-9bc9-58a4826f5bc6",
+      "category": "sast",
+      "name": "Dependency: jsonwebtoken - GHSA-qwph-4952-7xr6",
+      "message": "Vulnerable package: jsonwebtoken 0.4.0",
+      "description": "jsonwebtoken vulnerable to signature validation bypass due to insecure default algorithm in jwt.verify()",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "high",
+      "solution": "Update jsonwebtoken to a version that fixes GHSA-qwph-4952-7xr6.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "jsonwebtoken"
+          },
+          "version": "0.4.0"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-qwph-4952-7xr6",
+          "value": "GHSA-qwph-4952-7xr6",
+          "url": "https://github.com/advisories/GHSA-qwph-4952-7xr6"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-qwph-4952-7xr6"
+        }
+      ]
+    },
+    {
+      "id": "7a10e3e9-300e-4dd1-9df4-7ceaeeb3eba1",
+      "category": "sast",
+      "name": "Dependency: jws - GHSA-869p-cjfg-cm3x",
+      "message": "Vulnerable package: jws 0.2.6",
+      "description": "auth0/node-jws Improperly Verifies HMAC Signature",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update jws to a version that fixes GHSA-869p-cjfg-cm3x.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "jws"
+          },
+          "version": "0.2.6"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-869p-cjfg-cm3x",
+          "value": "GHSA-869p-cjfg-cm3x",
+          "url": "https://github.com/advisories/GHSA-869p-cjfg-cm3x"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-869p-cjfg-cm3x"
+        }
+      ]
+    },
+    {
+      "id": "215c728a-2008-4560-9adf-122029bf1b27",
+      "category": "sast",
+      "name": "Dependency: tar - GHSA-r6q2-hw4h-h46w",
+      "message": "Vulnerable package: tar 4.4.19",
+      "description": "Race Condition in node-tar Path Reservations via Unicode Ligature Collisions on macOS APFS",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update tar to a version that fixes GHSA-r6q2-hw4h-h46w.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "tar"
+          },
+          "version": "4.4.19"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-r6q2-hw4h-h46w",
+          "value": "GHSA-r6q2-hw4h-h46w",
+          "url": "https://github.com/advisories/GHSA-r6q2-hw4h-h46w"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-r6q2-hw4h-h46w"
+        }
+      ]
+    },
+    {
+      "id": "ba24fd2b-80a5-4c73-a4ce-6292e015e5b5",
+      "category": "sast",
+      "name": "Dependency: tar - GHSA-r6q2-hw4h-h46w",
+      "message": "Vulnerable package: tar 6.2.1",
+      "description": "Race Condition in node-tar Path Reservations via Unicode Ligature Collisions on macOS APFS",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update tar to a version that fixes GHSA-r6q2-hw4h-h46w.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "tar"
+          },
+          "version": "6.2.1"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-r6q2-hw4h-h46w",
+          "value": "GHSA-r6q2-hw4h-h46w",
+          "url": "https://github.com/advisories/GHSA-r6q2-hw4h-h46w"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-r6q2-hw4h-h46w"
+        }
+      ]
+    },
+    {
+      "id": "f0ac19f7-7f1f-48d9-b076-5e746a240069",
+      "category": "sast",
+      "name": "Dependency: tar - GHSA-9ppj-qmqm-q256",
+      "message": "Vulnerable package: tar 4.4.19",
+      "description": "node-tar Symlink Path Traversal via Drive-Relative Linkpath",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update tar to a version that fixes GHSA-9ppj-qmqm-q256.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "tar"
+          },
+          "version": "4.4.19"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-9ppj-qmqm-q256",
+          "value": "GHSA-9ppj-qmqm-q256",
+          "url": "https://github.com/advisories/GHSA-9ppj-qmqm-q256"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-9ppj-qmqm-q256"
+        }
+      ]
+    },
+    {
+      "id": "7b344347-f762-4073-9133-841460a8b619",
+      "category": "sast",
+      "name": "Dependency: tar - GHSA-9ppj-qmqm-q256",
+      "message": "Vulnerable package: tar 6.2.1",
+      "description": "node-tar Symlink Path Traversal via Drive-Relative Linkpath",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update tar to a version that fixes GHSA-9ppj-qmqm-q256.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "tar"
+          },
+          "version": "6.2.1"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-9ppj-qmqm-q256",
+          "value": "GHSA-9ppj-qmqm-q256",
+          "url": "https://github.com/advisories/GHSA-9ppj-qmqm-q256"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-9ppj-qmqm-q256"
+        }
+      ]
+    },
+    {
+      "id": "001063d7-8d59-4bcd-8da1-7468b81c9393",
+      "category": "sast",
+      "name": "Dependency: tar - GHSA-8qq5-rm4j-mr97",
+      "message": "Vulnerable package: tar 4.4.19",
+      "description": "node-tar is Vulnerable to Arbitrary File Overwrite and Symlink Poisoning via Insufficient Path Sanitization",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update tar to a version that fixes GHSA-8qq5-rm4j-mr97.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "tar"
+          },
+          "version": "4.4.19"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-8qq5-rm4j-mr97",
+          "value": "GHSA-8qq5-rm4j-mr97",
+          "url": "https://github.com/advisories/GHSA-8qq5-rm4j-mr97"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-8qq5-rm4j-mr97"
+        }
+      ]
+    },
+    {
+      "id": "769d9bec-21ef-4539-bf1c-4f3ec3caa908",
+      "category": "sast",
+      "name": "Dependency: tar - GHSA-8qq5-rm4j-mr97",
+      "message": "Vulnerable package: tar 6.2.1",
+      "description": "node-tar is Vulnerable to Arbitrary File Overwrite and Symlink Poisoning via Insufficient Path Sanitization",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update tar to a version that fixes GHSA-8qq5-rm4j-mr97.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "tar"
+          },
+          "version": "6.2.1"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-8qq5-rm4j-mr97",
+          "value": "GHSA-8qq5-rm4j-mr97",
+          "url": "https://github.com/advisories/GHSA-8qq5-rm4j-mr97"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-8qq5-rm4j-mr97"
+        }
+      ]
+    },
+    {
+      "id": "38d0d207-e4bb-4e6c-8c83-6c1c72b3a218",
+      "category": "sast",
+      "name": "Dependency: tar - GHSA-83g3-92jg-28cx",
+      "message": "Vulnerable package: tar 4.4.19",
+      "description": "Arbitrary File Read/Write via Hardlink Target Escape Through Symlink Chain in node-tar Extraction",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update tar to a version that fixes GHSA-83g3-92jg-28cx.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "tar"
+          },
+          "version": "4.4.19"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-83g3-92jg-28cx",
+          "value": "GHSA-83g3-92jg-28cx",
+          "url": "https://github.com/advisories/GHSA-83g3-92jg-28cx"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-83g3-92jg-28cx"
+        }
+      ]
+    },
+    {
+      "id": "24ec6c14-d41d-4111-920d-65e3dba2c4f8",
+      "category": "sast",
+      "name": "Dependency: tar - GHSA-83g3-92jg-28cx",
+      "message": "Vulnerable package: tar 6.2.1",
+      "description": "Arbitrary File Read/Write via Hardlink Target Escape Through Symlink Chain in node-tar Extraction",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update tar to a version that fixes GHSA-83g3-92jg-28cx.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "tar"
+          },
+          "version": "6.2.1"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-83g3-92jg-28cx",
+          "value": "GHSA-83g3-92jg-28cx",
+          "url": "https://github.com/advisories/GHSA-83g3-92jg-28cx"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-83g3-92jg-28cx"
+        }
+      ]
+    },
+    {
+      "id": "f7c7c081-9709-44a5-bacd-fcc4b507df28",
+      "category": "sast",
+      "name": "Dependency: @tootallnate/once - GHSA-vpq2-c234-7xj6",
+      "message": "Vulnerable package: @tootallnate/once 1.1.2",
+      "description": "@tootallnate/once vulnerable to Incorrect Control Flow Scoping",
+      "cve": "",
+      "severity": "low",
+      "confidence": "high",
+      "solution": "Update @tootallnate/once to a version that fixes GHSA-vpq2-c234-7xj6.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "@tootallnate/once"
+          },
+          "version": "1.1.2"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-vpq2-c234-7xj6",
+          "value": "GHSA-vpq2-c234-7xj6",
+          "url": "https://github.com/advisories/GHSA-vpq2-c234-7xj6"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-vpq2-c234-7xj6"
+        }
+      ]
+    },
+    {
+      "id": "6712d673-d158-4f75-b9cb-62a3d3aadcbb",
+      "category": "sast",
+      "name": "Dependency: @tootallnate/once - GHSA-vpq2-c234-7xj6",
+      "message": "Vulnerable package: @tootallnate/once 2.0.0",
+      "description": "@tootallnate/once vulnerable to Incorrect Control Flow Scoping",
+      "cve": "",
+      "severity": "low",
+      "confidence": "high",
+      "solution": "Update @tootallnate/once to a version that fixes GHSA-vpq2-c234-7xj6.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "@tootallnate/once"
+          },
+          "version": "2.0.0"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-vpq2-c234-7xj6",
+          "value": "GHSA-vpq2-c234-7xj6",
+          "url": "https://github.com/advisories/GHSA-vpq2-c234-7xj6"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-vpq2-c234-7xj6"
+        }
+      ]
+    },
+    {
+      "id": "b6496854-021f-477c-aa4a-df185e3b779b",
+      "category": "sast",
+      "name": "Dependency: tar - GHSA-qffp-2rhf-9h96",
+      "message": "Vulnerable package: tar 4.4.19",
+      "description": "tar has Hardlink Path Traversal via Drive-Relative Linkpath",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update tar to a version that fixes GHSA-qffp-2rhf-9h96.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "tar"
+          },
+          "version": "4.4.19"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-qffp-2rhf-9h96",
+          "value": "GHSA-qffp-2rhf-9h96",
+          "url": "https://github.com/advisories/GHSA-qffp-2rhf-9h96"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-qffp-2rhf-9h96"
+        }
+      ]
+    },
+    {
+      "id": "c483337b-cf63-4a3c-a80e-425932d0214e",
+      "category": "sast",
+      "name": "Dependency: tar - GHSA-qffp-2rhf-9h96",
+      "message": "Vulnerable package: tar 6.2.1",
+      "description": "tar has Hardlink Path Traversal via Drive-Relative Linkpath",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update tar to a version that fixes GHSA-qffp-2rhf-9h96.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "tar"
+          },
+          "version": "6.2.1"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-qffp-2rhf-9h96",
+          "value": "GHSA-qffp-2rhf-9h96",
+          "url": "https://github.com/advisories/GHSA-qffp-2rhf-9h96"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-qffp-2rhf-9h96"
+        }
+      ]
+    },
+    {
+      "id": "2da74eb1-435e-40ed-83da-07a1db2dd87a",
+      "category": "sast",
+      "name": "Dependency: marsdb - GHSA-5mrr-rgp6-x4gr",
+      "message": "Vulnerable package: marsdb 0.6.11",
+      "description": "Command Injection in marsdb",
+      "cve": "",
+      "severity": "critical",
+      "confidence": "high",
+      "solution": "Update marsdb to a version that fixes GHSA-5mrr-rgp6-x4gr.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "marsdb"
+          },
+          "version": "0.6.11"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-5mrr-rgp6-x4gr",
+          "value": "GHSA-5mrr-rgp6-x4gr",
+          "url": "https://github.com/advisories/GHSA-5mrr-rgp6-x4gr"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-5mrr-rgp6-x4gr"
+        }
+      ]
+    },
+    {
+      "id": "cfd561eb-9e1e-4f21-a856-35f79bcc6ba6",
+      "category": "sast",
+      "name": "Dependency: jws - GHSA-gjcw-v447-2w7q",
+      "message": "Vulnerable package: jws 0.2.6",
+      "description": "Forgeable Public/Private Tokens in jws",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update jws to a version that fixes GHSA-gjcw-v447-2w7q.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "jws"
+          },
+          "version": "0.2.6"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-gjcw-v447-2w7q",
+          "value": "GHSA-gjcw-v447-2w7q",
+          "url": "https://github.com/advisories/GHSA-gjcw-v447-2w7q"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-gjcw-v447-2w7q"
+        }
+      ]
+    },
+    {
+      "id": "428be72c-3731-41c8-b8fc-3fc35dc31a42",
+      "category": "sast",
+      "name": "Dependency: base64url - GHSA-rvg8-pwq2-xj7q",
+      "message": "Vulnerable package: base64url 0.0.6",
+      "description": "Out-of-bounds Read in base64url",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "high",
+      "solution": "Update base64url to a version that fixes GHSA-rvg8-pwq2-xj7q.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "base64url"
+          },
+          "version": "0.0.6"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-rvg8-pwq2-xj7q",
+          "value": "GHSA-rvg8-pwq2-xj7q",
+          "url": "https://github.com/advisories/GHSA-rvg8-pwq2-xj7q"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-rvg8-pwq2-xj7q"
+        }
+      ]
+    }
+  ],
+  "remediations": [],
+  "project_name": "juice-shop-public",
+  "project_path": "ez-appsec/juice-shop-public",
+  "github_url": "https://github.com/ez-appsec/juice-shop-public",
+  "scan_date": "2026-04-11T17:47:27Z"
+}
