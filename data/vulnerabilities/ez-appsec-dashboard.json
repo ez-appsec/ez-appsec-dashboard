@@ -2,7 +2,7 @@
   "version": "15.0.0",
   "vulnerabilities": [
     {
-      "id": "a0317b11-b8d0-4ae1-88c6-c97747652f25",
+      "id": "04f9d09c-e9c1-41ca-95b9-b4769872971a",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
@@ -46,5 +46,5 @@
   "project_name": "ez-appsec-dashboard",
   "project_path": "ez-appsec/ez-appsec-dashboard",
   "github_url": "https://github.com/ez-appsec/ez-appsec-dashboard",
-  "scan_date": "2026-04-14T09:16:46Z"
+  "scan_date": "2026-04-14T09:18:23Z"
 }
