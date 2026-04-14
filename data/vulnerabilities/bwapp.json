@@ -2,7 +2,7 @@
   "version": "15.0.0",
   "vulnerabilities": [
     {
-      "id": "be186c53-dbff-46d0-9bb2-f5d7bc898885",
+      "id": "8780070a-540c-4c2f-ab4f-b508759ef6f2",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Always set a user in the runtime stage of your Dockerfile. Without it, the container defaults to root, even if earlier build stages define a user.",
@@ -42,7 +42,7 @@
       "links": []
     },
     {
-      "id": "b32c1fb3-3bcf-45bf-8bf9-a1bef37b9d5b",
+      "id": "7f0382f3-37a8-497d-bd1c-3c0a2097b3d1",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "When building images, always tag them with useful tags which codify version information, intended destination (prod or test, for instance), stability, or other information that is useful when deploying the application in different environments. Do not rely on the automatically-created latest tag",
@@ -82,7 +82,7 @@
       "links": []
     },
     {
-      "id": "55d519d7-a3e7-4a6a-af46-fbaec15530f2",
+      "id": "650e98b3-f29c-4893-b2e7-5ab4facc8862",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Ensure that HEALTHCHECK is being used. The HEALTHCHECK instruction tells Docker how to test a container to check that it is still working",
@@ -122,7 +122,7 @@
       "links": []
     },
     {
-      "id": "f44a648e-55dc-4836-8883-8044cc7ad4ef",
+      "id": "c6f9c839-b92d-4702-9be4-3c15c0011671",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
@@ -166,5 +166,5 @@
   "project_name": "bwapp",
   "project_path": "ez-appsec/bwapp",
   "github_url": "https://github.com/ez-appsec/bwapp",
-  "scan_date": "2026-04-14T03:20:49Z"
+  "scan_date": "2026-04-14T03:25:51Z"
 }
