@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-14T03:21:07.718896Z",
+  "last_updated": "2026-04-14T03:22:14.276553Z",
   "projects": [
     {
       "slug": "bwapp",
@@ -14,6 +14,21 @@
         "high": 1,
         "medium": 1,
         "low": 2
+      }
+    },
+    {
+      "slug": "dvwa",
+      "name": "dvwa",
+      "path": "vulnerabilities/dvwa.json",
+      "project_path": "ez-appsec/dvwa",
+      "github_url": "https://github.com/ez-appsec/dvwa",
+      "last_updated": "2026-04-14T03:22:13Z",
+      "summary": {
+        "total": 247,
+        "critical": 0,
+        "high": 19,
+        "medium": 53,
+        "low": 148
       }
     },
     {
@@ -48,11 +63,11 @@
     }
   ],
   "totals": {
-    "projects": 3,
-    "findings": 188,
+    "projects": 4,
+    "findings": 435,
     "critical": 10,
-    "high": 67,
-    "medium": 61,
-    "low": 43
+    "high": 86,
+    "medium": 114,
+    "low": 191
   }
 }
