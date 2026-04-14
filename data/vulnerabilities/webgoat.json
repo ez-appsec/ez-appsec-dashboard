@@ -2,7 +2,7 @@
   "version": "15.0.0",
   "vulnerabilities": [
     {
-      "id": "0bf5a4df-4aaa-4e60-8cf6-73f65992a22d",
+      "id": "f5c9eb91-07ee-4a7e-a1fd-502e63b4d5d7",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Always set a user in the runtime stage of your Dockerfile. Without it, the container defaults to root, even if earlier build stages define a user.",
@@ -42,87 +42,7 @@
       "links": []
     },
     {
-      "id": "f0c0b925-99e6-45da-aada-7e503f3f8641",
-      "category": "sast",
-      "name": "KICS: unknown",
-      "message": "When installing a package, its pin version should be defined",
-      "description": "KICS detected: unknown",
-      "cve": "",
-      "severity": "medium",
-      "confidence": "medium",
-      "solution": "Review the infrastructure configuration and apply security best practices.",
-      "scanner": {
-        "id": "kics",
-        "name": "KICS"
-      },
-      "location": {
-        "file": {
-          "file_name": "Dockerfile_desktop",
-          "similarity_id": "b04efd564fb6ba76c145b9885e3a7df8c56ed3059fb6fa67f35773327b65bfa8",
-          "line": 46,
-          "issue_type": "MissingAttribute",
-          "search_key": "FROM={{lscr.io/linuxserver/webtop:ubuntu-xfce}}.RUN={{apt-get update   && apt-get --yes install --no-install-recommends vim nano gzip   && rm -rf /var/lib/apt/lists/*}}",
-          "search_line": -1,
-          "search_value": "nano",
-          "expected_value": "Package 'nano' has version defined",
-          "actual_value": "Package 'nano' does not have version defined"
-        },
-        "start_line": 1,
-        "end_line": 1,
-        "class": "iac",
-        "method": "unknown"
-      },
-      "identifiers": [
-        {
-          "type": "kics_query",
-          "name": "unknown",
-          "value": "unknown"
-        }
-      ],
-      "links": []
-    },
-    {
-      "id": "8174f55f-213f-42a8-87ea-039ac0652337",
-      "category": "sast",
-      "name": "KICS: unknown",
-      "message": "When installing a package, its pin version should be defined",
-      "description": "KICS detected: unknown",
-      "cve": "",
-      "severity": "medium",
-      "confidence": "medium",
-      "solution": "Review the infrastructure configuration and apply security best practices.",
-      "scanner": {
-        "id": "kics",
-        "name": "KICS"
-      },
-      "location": {
-        "file": {
-          "file_name": "Dockerfile_desktop",
-          "similarity_id": "b3d7be49c32abfc65d375296dce06a5090a8a7eb7d5bcb45442f73ee5c5c8192",
-          "line": 46,
-          "issue_type": "MissingAttribute",
-          "search_key": "FROM={{lscr.io/linuxserver/webtop:ubuntu-xfce}}.RUN={{apt-get update   && apt-get --yes install --no-install-recommends vim nano gzip   && rm -rf /var/lib/apt/lists/*}}",
-          "search_line": -1,
-          "search_value": "gzip",
-          "expected_value": "Package 'gzip' has version defined",
-          "actual_value": "Package 'gzip' does not have version defined"
-        },
-        "start_line": 1,
-        "end_line": 1,
-        "class": "iac",
-        "method": "unknown"
-      },
-      "identifiers": [
-        {
-          "type": "kics_query",
-          "name": "unknown",
-          "value": "unknown"
-        }
-      ],
-      "links": []
-    },
-    {
-      "id": "911483c9-0266-4ef8-91f9-d95928f869db",
+      "id": "4f417c61-cc70-40b1-a7d9-dd3a80eae531",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "When installing a package, its pin version should be defined",
@@ -162,10 +82,10 @@
       "links": []
     },
     {
-      "id": "0e59596c-32e6-488c-9115-5b9fd4f8444a",
+      "id": "055fdf14-0483-45c8-b5a8-d78371158034",
       "category": "sast",
       "name": "KICS: unknown",
-      "message": "Package version pinning reduces the range of versions that can be installed, reducing the chances of failure due to unanticipated changes",
+      "message": "When installing a package, its pin version should be defined",
       "description": "KICS detected: unknown",
       "cve": "",
       "severity": "medium",
@@ -178,14 +98,14 @@
       "location": {
         "file": {
           "file_name": "Dockerfile_desktop",
-          "similarity_id": "379238df3cc7c704f0f7ff43f5e9aefbc8726f07163f8ebdc213696a841b293f",
-          "line": 16,
-          "issue_type": "IncorrectValue",
-          "search_key": "FROM={{alpine:3.22 AS jre}}.{{RUN apk add --no-cache curl tar   && set -eux;      case \"${TARGETARCH}\" in        amd64) ARCH=x64 ;;        arm64) ARCH=aarch64 ;;        *) echo \"Unsupported architecture: ${TARGETARCH}\" >&2; exit 1 ;;      esac;      JAVA_ENC=\"${JAVA_FULL//+/%2B}\";      JAVA_FILE=\"${JAVA_FULL//+/_}\";      curl -sSL \"https://github.com/adoptium/temurin${JAVA_MAJOR}-binaries/releases/download/jdk-${JAVA_ENC}/OpenJDK${JAVA_MAJOR}U-jre_${ARCH}_linux_hotspot_${JAVA_FILE}.tar.gz\" -o /tmp/java.tgz;      mkdir -p /jre;      tar -xzf /tmp/java.tgz -C /jre --strip-components=1;      rm -f /tmp/java.tgz}}",
+          "similarity_id": "b3d7be49c32abfc65d375296dce06a5090a8a7eb7d5bcb45442f73ee5c5c8192",
+          "line": 46,
+          "issue_type": "MissingAttribute",
+          "search_key": "FROM={{lscr.io/linuxserver/webtop:ubuntu-xfce}}.RUN={{apt-get update   && apt-get --yes install --no-install-recommends vim nano gzip   && rm -rf /var/lib/apt/lists/*}}",
           "search_line": -1,
-          "search_value": "",
-          "expected_value": "RUN instruction with 'apk add <package>' should use package pinning form 'apk add <package>=<version>'",
-          "actual_value": "RUN instruction apk add --no-cache curl tar   && set -eux;      case \"${TARGETARCH}\" in        amd64) ARCH=x64 ;;        arm64) ARCH=aarch64 ;;        *) echo \"Unsupported architecture: ${TARGETARCH}\" >&2; exit 1 ;;      esac;      JAVA_ENC=\"${JAVA_FULL//+/%2B}\";      JAVA_FILE=\"${JAVA_FULL//+/_}\";      curl -sSL \"https://github.com/adoptium/temurin23-binaries/releases/download/jdk-${JAVA_ENC}/OpenJDK${JAVA_MAJOR}U-jre_${ARCH}_linux_hotspot_${JAVA_FILE}.tar.gz\" -o /tmp/java.tgz;      mkdir -p /jre;      tar -xzf /tmp/java.tgz -C /jre --strip-components=1;      rm -f /tmp/java.tgz does not use package pinning form"
+          "search_value": "gzip",
+          "expected_value": "Package 'gzip' has version defined",
+          "actual_value": "Package 'gzip' does not have version defined"
         },
         "start_line": 1,
         "end_line": 1,
@@ -202,7 +122,47 @@
       "links": []
     },
     {
-      "id": "9f6c5f30-8090-4ba5-83b6-f022241c65a8",
+      "id": "41431fce-9d4b-49cb-9374-e4d23da06b89",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "When installing a package, its pin version should be defined",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "Dockerfile_desktop",
+          "similarity_id": "b04efd564fb6ba76c145b9885e3a7df8c56ed3059fb6fa67f35773327b65bfa8",
+          "line": 46,
+          "issue_type": "MissingAttribute",
+          "search_key": "FROM={{lscr.io/linuxserver/webtop:ubuntu-xfce}}.RUN={{apt-get update   && apt-get --yes install --no-install-recommends vim nano gzip   && rm -rf /var/lib/apt/lists/*}}",
+          "search_line": -1,
+          "search_value": "nano",
+          "expected_value": "Package 'nano' has version defined",
+          "actual_value": "Package 'nano' does not have version defined"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "80388c91-fa45-4ab0-be2c-02c28004dcb1",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Package version pinning reduces the range of versions that can be installed, reducing the chances of failure due to unanticipated changes",
@@ -242,7 +202,47 @@
       "links": []
     },
     {
-      "id": "2f7136ae-5dbf-43b8-804b-441b11a194d6",
+      "id": "597786bc-41c2-4483-8cd4-ec27962d5084",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "Package version pinning reduces the range of versions that can be installed, reducing the chances of failure due to unanticipated changes",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": "Dockerfile_desktop",
+          "similarity_id": "379238df3cc7c704f0f7ff43f5e9aefbc8726f07163f8ebdc213696a841b293f",
+          "line": 16,
+          "issue_type": "IncorrectValue",
+          "search_key": "FROM={{alpine:3.22 AS jre}}.{{RUN apk add --no-cache curl tar   && set -eux;      case \"${TARGETARCH}\" in        amd64) ARCH=x64 ;;        arm64) ARCH=aarch64 ;;        *) echo \"Unsupported architecture: ${TARGETARCH}\" >&2; exit 1 ;;      esac;      JAVA_ENC=\"${JAVA_FULL//+/%2B}\";      JAVA_FILE=\"${JAVA_FULL//+/_}\";      curl -sSL \"https://github.com/adoptium/temurin${JAVA_MAJOR}-binaries/releases/download/jdk-${JAVA_ENC}/OpenJDK${JAVA_MAJOR}U-jre_${ARCH}_linux_hotspot_${JAVA_FILE}.tar.gz\" -o /tmp/java.tgz;      mkdir -p /jre;      tar -xzf /tmp/java.tgz -C /jre --strip-components=1;      rm -f /tmp/java.tgz}}",
+          "search_line": -1,
+          "search_value": "",
+          "expected_value": "RUN instruction with 'apk add <package>' should use package pinning form 'apk add <package>=<version>'",
+          "actual_value": "RUN instruction apk add --no-cache curl tar   && set -eux;      case \"${TARGETARCH}\" in        amd64) ARCH=x64 ;;        arm64) ARCH=aarch64 ;;        *) echo \"Unsupported architecture: ${TARGETARCH}\" >&2; exit 1 ;;      esac;      JAVA_ENC=\"${JAVA_FULL//+/%2B}\";      JAVA_FILE=\"${JAVA_FULL//+/_}\";      curl -sSL \"https://github.com/adoptium/temurin23-binaries/releases/download/jdk-${JAVA_ENC}/OpenJDK${JAVA_MAJOR}U-jre_${ARCH}_linux_hotspot_${JAVA_FILE}.tar.gz\" -o /tmp/java.tgz;      mkdir -p /jre;      tar -xzf /tmp/java.tgz -C /jre --strip-components=1;      rm -f /tmp/java.tgz does not use package pinning form"
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "49780629-8533-4e6c-9f58-224e550a80f8",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "It is considered a best practice for every executable in a container to be owned by the root user even if it is executed by a non-root user, only execution permissions are required on the file, not ownership",
@@ -282,7 +282,7 @@
       "links": []
     },
     {
-      "id": "def1dc6f-83c5-4abe-9b49-e0e9aa127eb9",
+      "id": "99dc5f01-d186-4eb1-80ea-297d7cf9b2be",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Ensure that HEALTHCHECK is being used. The HEALTHCHECK instruction tells Docker how to test a container to check that it is still working",
@@ -322,327 +322,7 @@
       "links": []
     },
     {
-      "id": "836b9331-ac99-4efb-8740-816b0288d836",
-      "category": "sast",
-      "name": "KICS: unknown",
-      "message": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
-      "description": "KICS detected: unknown",
-      "cve": "",
-      "severity": "low",
-      "confidence": "medium",
-      "solution": "Review the infrastructure configuration and apply security best practices.",
-      "scanner": {
-        "id": "kics",
-        "name": "KICS"
-      },
-      "location": {
-        "file": {
-          "file_name": ".github/workflows/build.yml",
-          "similarity_id": "a6655f071e3a77f1154638c97ce69a4dd208acbdd9fe0b292db27ebd0b49cde4",
-          "line": 29,
-          "issue_type": "IncorrectValue",
-          "search_key": "uses={{pre-commit/action@v3.0.1}}",
-          "search_line": 29,
-          "search_value": "",
-          "expected_value": "Action pinned to a full length commit SHA.",
-          "actual_value": "Action is not pinned to a full length commit SHA."
-        },
-        "start_line": 1,
-        "end_line": 1,
-        "class": "iac",
-        "method": "unknown"
-      },
-      "identifiers": [
-        {
-          "type": "kics_query",
-          "name": "unknown",
-          "value": "unknown"
-        }
-      ],
-      "links": []
-    },
-    {
-      "id": "69b74d71-faf9-433f-98d0-ab35d82b5c07",
-      "category": "sast",
-      "name": "KICS: unknown",
-      "message": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
-      "description": "KICS detected: unknown",
-      "cve": "",
-      "severity": "low",
-      "confidence": "medium",
-      "solution": "Review the infrastructure configuration and apply security best practices.",
-      "scanner": {
-        "id": "kics",
-        "name": "KICS"
-      },
-      "location": {
-        "file": {
-          "file_name": ".github/workflows/release.yml",
-          "similarity_id": "55a5a72c7177bf0c7f04c38c78ea8c8dea027a006ab29cf6eee183a64944fa4d",
-          "line": 82,
-          "issue_type": "IncorrectValue",
-          "search_key": "uses={{docker/build-push-action@v6.18.0}}",
-          "search_line": 82,
-          "search_value": "",
-          "expected_value": "Action pinned to a full length commit SHA.",
-          "actual_value": "Action is not pinned to a full length commit SHA."
-        },
-        "start_line": 1,
-        "end_line": 1,
-        "class": "iac",
-        "method": "unknown"
-      },
-      "identifiers": [
-        {
-          "type": "kics_query",
-          "name": "unknown",
-          "value": "unknown"
-        }
-      ],
-      "links": []
-    },
-    {
-      "id": "41d3aab3-954d-4946-9599-4701b6b6040f",
-      "category": "sast",
-      "name": "KICS: unknown",
-      "message": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
-      "description": "KICS detected: unknown",
-      "cve": "",
-      "severity": "low",
-      "confidence": "medium",
-      "solution": "Review the infrastructure configuration and apply security best practices.",
-      "scanner": {
-        "id": "kics",
-        "name": "KICS"
-      },
-      "location": {
-        "file": {
-          "file_name": ".github/workflows/release.yml",
-          "similarity_id": "e4bba25451393ceb7a22edd3792b7494846bcb89ebffe4450864d0f99f0256c4",
-          "line": 68,
-          "issue_type": "IncorrectValue",
-          "search_key": "uses={{docker/setup-qemu-action@v3.6.0}}",
-          "search_line": 68,
-          "search_value": "",
-          "expected_value": "Action pinned to a full length commit SHA.",
-          "actual_value": "Action is not pinned to a full length commit SHA."
-        },
-        "start_line": 1,
-        "end_line": 1,
-        "class": "iac",
-        "method": "unknown"
-      },
-      "identifiers": [
-        {
-          "type": "kics_query",
-          "name": "unknown",
-          "value": "unknown"
-        }
-      ],
-      "links": []
-    },
-    {
-      "id": "c20e2e89-f460-4cba-acf2-e0fb0d6c146d",
-      "category": "sast",
-      "name": "KICS: unknown",
-      "message": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
-      "description": "KICS detected: unknown",
-      "cve": "",
-      "severity": "low",
-      "confidence": "medium",
-      "solution": "Review the infrastructure configuration and apply security best practices.",
-      "scanner": {
-        "id": "kics",
-        "name": "KICS"
-      },
-      "location": {
-        "file": {
-          "file_name": ".github/workflows/release.yml",
-          "similarity_id": "f2db909c68b6006ef8c7cedc45968bbcb699b50099d8a3275d74ab5a80298b96",
-          "line": 34,
-          "issue_type": "IncorrectValue",
-          "search_key": "uses={{softprops/action-gh-release@v1}}",
-          "search_line": 34,
-          "search_value": "",
-          "expected_value": "Action pinned to a full length commit SHA.",
-          "actual_value": "Action is not pinned to a full length commit SHA."
-        },
-        "start_line": 1,
-        "end_line": 1,
-        "class": "iac",
-        "method": "unknown"
-      },
-      "identifiers": [
-        {
-          "type": "kics_query",
-          "name": "unknown",
-          "value": "unknown"
-        }
-      ],
-      "links": []
-    },
-    {
-      "id": "9be9abd8-6d65-4a64-a525-9d9e2aa08458",
-      "category": "sast",
-      "name": "KICS: unknown",
-      "message": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
-      "description": "KICS detected: unknown",
-      "cve": "",
-      "severity": "low",
-      "confidence": "medium",
-      "solution": "Review the infrastructure configuration and apply security best practices.",
-      "scanner": {
-        "id": "kics",
-        "name": "KICS"
-      },
-      "location": {
-        "file": {
-          "file_name": ".github/workflows/build.yml",
-          "similarity_id": "ff4d807014ec82d6009eaf095f808854b7d0531f43dabf84ea395eb05928f482",
-          "line": 31,
-          "issue_type": "IncorrectValue",
-          "search_key": "uses={{pre-commit-ci/lite-action@v1.1.0}}",
-          "search_line": 31,
-          "search_value": "",
-          "expected_value": "Action pinned to a full length commit SHA.",
-          "actual_value": "Action is not pinned to a full length commit SHA."
-        },
-        "start_line": 1,
-        "end_line": 1,
-        "class": "iac",
-        "method": "unknown"
-      },
-      "identifiers": [
-        {
-          "type": "kics_query",
-          "name": "unknown",
-          "value": "unknown"
-        }
-      ],
-      "links": []
-    },
-    {
-      "id": "bee9fd40-5ba5-44d9-a5e9-c3baa355b399",
-      "category": "sast",
-      "name": "KICS: unknown",
-      "message": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
-      "description": "KICS detected: unknown",
-      "cve": "",
-      "severity": "low",
-      "confidence": "medium",
-      "solution": "Review the infrastructure configuration and apply security best practices.",
-      "scanner": {
-        "id": "kics",
-        "name": "KICS"
-      },
-      "location": {
-        "file": {
-          "file_name": ".github/workflows/release.yml",
-          "similarity_id": "7a63a1d581525a7d4b6f0a81841ffb685a00b16a4f74134a5b142311b900c7c7",
-          "line": 126,
-          "issue_type": "IncorrectValue",
-          "search_key": "uses={{devops-infra/action-commit-push@v0.11.4}}",
-          "search_line": 126,
-          "search_value": "",
-          "expected_value": "Action pinned to a full length commit SHA.",
-          "actual_value": "Action is not pinned to a full length commit SHA."
-        },
-        "start_line": 1,
-        "end_line": 1,
-        "class": "iac",
-        "method": "unknown"
-      },
-      "identifiers": [
-        {
-          "type": "kics_query",
-          "name": "unknown",
-          "value": "unknown"
-        }
-      ],
-      "links": []
-    },
-    {
-      "id": "d7d2712b-9535-47dc-9738-4bfd4311ef28",
-      "category": "sast",
-      "name": "KICS: unknown",
-      "message": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
-      "description": "KICS detected: unknown",
-      "cve": "",
-      "severity": "low",
-      "confidence": "medium",
-      "solution": "Review the infrastructure configuration and apply security best practices.",
-      "scanner": {
-        "id": "kics",
-        "name": "KICS"
-      },
-      "location": {
-        "file": {
-          "file_name": ".github/workflows/release.yml",
-          "similarity_id": "70d6aaa266225a1cbf8ad9503d919c0f64c3f5e7dbdda9c55f459f96601b0354",
-          "line": 134,
-          "issue_type": "IncorrectValue",
-          "search_key": "uses={{devops-infra/action-pull-request@v1.0.2}}",
-          "search_line": 134,
-          "search_value": "",
-          "expected_value": "Action pinned to a full length commit SHA.",
-          "actual_value": "Action is not pinned to a full length commit SHA."
-        },
-        "start_line": 1,
-        "end_line": 1,
-        "class": "iac",
-        "method": "unknown"
-      },
-      "identifiers": [
-        {
-          "type": "kics_query",
-          "name": "unknown",
-          "value": "unknown"
-        }
-      ],
-      "links": []
-    },
-    {
-      "id": "85b583d1-ebc8-417e-be51-a19387479d14",
-      "category": "sast",
-      "name": "KICS: unknown",
-      "message": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
-      "description": "KICS detected: unknown",
-      "cve": "",
-      "severity": "low",
-      "confidence": "medium",
-      "solution": "Review the infrastructure configuration and apply security best practices.",
-      "scanner": {
-        "id": "kics",
-        "name": "KICS"
-      },
-      "location": {
-        "file": {
-          "file_name": ".github/workflows/release.yml",
-          "similarity_id": "50c2a2d9ed3030b34840dd893f9758b8a5d160b73c114a1bf5c1164132ab9a3b",
-          "line": 76,
-          "issue_type": "IncorrectValue",
-          "search_key": "uses={{docker/login-action@v3.6.0}}",
-          "search_line": 76,
-          "search_value": "",
-          "expected_value": "Action pinned to a full length commit SHA.",
-          "actual_value": "Action is not pinned to a full length commit SHA."
-        },
-        "start_line": 1,
-        "end_line": 1,
-        "class": "iac",
-        "method": "unknown"
-      },
-      "identifiers": [
-        {
-          "type": "kics_query",
-          "name": "unknown",
-          "value": "unknown"
-        }
-      ],
-      "links": []
-    },
-    {
-      "id": "4e680af8-63eb-499e-859c-0198ec54247a",
+      "id": "5c0a5dca-ecaf-43d3-b76c-942d0fa3e9d3",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
@@ -682,7 +362,207 @@
       "links": []
     },
     {
-      "id": "55d2b3ed-1991-41cd-9636-91dbe8f52765",
+      "id": "11fea417-5214-4915-990e-0878df8f0353",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "low",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": ".github/workflows/release.yml",
+          "similarity_id": "50c2a2d9ed3030b34840dd893f9758b8a5d160b73c114a1bf5c1164132ab9a3b",
+          "line": 76,
+          "issue_type": "IncorrectValue",
+          "search_key": "uses={{docker/login-action@v3.6.0}}",
+          "search_line": 76,
+          "search_value": "",
+          "expected_value": "Action pinned to a full length commit SHA.",
+          "actual_value": "Action is not pinned to a full length commit SHA."
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "3789d9a1-f921-4d1a-8b48-f3b38dba2119",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "low",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": ".github/workflows/release.yml",
+          "similarity_id": "e4bba25451393ceb7a22edd3792b7494846bcb89ebffe4450864d0f99f0256c4",
+          "line": 68,
+          "issue_type": "IncorrectValue",
+          "search_key": "uses={{docker/setup-qemu-action@v3.6.0}}",
+          "search_line": 68,
+          "search_value": "",
+          "expected_value": "Action pinned to a full length commit SHA.",
+          "actual_value": "Action is not pinned to a full length commit SHA."
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "cc039681-49a9-4a92-a78e-e12733739346",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "low",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": ".github/workflows/release.yml",
+          "similarity_id": "55a5a72c7177bf0c7f04c38c78ea8c8dea027a006ab29cf6eee183a64944fa4d",
+          "line": 82,
+          "issue_type": "IncorrectValue",
+          "search_key": "uses={{docker/build-push-action@v6.18.0}}",
+          "search_line": 82,
+          "search_value": "",
+          "expected_value": "Action pinned to a full length commit SHA.",
+          "actual_value": "Action is not pinned to a full length commit SHA."
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "b26c531f-caae-43f0-be52-84c2d34357c2",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "low",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": ".github/workflows/release.yml",
+          "similarity_id": "f2db909c68b6006ef8c7cedc45968bbcb699b50099d8a3275d74ab5a80298b96",
+          "line": 34,
+          "issue_type": "IncorrectValue",
+          "search_key": "uses={{softprops/action-gh-release@v1}}",
+          "search_line": 34,
+          "search_value": "",
+          "expected_value": "Action pinned to a full length commit SHA.",
+          "actual_value": "Action is not pinned to a full length commit SHA."
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "2582c8bc-0e5b-4f13-90d1-e7af2408ef78",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "low",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": ".github/workflows/release.yml",
+          "similarity_id": "70d6aaa266225a1cbf8ad9503d919c0f64c3f5e7dbdda9c55f459f96601b0354",
+          "line": 134,
+          "issue_type": "IncorrectValue",
+          "search_key": "uses={{devops-infra/action-pull-request@v1.0.2}}",
+          "search_line": 134,
+          "search_value": "",
+          "expected_value": "Action pinned to a full length commit SHA.",
+          "actual_value": "Action is not pinned to a full length commit SHA."
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "4713f9f2-5f36-45b5-ae5c-ca20db08d212",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
@@ -722,7 +602,87 @@
       "links": []
     },
     {
-      "id": "79367cf7-9642-4623-9160-a18ff9f546ae",
+      "id": "64ecf384-7240-47f2-8f4c-50be4beefe9c",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "low",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": ".github/workflows/build.yml",
+          "similarity_id": "ff4d807014ec82d6009eaf095f808854b7d0531f43dabf84ea395eb05928f482",
+          "line": 31,
+          "issue_type": "IncorrectValue",
+          "search_key": "uses={{pre-commit-ci/lite-action@v1.1.0}}",
+          "search_line": 31,
+          "search_value": "",
+          "expected_value": "Action pinned to a full length commit SHA.",
+          "actual_value": "Action is not pinned to a full length commit SHA."
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "d4c23142-93bc-4e25-a81d-2fc359d336e4",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "low",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": ".github/workflows/build.yml",
+          "similarity_id": "a6655f071e3a77f1154638c97ce69a4dd208acbdd9fe0b292db27ebd0b49cde4",
+          "line": 29,
+          "issue_type": "IncorrectValue",
+          "search_key": "uses={{pre-commit/action@v3.0.1}}",
+          "search_line": 29,
+          "search_value": "",
+          "expected_value": "Action pinned to a full length commit SHA.",
+          "actual_value": "Action is not pinned to a full length commit SHA."
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "8da52840-b1f6-4a0b-91b9-d00371c9b96d",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
@@ -762,7 +722,47 @@
       "links": []
     },
     {
-      "id": "2c0dc8c4-9269-4858-b286-517539d5b1b1",
+      "id": "fe9ee053-e0e6-4347-bd48-53c15600b88e",
+      "category": "sast",
+      "name": "KICS: unknown",
+      "message": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
+      "description": "KICS detected: unknown",
+      "cve": "",
+      "severity": "low",
+      "confidence": "medium",
+      "solution": "Review the infrastructure configuration and apply security best practices.",
+      "scanner": {
+        "id": "kics",
+        "name": "KICS"
+      },
+      "location": {
+        "file": {
+          "file_name": ".github/workflows/release.yml",
+          "similarity_id": "7a63a1d581525a7d4b6f0a81841ffb685a00b16a4f74134a5b142311b900c7c7",
+          "line": 126,
+          "issue_type": "IncorrectValue",
+          "search_key": "uses={{devops-infra/action-commit-push@v0.11.4}}",
+          "search_line": 126,
+          "search_value": "",
+          "expected_value": "Action pinned to a full length commit SHA.",
+          "actual_value": "Action is not pinned to a full length commit SHA."
+        },
+        "start_line": 1,
+        "end_line": 1,
+        "class": "iac",
+        "method": "unknown"
+      },
+      "identifiers": [
+        {
+          "type": "kics_query",
+          "name": "unknown",
+          "value": "unknown"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "d1e78cc4-145b-4035-8d7f-2f8a9506a55c",
       "category": "sast",
       "name": "Dependency: xstream - GHSA-j9h8-phrw-h4fh",
       "message": "Vulnerable package: xstream 1.4.5",
@@ -799,7 +799,7 @@
       ]
     },
     {
-      "id": "19a7f63c-addc-462d-a0e0-ad7c45cacdea",
+      "id": "c82ccd0c-c279-42bc-8bf3-58a5760e9690",
       "category": "sast",
       "name": "Dependency: xstream - GHSA-mw36-7c6c-q4q2",
       "message": "Vulnerable package: xstream 1.4.5",
@@ -836,7 +836,7 @@
       ]
     },
     {
-      "id": "d1fa04c1-e856-468a-9af5-01adc475f4b2",
+      "id": "236846ab-8087-4800-8706-5b01416155e4",
       "category": "sast",
       "name": "Dependency: xstream - GHSA-7chv-rrw6-w6fc",
       "message": "Vulnerable package: xstream 1.4.5",
@@ -873,7 +873,7 @@
       ]
     },
     {
-      "id": "0bad4fa2-8e8c-4197-8df0-be94d0c051a7",
+      "id": "b629f0a8-876e-4b32-9b3f-943623798f33",
       "category": "sast",
       "name": "Dependency: xstream - GHSA-g5w6-mrj7-75h2",
       "message": "Vulnerable package: xstream 1.4.5",
@@ -910,7 +910,7 @@
       ]
     },
     {
-      "id": "f5b5866b-114b-440e-8b98-d4cdacf3f179",
+      "id": "3728ac43-ee4a-4ba5-847f-45e89889d4a1",
       "category": "sast",
       "name": "Dependency: xstream - GHSA-4cch-wxpw-8p28",
       "message": "Vulnerable package: xstream 1.4.5",
@@ -947,7 +947,7 @@
       ]
     },
     {
-      "id": "758457fd-7c9f-4433-a97e-7f7308191eb0",
+      "id": "0d36965f-d088-47a4-b475-c5894e53a0a7",
       "category": "sast",
       "name": "Dependency: xstream - GHSA-jfvx-7wrx-43fh",
       "message": "Vulnerable package: xstream 1.4.5",
@@ -984,7 +984,7 @@
       ]
     },
     {
-      "id": "efae7494-49fa-4b56-947e-44e6fee48976",
+      "id": "1e806cc9-b0ea-4d5a-b940-1a8dab6e979f",
       "category": "sast",
       "name": "Dependency: xstream - GHSA-xw4p-crpj-vjx2",
       "message": "Vulnerable package: xstream 1.4.5",
@@ -1021,7 +1021,7 @@
       ]
     },
     {
-      "id": "904a9ec5-aac5-4774-a89c-b199d9edd018",
+      "id": "6d367d81-3424-4da9-aaa1-d98e6b01d211",
       "category": "sast",
       "name": "Dependency: xstream - GHSA-hrcp-8f3q-4w2c",
       "message": "Vulnerable package: xstream 1.4.5",
@@ -1058,7 +1058,7 @@
       ]
     },
     {
-      "id": "23a7fcd4-dc0d-48d2-b5bf-3f6e9d52f90b",
+      "id": "c132ad9b-35b9-47fa-958e-636c73dfe32d",
       "category": "sast",
       "name": "Dependency: xstream - GHSA-hwpc-8xqv-jvj4",
       "message": "Vulnerable package: xstream 1.4.5",
@@ -1095,7 +1095,7 @@
       ]
     },
     {
-      "id": "fefad8fd-bf52-422c-8127-a78d3b5556e4",
+      "id": "5c535faf-ca0f-43a8-949b-3ba1db3df20b",
       "category": "sast",
       "name": "Dependency: xstream - GHSA-p8pq-r894-fm8f",
       "message": "Vulnerable package: xstream 1.4.5",
@@ -1132,7 +1132,7 @@
       ]
     },
     {
-      "id": "925ead72-7d6d-4b17-aaa8-7be56870c176",
+      "id": "70f0b65c-8156-43b8-9689-0c740297cd47",
       "category": "sast",
       "name": "Dependency: xstream - GHSA-2p3x-qw9c-25hh",
       "message": "Vulnerable package: xstream 1.4.5",
@@ -1169,7 +1169,7 @@
       ]
     },
     {
-      "id": "a075c1eb-e21d-48ec-bd3a-1a64e43c64fc",
+      "id": "b92dd402-f644-4bdb-84cf-8deb5bb238d4",
       "category": "sast",
       "name": "Dependency: xstream - GHSA-59jw-jqf4-3wq3",
       "message": "Vulnerable package: xstream 1.4.5",
@@ -1206,7 +1206,7 @@
       ]
     },
     {
-      "id": "303f3f27-c842-4bf5-bc70-e366284b2600",
+      "id": "2b766730-31fc-4f97-b373-609fd0793b6e",
       "category": "sast",
       "name": "Dependency: xstream - GHSA-f554-x222-wgf7",
       "message": "Vulnerable package: xstream 1.4.5",
@@ -1243,7 +1243,7 @@
       ]
     },
     {
-      "id": "89eb4143-ac0a-411d-a58b-f652417dac27",
+      "id": "81d3a04c-4bd7-45ec-b392-396476b4b0b5",
       "category": "sast",
       "name": "Dependency: xstream - GHSA-43gc-mjxg-gvrq",
       "message": "Vulnerable package: xstream 1.4.5",
@@ -1280,7 +1280,7 @@
       ]
     },
     {
-      "id": "442eaf14-214f-4e57-afaf-b2452ff229a4",
+      "id": "c1b8ca5f-b0ad-4373-810b-4cbe976899b2",
       "category": "sast",
       "name": "Dependency: xstream - GHSA-f6hm-88x3-mfjv",
       "message": "Vulnerable package: xstream 1.4.5",
@@ -1317,7 +1317,7 @@
       ]
     },
     {
-      "id": "0965946e-c7a6-4164-92a2-ce1dd33eb4e4",
+      "id": "f4f24632-1634-4ad5-b70e-db23cabfe3d1",
       "category": "sast",
       "name": "Dependency: xstream - GHSA-rgh3-987h-wpmw",
       "message": "Vulnerable package: xstream 1.4.5",
@@ -1354,7 +1354,7 @@
       ]
     },
     {
-      "id": "6c870486-fca6-453e-9a4a-2eb0752f0a83",
+      "id": "c96d1986-88dd-4194-8506-e9f223b631cd",
       "category": "sast",
       "name": "Dependency: xstream - GHSA-4hrm-m67v-5cxr",
       "message": "Vulnerable package: xstream 1.4.5",
@@ -1391,7 +1391,7 @@
       ]
     },
     {
-      "id": "56816486-d907-4914-a0f0-e956b8a4946f",
+      "id": "c6a9def4-ba82-44fc-b25f-32ea2c911c62",
       "category": "sast",
       "name": "Dependency: xstream - GHSA-7hwc-46rm-65jh",
       "message": "Vulnerable package: xstream 1.4.5",
@@ -1428,7 +1428,7 @@
       ]
     },
     {
-      "id": "93f2891f-fd7d-4691-9a93-a364ff35a9ab",
+      "id": "5dcd4532-22fd-4e23-b515-b12ee6a13d4b",
       "category": "sast",
       "name": "Dependency: xstream - GHSA-cxfm-5m4g-x7xp",
       "message": "Vulnerable package: xstream 1.4.5",
@@ -1465,7 +1465,7 @@
       ]
     },
     {
-      "id": "c46885ef-b839-4b34-8fef-35cf82b22362",
+      "id": "45893069-5258-4cc0-ad19-49eafdc6fed0",
       "category": "sast",
       "name": "Dependency: xstream - GHSA-j563-grx4-pjpv",
       "message": "Vulnerable package: xstream 1.4.5",
@@ -1502,7 +1502,7 @@
       ]
     },
     {
-      "id": "510ed71a-763c-41b0-ac82-f016769691e5",
+      "id": "e76bb9fc-f707-4a41-97b3-7f5fa8941d7b",
       "category": "sast",
       "name": "Dependency: xstream - GHSA-qpfq-ph7r-qv6f",
       "message": "Vulnerable package: xstream 1.4.5",
@@ -1539,7 +1539,7 @@
       ]
     },
     {
-      "id": "51203b60-85c5-4aa9-9768-f808b3318a4f",
+      "id": "e6e89437-34c7-48c6-9461-0c4583a39d15",
       "category": "sast",
       "name": "Dependency: xstream - GHSA-rmr5-cpv2-vgjf",
       "message": "Vulnerable package: xstream 1.4.5",
@@ -1576,7 +1576,7 @@
       ]
     },
     {
-      "id": "96ad63c5-f3c7-49b1-a30b-4f7bedcd12e8",
+      "id": "778d19a1-c46a-4d5d-92bf-face2ba6d521",
       "category": "sast",
       "name": "Dependency: xstream - GHSA-64xx-cq4q-mf44",
       "message": "Vulnerable package: xstream 1.4.5",
@@ -1613,7 +1613,7 @@
       ]
     },
     {
-      "id": "af437375-4aec-47c1-961b-5ec51282db80",
+      "id": "eb55b2b7-e04e-4570-b827-3d996fc808db",
       "category": "sast",
       "name": "Dependency: xstream - GHSA-3ccq-5vw3-2p6x",
       "message": "Vulnerable package: xstream 1.4.5",
@@ -1650,7 +1650,7 @@
       ]
     },
     {
-      "id": "ea9a49af-6f9d-4520-8bb7-857b074209f2",
+      "id": "ce641600-88b0-4bb6-8e5e-b983bfe8a03f",
       "category": "sast",
       "name": "Dependency: xstream - GHSA-hph2-m3g5-xxv4",
       "message": "Vulnerable package: xstream 1.4.5",
@@ -1687,7 +1687,7 @@
       ]
     },
     {
-      "id": "bf969adb-2ba5-4ddd-96d4-67f9aa79e502",
+      "id": "c035943b-6841-4b99-9146-0d28629c37de",
       "category": "sast",
       "name": "Dependency: xstream - GHSA-2q8x-2p7f-574v",
       "message": "Vulnerable package: xstream 1.4.5",
@@ -1724,7 +1724,7 @@
       ]
     },
     {
-      "id": "aaf60334-475f-461f-8347-69f192c23700",
+      "id": "e660d312-0347-4722-81f4-8cf0f259b031",
       "category": "sast",
       "name": "Dependency: xstream - GHSA-6w62-hx7r-mw68",
       "message": "Vulnerable package: xstream 1.4.5",
@@ -1761,7 +1761,7 @@
       ]
     },
     {
-      "id": "00a83a24-3d43-4aea-b339-7b586335a354",
+      "id": "2055c6a0-b219-4e43-b539-0660edf46e25",
       "category": "sast",
       "name": "Dependency: xstream - GHSA-h7v4-7xg3-hxcc",
       "message": "Vulnerable package: xstream 1.4.5",
@@ -1798,7 +1798,7 @@
       ]
     },
     {
-      "id": "c814f0fc-1a9b-41ec-bd3e-6189d4c554ee",
+      "id": "bb21f48c-c2ef-4092-8db3-637247b2f91b",
       "category": "sast",
       "name": "Dependency: xstream - GHSA-qrx8-8545-4wg2",
       "message": "Vulnerable package: xstream 1.4.5",
@@ -1835,7 +1835,7 @@
       ]
     },
     {
-      "id": "2f6212e0-f334-45b5-b5c2-30e64c4860c8",
+      "id": "d65b4194-028c-452c-a087-511127a3fa80",
       "category": "sast",
       "name": "Dependency: xstream - GHSA-8jrj-525p-826v",
       "message": "Vulnerable package: xstream 1.4.5",
@@ -1872,7 +1872,7 @@
       ]
     },
     {
-      "id": "cb55f4d8-25a9-4d55-9205-2e3b816be0ff",
+      "id": "2297cce6-d81f-44c2-9aa6-ed12f2496764",
       "category": "sast",
       "name": "Dependency: xstream - GHSA-hvv8-336g-rx3m",
       "message": "Vulnerable package: xstream 1.4.5",
@@ -1909,7 +1909,7 @@
       ]
     },
     {
-      "id": "8e2b158f-9d84-4e7b-b8cf-704451e783c6",
+      "id": "7dd8aefd-59ca-4d6d-bf63-ab3f1d21037a",
       "category": "sast",
       "name": "Dependency: xstream - GHSA-74cv-f58x-f9wf",
       "message": "Vulnerable package: xstream 1.4.5",
@@ -1946,7 +1946,7 @@
       ]
     },
     {
-      "id": "45951c4c-b016-4e5a-aeb6-7004d350c451",
+      "id": "fe2e7d61-81db-472c-9133-5383ddf79197",
       "category": "sast",
       "name": "Dependency: jose4j - GHSA-6qvw-249j-h44c",
       "message": "Vulnerable package: jose4j 0.9.3",
@@ -1983,7 +1983,7 @@
       ]
     },
     {
-      "id": "11866f31-4049-48f7-b6a7-6072c071e8fe",
+      "id": "edec2d1c-fd6a-4248-be85-03c605ef0c05",
       "category": "sast",
       "name": "Dependency: xstream - GHSA-hfq9-hggm-c56q",
       "message": "Vulnerable package: xstream 1.4.5",
@@ -2020,7 +2020,7 @@
       ]
     },
     {
-      "id": "5f16f3b2-4aca-4e16-9468-8f2b6efb117f",
+      "id": "cfaf1008-1f61-45de-863e-2657f6e7c9b5",
       "category": "sast",
       "name": "Dependency: xstream - GHSA-f8cc-g7j8-xxpm",
       "message": "Vulnerable package: xstream 1.4.5",
@@ -2057,7 +2057,7 @@
       ]
     },
     {
-      "id": "6489ff84-7206-4bcc-ac87-741b521f7528",
+      "id": "45b5152c-8663-4ad3-b1a7-8ca2126e37b5",
       "category": "sast",
       "name": "Dependency: xstream - GHSA-56p8-3fh9-4cvq",
       "message": "Vulnerable package: xstream 1.4.5",
@@ -2094,7 +2094,7 @@
       ]
     },
     {
-      "id": "d39c00d0-a8d7-4c68-a419-a3db3deb245c",
+      "id": "25443186-b4b3-42e4-8a53-c8a38bb38645",
       "category": "sast",
       "name": "Dependency: xstream - GHSA-6wf9-jmg9-vxcc",
       "message": "Vulnerable package: xstream 1.4.5",
@@ -2131,7 +2131,7 @@
       ]
     },
     {
-      "id": "3910d39d-4bff-4c34-8aaf-22214307df0c",
+      "id": "44e7e577-e184-4c4e-989e-ccb47f647b02",
       "category": "sast",
       "name": "Dependency: jose4j - GHSA-3677-xxcr-wjqv",
       "message": "Vulnerable package: jose4j 0.9.3",
@@ -2172,5 +2172,5 @@
   "project_name": "webgoat",
   "project_path": "ez-appsec/webgoat",
   "github_url": "https://github.com/ez-appsec/webgoat",
-  "scan_date": "2026-04-14T03:21:07Z"
+  "scan_date": "2026-04-14T03:27:52Z"
 }

@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-14T03:25:52.222549Z",
+  "last_updated": "2026-04-14T03:27:53.447311Z",
   "projects": [
     {
       "slug": "bwapp",
@@ -52,7 +52,7 @@
       "path": "vulnerabilities/webgoat.json",
       "project_path": "ez-appsec/webgoat",
       "github_url": "https://github.com/ez-appsec/webgoat",
-      "last_updated": "2026-04-14T03:21:07Z",
+      "last_updated": "2026-04-14T03:27:52Z",
       "summary": {
         "total": 57,
         "critical": 1,
