@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-14T03:22:14.276553Z",
+  "last_updated": "2026-04-14T03:22:46.847445Z",
   "projects": [
     {
       "slug": "bwapp",
@@ -37,7 +37,7 @@
       "path": "vulnerabilities/juice-shop-public.json",
       "project_path": "ez-appsec/juice-shop-public",
       "github_url": "https://github.com/ez-appsec/juice-shop-public",
-      "last_updated": "2026-04-11T17:47:27Z",
+      "last_updated": "2026-04-14T03:22:46Z",
       "summary": {
         "total": 127,
         "critical": 9,
