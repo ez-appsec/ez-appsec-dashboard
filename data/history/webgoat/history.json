@@ -518,5 +518,13 @@
     "high": 24,
     "medium": 19,
     "low": 13
+  },
+  {
+    "date": "2026-07-12T07:30:23Z",
+    "total": 57,
+    "critical": 1,
+    "high": 24,
+    "medium": 19,
+    "low": 13
   }
 ]
