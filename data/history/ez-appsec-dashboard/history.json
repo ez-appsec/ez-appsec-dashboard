@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-07-12T09:07:44Z",
-    "total": 1,
-    "critical": 0,
-    "high": 0,
-    "medium": 0,
-    "low": 1
-  },
-  {
     "date": "2026-07-12T09:09:49Z",
     "total": 1,
     "critical": 0,
@@ -713,6 +705,14 @@
   },
   {
     "date": "2026-07-12T12:04:36Z",
+    "total": 1,
+    "critical": 0,
+    "high": 0,
+    "medium": 0,
+    "low": 1
+  },
+  {
+    "date": "2026-07-12T12:06:39Z",
     "total": 1,
     "critical": 0,
     "high": 0,
