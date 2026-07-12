@@ -710,5 +710,13 @@
     "high": 1,
     "medium": 1,
     "low": 2
+  },
+  {
+    "date": "2026-04-14T03:25:51Z",
+    "total": 4,
+    "critical": 0,
+    "high": 1,
+    "medium": 1,
+    "low": 2
   }
 ]
