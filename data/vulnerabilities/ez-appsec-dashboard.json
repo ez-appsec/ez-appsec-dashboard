@@ -2,7 +2,7 @@
   "version": "15.0.0",
   "vulnerabilities": [
     {
-      "id": "3c8af603-4398-4aac-ba3a-846f7d84cdd2",
+      "id": "21fdb97f69253ffd3a835d1875938cce5484108ff5e01b078886f4c94a49c249",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
@@ -16,19 +16,9 @@
         "name": "KICS"
       },
       "location": {
-        "file": {
-          "file_name": ".github/workflows/ez-appsec-scan.yml",
-          "similarity_id": "54185de07246620d4930c1866f394a7c41ab5455e071d4641fe198b78d0bd0a0",
-          "line": 96,
-          "issue_type": "IncorrectValue",
-          "search_key": "uses={{github/codeql-action/upload-sarif@v3}}",
-          "search_line": 96,
-          "search_value": "",
-          "expected_value": "Action pinned to a full length commit SHA.",
-          "actual_value": "Action is not pinned to a full length commit SHA."
-        },
-        "start_line": 1,
-        "end_line": 1,
+        "file": ".github/workflows/ez-appsec-scan.yml",
+        "start_line": 96,
+        "end_line": 96,
         "class": "iac",
         "method": "unknown"
       },
@@ -39,12 +29,14 @@
           "value": "unknown"
         }
       ],
-      "links": []
+      "links": [],
+      "category_v2": "iac"
     }
   ],
   "remediations": [],
+  "suppressed_count": 0,
   "project_name": "ez-appsec-dashboard",
   "project_path": "ez-appsec/ez-appsec-dashboard",
   "github_url": "https://github.com/ez-appsec/ez-appsec-dashboard",
-  "scan_date": "2026-04-14T21:36:37Z"
+  "scan_date": "2026-07-12T07:32:31Z"
 }
