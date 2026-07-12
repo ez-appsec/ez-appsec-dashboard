@@ -2,7 +2,7 @@
   "version": "15.0.0",
   "vulnerabilities": [
     {
-      "id": "f5c9eb91-07ee-4a7e-a1fd-502e63b4d5d7",
+      "id": "0cda03d8a913dd5622c5e5a0ed78a12ab0333443360381f18c68585a65888cfc",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Always set a user in the runtime stage of your Dockerfile. Without it, the container defaults to root, even if earlier build stages define a user.",
@@ -16,19 +16,9 @@
         "name": "KICS"
       },
       "location": {
-        "file": {
-          "file_name": "Dockerfile_desktop",
-          "similarity_id": "531bf8e9771fc9a38b866afcdc86e10dd80487262d98baf44f82522516f4db9e",
-          "line": 31,
-          "issue_type": "MissingAttribute",
-          "search_key": "FROM={{lscr.io/linuxserver/webtop:ubuntu-xfce}}",
-          "search_line": -1,
-          "search_value": "",
-          "expected_value": "The 'Dockerfile' should contain the 'USER' instruction",
-          "actual_value": "The 'Dockerfile' does not contain any 'USER' instruction"
-        },
-        "start_line": 1,
-        "end_line": 1,
+        "file": "Dockerfile_desktop",
+        "start_line": 31,
+        "end_line": 31,
         "class": "iac",
         "method": "unknown"
       },
@@ -39,10 +29,11 @@
           "value": "unknown"
         }
       ],
-      "links": []
+      "links": [],
+      "category_v2": "iac"
     },
     {
-      "id": "4f417c61-cc70-40b1-a7d9-dd3a80eae531",
+      "id": "87c91e4ba9f60d8e81e1d9932b32f4fe5fcd0b3caf7f611dcb68e6c2dcda4bda",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "When installing a package, its pin version should be defined",
@@ -56,19 +47,9 @@
         "name": "KICS"
       },
       "location": {
-        "file": {
-          "file_name": "Dockerfile_desktop",
-          "similarity_id": "4b701b21f93e5ea8ff1263b0c35f07e9c3e4c2b35857ebe7dd5d2bbe8864b77f",
-          "line": 46,
-          "issue_type": "MissingAttribute",
-          "search_key": "FROM={{lscr.io/linuxserver/webtop:ubuntu-xfce}}.RUN={{apt-get update   && apt-get --yes install --no-install-recommends vim nano gzip   && rm -rf /var/lib/apt/lists/*}}",
-          "search_line": -1,
-          "search_value": "vim",
-          "expected_value": "Package 'vim' has version defined",
-          "actual_value": "Package 'vim' does not have version defined"
-        },
-        "start_line": 1,
-        "end_line": 1,
+        "file": "Dockerfile_desktop",
+        "start_line": 46,
+        "end_line": 46,
         "class": "iac",
         "method": "unknown"
       },
@@ -79,10 +60,11 @@
           "value": "unknown"
         }
       ],
-      "links": []
+      "links": [],
+      "category_v2": "iac"
     },
     {
-      "id": "055fdf14-0483-45c8-b5a8-d78371158034",
+      "id": "87c91e4ba9f60d8e81e1d9932b32f4fe5fcd0b3caf7f611dcb68e6c2dcda4bda",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "When installing a package, its pin version should be defined",
@@ -96,19 +78,9 @@
         "name": "KICS"
       },
       "location": {
-        "file": {
-          "file_name": "Dockerfile_desktop",
-          "similarity_id": "b3d7be49c32abfc65d375296dce06a5090a8a7eb7d5bcb45442f73ee5c5c8192",
-          "line": 46,
-          "issue_type": "MissingAttribute",
-          "search_key": "FROM={{lscr.io/linuxserver/webtop:ubuntu-xfce}}.RUN={{apt-get update   && apt-get --yes install --no-install-recommends vim nano gzip   && rm -rf /var/lib/apt/lists/*}}",
-          "search_line": -1,
-          "search_value": "gzip",
-          "expected_value": "Package 'gzip' has version defined",
-          "actual_value": "Package 'gzip' does not have version defined"
-        },
-        "start_line": 1,
-        "end_line": 1,
+        "file": "Dockerfile_desktop",
+        "start_line": 46,
+        "end_line": 46,
         "class": "iac",
         "method": "unknown"
       },
@@ -119,10 +91,11 @@
           "value": "unknown"
         }
       ],
-      "links": []
+      "links": [],
+      "category_v2": "iac"
     },
     {
-      "id": "41431fce-9d4b-49cb-9374-e4d23da06b89",
+      "id": "87c91e4ba9f60d8e81e1d9932b32f4fe5fcd0b3caf7f611dcb68e6c2dcda4bda",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "When installing a package, its pin version should be defined",
@@ -136,19 +109,9 @@
         "name": "KICS"
       },
       "location": {
-        "file": {
-          "file_name": "Dockerfile_desktop",
-          "similarity_id": "b04efd564fb6ba76c145b9885e3a7df8c56ed3059fb6fa67f35773327b65bfa8",
-          "line": 46,
-          "issue_type": "MissingAttribute",
-          "search_key": "FROM={{lscr.io/linuxserver/webtop:ubuntu-xfce}}.RUN={{apt-get update   && apt-get --yes install --no-install-recommends vim nano gzip   && rm -rf /var/lib/apt/lists/*}}",
-          "search_line": -1,
-          "search_value": "nano",
-          "expected_value": "Package 'nano' has version defined",
-          "actual_value": "Package 'nano' does not have version defined"
-        },
-        "start_line": 1,
-        "end_line": 1,
+        "file": "Dockerfile_desktop",
+        "start_line": 46,
+        "end_line": 46,
         "class": "iac",
         "method": "unknown"
       },
@@ -159,10 +122,11 @@
           "value": "unknown"
         }
       ],
-      "links": []
+      "links": [],
+      "category_v2": "iac"
     },
     {
-      "id": "80388c91-fa45-4ab0-be2c-02c28004dcb1",
+      "id": "26c08629f8227dd223e882a14857c9ff55cb03b93fe0a2faa713517bd2f6810c",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Package version pinning reduces the range of versions that can be installed, reducing the chances of failure due to unanticipated changes",
@@ -176,19 +140,9 @@
         "name": "KICS"
       },
       "location": {
-        "file": {
-          "file_name": "Dockerfile_desktop",
-          "similarity_id": "58a43509a9a06cfd2e23f7bca192284d4cf538ea5e042510093f46ebffe26740",
-          "line": 4,
-          "issue_type": "IncorrectValue",
-          "search_key": "FROM={{alpine:3.22 AS zap}}.{{RUN apk add --no-cache curl tar   && set -eux;      curl -sSL \"https://github.com/zaproxy/zaproxy/releases/download/v${ZAP_VERSION}/ZAP_${ZAP_VERSION}_Linux.tar.gz\" -o /tmp/zap.tgz;      mkdir -p /zap;      tar -xzf /tmp/zap.tgz -C /zap --strip-components=1;      rm -f /tmp/zap.tgz}}",
-          "search_line": -1,
-          "search_value": "",
-          "expected_value": "RUN instruction with 'apk add <package>' should use package pinning form 'apk add <package>=<version>'",
-          "actual_value": "RUN instruction apk add --no-cache curl tar   && set -eux;      curl -sSL \"https://github.com/zaproxy/zaproxy/releases/download/v2.16.1/ZAP_${ZAP_VERSION}_Linux.tar.gz\" -o /tmp/zap.tgz;      mkdir -p /zap;      tar -xzf /tmp/zap.tgz -C /zap --strip-components=1;      rm -f /tmp/zap.tgz does not use package pinning form"
-        },
-        "start_line": 1,
-        "end_line": 1,
+        "file": "Dockerfile_desktop",
+        "start_line": 16,
+        "end_line": 16,
         "class": "iac",
         "method": "unknown"
       },
@@ -199,10 +153,11 @@
           "value": "unknown"
         }
       ],
-      "links": []
+      "links": [],
+      "category_v2": "iac"
     },
     {
-      "id": "597786bc-41c2-4483-8cd4-ec27962d5084",
+      "id": "a79a42439f5c860b4190194439d2e105bef5ea230a3a661319e2325c07ceeca5",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Package version pinning reduces the range of versions that can be installed, reducing the chances of failure due to unanticipated changes",
@@ -216,19 +171,9 @@
         "name": "KICS"
       },
       "location": {
-        "file": {
-          "file_name": "Dockerfile_desktop",
-          "similarity_id": "379238df3cc7c704f0f7ff43f5e9aefbc8726f07163f8ebdc213696a841b293f",
-          "line": 16,
-          "issue_type": "IncorrectValue",
-          "search_key": "FROM={{alpine:3.22 AS jre}}.{{RUN apk add --no-cache curl tar   && set -eux;      case \"${TARGETARCH}\" in        amd64) ARCH=x64 ;;        arm64) ARCH=aarch64 ;;        *) echo \"Unsupported architecture: ${TARGETARCH}\" >&2; exit 1 ;;      esac;      JAVA_ENC=\"${JAVA_FULL//+/%2B}\";      JAVA_FILE=\"${JAVA_FULL//+/_}\";      curl -sSL \"https://github.com/adoptium/temurin${JAVA_MAJOR}-binaries/releases/download/jdk-${JAVA_ENC}/OpenJDK${JAVA_MAJOR}U-jre_${ARCH}_linux_hotspot_${JAVA_FILE}.tar.gz\" -o /tmp/java.tgz;      mkdir -p /jre;      tar -xzf /tmp/java.tgz -C /jre --strip-components=1;      rm -f /tmp/java.tgz}}",
-          "search_line": -1,
-          "search_value": "",
-          "expected_value": "RUN instruction with 'apk add <package>' should use package pinning form 'apk add <package>=<version>'",
-          "actual_value": "RUN instruction apk add --no-cache curl tar   && set -eux;      case \"${TARGETARCH}\" in        amd64) ARCH=x64 ;;        arm64) ARCH=aarch64 ;;        *) echo \"Unsupported architecture: ${TARGETARCH}\" >&2; exit 1 ;;      esac;      JAVA_ENC=\"${JAVA_FULL//+/%2B}\";      JAVA_FILE=\"${JAVA_FULL//+/_}\";      curl -sSL \"https://github.com/adoptium/temurin23-binaries/releases/download/jdk-${JAVA_ENC}/OpenJDK${JAVA_MAJOR}U-jre_${ARCH}_linux_hotspot_${JAVA_FILE}.tar.gz\" -o /tmp/java.tgz;      mkdir -p /jre;      tar -xzf /tmp/java.tgz -C /jre --strip-components=1;      rm -f /tmp/java.tgz does not use package pinning form"
-        },
-        "start_line": 1,
-        "end_line": 1,
+        "file": "Dockerfile_desktop",
+        "start_line": 4,
+        "end_line": 4,
         "class": "iac",
         "method": "unknown"
       },
@@ -239,10 +184,11 @@
           "value": "unknown"
         }
       ],
-      "links": []
+      "links": [],
+      "category_v2": "iac"
     },
     {
-      "id": "49780629-8533-4e6c-9f58-224e550a80f8",
+      "id": "7f1e31200cf9ef28c6107cb3f673d2eed60606c0003593d4da783665ac20c12b",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "It is considered a best practice for every executable in a container to be owned by the root user even if it is executed by a non-root user, only execution permissions are required on the file, not ownership",
@@ -256,19 +202,9 @@
         "name": "KICS"
       },
       "location": {
-        "file": {
-          "file_name": "Dockerfile",
-          "similarity_id": "b19889947205f69fadba699b19b65859e67774ccf04e455c210005e2ca732b2e",
-          "line": 14,
-          "issue_type": "IncorrectValue",
-          "search_key": "FROM={{docker.io/eclipse-temurin:25-jdk-noble}}.{{COPY --chown=webgoat target/webgoat-*.jar /home/webgoat/webgoat.jar}}",
-          "search_line": -1,
-          "search_value": "",
-          "expected_value": "The 'Dockerfile' shouldn\u00b4t contain the 'chown' flag",
-          "actual_value": "The 'Dockerfile' contains the 'chown' flag"
-        },
-        "start_line": 1,
-        "end_line": 1,
+        "file": "Dockerfile",
+        "start_line": 14,
+        "end_line": 14,
         "class": "iac",
         "method": "unknown"
       },
@@ -279,10 +215,11 @@
           "value": "unknown"
         }
       ],
-      "links": []
+      "links": [],
+      "category_v2": "iac"
     },
     {
-      "id": "99dc5f01-d186-4eb1-80ea-297d7cf9b2be",
+      "id": "0cda03d8a913dd5622c5e5a0ed78a12ab0333443360381f18c68585a65888cfc",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Ensure that HEALTHCHECK is being used. The HEALTHCHECK instruction tells Docker how to test a container to check that it is still working",
@@ -296,19 +233,9 @@
         "name": "KICS"
       },
       "location": {
-        "file": {
-          "file_name": "Dockerfile_desktop",
-          "similarity_id": "72a35d879af02b6dd88472f09aa54e2bb255f479d0ed06c7109874c238095f9d",
-          "line": 31,
-          "issue_type": "MissingAttribute",
-          "search_key": "FROM={{lscr.io/linuxserver/webtop:ubuntu-xfce}}",
-          "search_line": -1,
-          "search_value": "",
-          "expected_value": "Dockerfile should contain instruction 'HEALTHCHECK'",
-          "actual_value": "Dockerfile doesn't contain instruction 'HEALTHCHECK'"
-        },
-        "start_line": 1,
-        "end_line": 1,
+        "file": "Dockerfile_desktop",
+        "start_line": 31,
+        "end_line": 31,
         "class": "iac",
         "method": "unknown"
       },
@@ -319,10 +246,11 @@
           "value": "unknown"
         }
       ],
-      "links": []
+      "links": [],
+      "category_v2": "iac"
     },
     {
-      "id": "5c0a5dca-ecaf-43d3-b76c-942d0fa3e9d3",
+      "id": "59e6b696cfa017989fb23937ed033643ff86e083e4653135a1695d9cf98c2a83",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
@@ -336,19 +264,9 @@
         "name": "KICS"
       },
       "location": {
-        "file": {
-          "file_name": ".github/workflows/release.yml",
-          "similarity_id": "715d349a6e3119d3701f2e9c8fadc4808777ba451c9644ba188d36df044d0720",
-          "line": 95,
-          "issue_type": "IncorrectValue",
-          "search_key": "uses={{docker/build-push-action@v6.18.0}}",
-          "search_line": 95,
-          "search_value": "",
-          "expected_value": "Action pinned to a full length commit SHA.",
-          "actual_value": "Action is not pinned to a full length commit SHA."
-        },
-        "start_line": 1,
-        "end_line": 1,
+        "file": ".github/workflows/release.yml",
+        "start_line": 126,
+        "end_line": 126,
         "class": "iac",
         "method": "unknown"
       },
@@ -359,10 +277,11 @@
           "value": "unknown"
         }
       ],
-      "links": []
+      "links": [],
+      "category_v2": "iac"
     },
     {
-      "id": "11fea417-5214-4915-990e-0878df8f0353",
+      "id": "a7611bd13b0480494f326fe45231396e571e57aa58488a728505c37d32b5b060",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
@@ -376,19 +295,9 @@
         "name": "KICS"
       },
       "location": {
-        "file": {
-          "file_name": ".github/workflows/release.yml",
-          "similarity_id": "50c2a2d9ed3030b34840dd893f9758b8a5d160b73c114a1bf5c1164132ab9a3b",
-          "line": 76,
-          "issue_type": "IncorrectValue",
-          "search_key": "uses={{docker/login-action@v3.6.0}}",
-          "search_line": 76,
-          "search_value": "",
-          "expected_value": "Action pinned to a full length commit SHA.",
-          "actual_value": "Action is not pinned to a full length commit SHA."
-        },
-        "start_line": 1,
-        "end_line": 1,
+        "file": ".github/workflows/release.yml",
+        "start_line": 134,
+        "end_line": 134,
         "class": "iac",
         "method": "unknown"
       },
@@ -399,10 +308,11 @@
           "value": "unknown"
         }
       ],
-      "links": []
+      "links": [],
+      "category_v2": "iac"
     },
     {
-      "id": "3789d9a1-f921-4d1a-8b48-f3b38dba2119",
+      "id": "e43cbe9d896453ad81caac4e1f087dbb0b4120482e65c4de3b4068d884372303",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
@@ -416,19 +326,9 @@
         "name": "KICS"
       },
       "location": {
-        "file": {
-          "file_name": ".github/workflows/release.yml",
-          "similarity_id": "e4bba25451393ceb7a22edd3792b7494846bcb89ebffe4450864d0f99f0256c4",
-          "line": 68,
-          "issue_type": "IncorrectValue",
-          "search_key": "uses={{docker/setup-qemu-action@v3.6.0}}",
-          "search_line": 68,
-          "search_value": "",
-          "expected_value": "Action pinned to a full length commit SHA.",
-          "actual_value": "Action is not pinned to a full length commit SHA."
-        },
-        "start_line": 1,
-        "end_line": 1,
+        "file": ".github/workflows/release.yml",
+        "start_line": 68,
+        "end_line": 68,
         "class": "iac",
         "method": "unknown"
       },
@@ -439,10 +339,11 @@
           "value": "unknown"
         }
       ],
-      "links": []
+      "links": [],
+      "category_v2": "iac"
     },
     {
-      "id": "cc039681-49a9-4a92-a78e-e12733739346",
+      "id": "a32286ac2ac4559327c317df0748a950d4d6388fb27741fcb1717b6cbe51597c",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
@@ -456,19 +357,9 @@
         "name": "KICS"
       },
       "location": {
-        "file": {
-          "file_name": ".github/workflows/release.yml",
-          "similarity_id": "55a5a72c7177bf0c7f04c38c78ea8c8dea027a006ab29cf6eee183a64944fa4d",
-          "line": 82,
-          "issue_type": "IncorrectValue",
-          "search_key": "uses={{docker/build-push-action@v6.18.0}}",
-          "search_line": 82,
-          "search_value": "",
-          "expected_value": "Action pinned to a full length commit SHA.",
-          "actual_value": "Action is not pinned to a full length commit SHA."
-        },
-        "start_line": 1,
-        "end_line": 1,
+        "file": ".github/workflows/release.yml",
+        "start_line": 34,
+        "end_line": 34,
         "class": "iac",
         "method": "unknown"
       },
@@ -479,10 +370,11 @@
           "value": "unknown"
         }
       ],
-      "links": []
+      "links": [],
+      "category_v2": "iac"
     },
     {
-      "id": "b26c531f-caae-43f0-be52-84c2d34357c2",
+      "id": "7c19f17c35c0737c0cda9865f73810b9850b39a958efd1e2e04ce3f99d78db87",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
@@ -496,19 +388,9 @@
         "name": "KICS"
       },
       "location": {
-        "file": {
-          "file_name": ".github/workflows/release.yml",
-          "similarity_id": "f2db909c68b6006ef8c7cedc45968bbcb699b50099d8a3275d74ab5a80298b96",
-          "line": 34,
-          "issue_type": "IncorrectValue",
-          "search_key": "uses={{softprops/action-gh-release@v1}}",
-          "search_line": 34,
-          "search_value": "",
-          "expected_value": "Action pinned to a full length commit SHA.",
-          "actual_value": "Action is not pinned to a full length commit SHA."
-        },
-        "start_line": 1,
-        "end_line": 1,
+        "file": ".github/workflows/build.yml",
+        "start_line": 29,
+        "end_line": 29,
         "class": "iac",
         "method": "unknown"
       },
@@ -519,10 +401,11 @@
           "value": "unknown"
         }
       ],
-      "links": []
+      "links": [],
+      "category_v2": "iac"
     },
     {
-      "id": "2582c8bc-0e5b-4f13-90d1-e7af2408ef78",
+      "id": "1cece619661b963fcecc59a197066d1c2c1107d7ca7dc261abcc909b9e283784",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
@@ -536,19 +419,9 @@
         "name": "KICS"
       },
       "location": {
-        "file": {
-          "file_name": ".github/workflows/release.yml",
-          "similarity_id": "70d6aaa266225a1cbf8ad9503d919c0f64c3f5e7dbdda9c55f459f96601b0354",
-          "line": 134,
-          "issue_type": "IncorrectValue",
-          "search_key": "uses={{devops-infra/action-pull-request@v1.0.2}}",
-          "search_line": 134,
-          "search_value": "",
-          "expected_value": "Action pinned to a full length commit SHA.",
-          "actual_value": "Action is not pinned to a full length commit SHA."
-        },
-        "start_line": 1,
-        "end_line": 1,
+        "file": ".github/workflows/release.yml",
+        "start_line": 82,
+        "end_line": 82,
         "class": "iac",
         "method": "unknown"
       },
@@ -559,10 +432,11 @@
           "value": "unknown"
         }
       ],
-      "links": []
+      "links": [],
+      "category_v2": "iac"
     },
     {
-      "id": "4713f9f2-5f36-45b5-ae5c-ca20db08d212",
+      "id": "e904c8cb36b71dabaf5391da74db2f1ecb1432e97107d892e007545296c37be1",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
@@ -576,19 +450,9 @@
         "name": "KICS"
       },
       "location": {
-        "file": {
-          "file_name": ".github/workflows/release.yml",
-          "similarity_id": "3eb7be1080cb9e47de4c8d4dbdc0cdc2b98d3cdfff7c108e7cb81d6b9a43ba08",
-          "line": 73,
-          "issue_type": "IncorrectValue",
-          "search_key": "uses={{docker/setup-buildx-action@v3}}",
-          "search_line": 73,
-          "search_value": "",
-          "expected_value": "Action pinned to a full length commit SHA.",
-          "actual_value": "Action is not pinned to a full length commit SHA."
-        },
-        "start_line": 1,
-        "end_line": 1,
+        "file": ".github/workflows/release.yml",
+        "start_line": 76,
+        "end_line": 76,
         "class": "iac",
         "method": "unknown"
       },
@@ -599,10 +463,11 @@
           "value": "unknown"
         }
       ],
-      "links": []
+      "links": [],
+      "category_v2": "iac"
     },
     {
-      "id": "64ecf384-7240-47f2-8f4c-50be4beefe9c",
+      "id": "5ec094f64f31da82af6e7400f1a7e4ce4ebbf4512819234ef505dbd4055dcfe5",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
@@ -616,19 +481,9 @@
         "name": "KICS"
       },
       "location": {
-        "file": {
-          "file_name": ".github/workflows/build.yml",
-          "similarity_id": "ff4d807014ec82d6009eaf095f808854b7d0531f43dabf84ea395eb05928f482",
-          "line": 31,
-          "issue_type": "IncorrectValue",
-          "search_key": "uses={{pre-commit-ci/lite-action@v1.1.0}}",
-          "search_line": 31,
-          "search_value": "",
-          "expected_value": "Action pinned to a full length commit SHA.",
-          "actual_value": "Action is not pinned to a full length commit SHA."
-        },
-        "start_line": 1,
-        "end_line": 1,
+        "file": ".github/workflows/release.yml",
+        "start_line": 73,
+        "end_line": 73,
         "class": "iac",
         "method": "unknown"
       },
@@ -639,10 +494,11 @@
           "value": "unknown"
         }
       ],
-      "links": []
+      "links": [],
+      "category_v2": "iac"
     },
     {
-      "id": "d4c23142-93bc-4e25-a81d-2fc359d336e4",
+      "id": "41638c0eb7b3cf30e36e5b740819630c1e30606514b756acbd9662d0e41e408a",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
@@ -656,19 +512,9 @@
         "name": "KICS"
       },
       "location": {
-        "file": {
-          "file_name": ".github/workflows/build.yml",
-          "similarity_id": "a6655f071e3a77f1154638c97ce69a4dd208acbdd9fe0b292db27ebd0b49cde4",
-          "line": 29,
-          "issue_type": "IncorrectValue",
-          "search_key": "uses={{pre-commit/action@v3.0.1}}",
-          "search_line": 29,
-          "search_value": "",
-          "expected_value": "Action pinned to a full length commit SHA.",
-          "actual_value": "Action is not pinned to a full length commit SHA."
-        },
-        "start_line": 1,
-        "end_line": 1,
+        "file": ".github/workflows/build.yml",
+        "start_line": 31,
+        "end_line": 31,
         "class": "iac",
         "method": "unknown"
       },
@@ -679,10 +525,11 @@
           "value": "unknown"
         }
       ],
-      "links": []
+      "links": [],
+      "category_v2": "iac"
     },
     {
-      "id": "8da52840-b1f6-4a0b-91b9-d00371c9b96d",
+      "id": "21fdb97f69253ffd3a835d1875938cce5484108ff5e01b078886f4c94a49c249",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
@@ -696,19 +543,9 @@
         "name": "KICS"
       },
       "location": {
-        "file": {
-          "file_name": ".github/workflows/ez-appsec-scan.yml",
-          "similarity_id": "54185de07246620d4930c1866f394a7c41ab5455e071d4641fe198b78d0bd0a0",
-          "line": 96,
-          "issue_type": "IncorrectValue",
-          "search_key": "uses={{github/codeql-action/upload-sarif@v3}}",
-          "search_line": 96,
-          "search_value": "",
-          "expected_value": "Action pinned to a full length commit SHA.",
-          "actual_value": "Action is not pinned to a full length commit SHA."
-        },
-        "start_line": 1,
-        "end_line": 1,
+        "file": ".github/workflows/ez-appsec-scan.yml",
+        "start_line": 96,
+        "end_line": 96,
         "class": "iac",
         "method": "unknown"
       },
@@ -719,10 +556,11 @@
           "value": "unknown"
         }
       ],
-      "links": []
+      "links": [],
+      "category_v2": "iac"
     },
     {
-      "id": "fe9ee053-e0e6-4347-bd48-53c15600b88e",
+      "id": "3a7abb71113d7f71ba001f610050942f01220bf474edbbba0bfbd96ad7670719",
       "category": "sast",
       "name": "KICS: unknown",
       "message": "Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release. Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. When selecting a SHA, you should verify it is from the action's repository and not a repository fork.",
@@ -736,19 +574,9 @@
         "name": "KICS"
       },
       "location": {
-        "file": {
-          "file_name": ".github/workflows/release.yml",
-          "similarity_id": "7a63a1d581525a7d4b6f0a81841ffb685a00b16a4f74134a5b142311b900c7c7",
-          "line": 126,
-          "issue_type": "IncorrectValue",
-          "search_key": "uses={{devops-infra/action-commit-push@v0.11.4}}",
-          "search_line": 126,
-          "search_value": "",
-          "expected_value": "Action pinned to a full length commit SHA.",
-          "actual_value": "Action is not pinned to a full length commit SHA."
-        },
-        "start_line": 1,
-        "end_line": 1,
+        "file": ".github/workflows/release.yml",
+        "start_line": 95,
+        "end_line": 95,
         "class": "iac",
         "method": "unknown"
       },
@@ -759,10 +587,11 @@
           "value": "unknown"
         }
       ],
-      "links": []
+      "links": [],
+      "category_v2": "iac"
     },
     {
-      "id": "d1e78cc4-145b-4035-8d7f-2f8a9506a55c",
+      "id": "260e5174fb5ed4f83b2e28bba2ec35e5f46108acc5d517a9721128c23d1fdced",
       "category": "sast",
       "name": "Dependency: xstream - GHSA-j9h8-phrw-h4fh",
       "message": "Vulnerable package: xstream 1.4.5",
@@ -796,417 +625,11 @@
         {
           "url": "https://github.com/advisories/GHSA-j9h8-phrw-h4fh"
         }
-      ]
-    },
-    {
-      "id": "c82ccd0c-c279-42bc-8bf3-58a5760e9690",
-      "category": "sast",
-      "name": "Dependency: xstream - GHSA-mw36-7c6c-q4q2",
-      "message": "Vulnerable package: xstream 1.4.5",
-      "description": "XStream can be used for Remote Code Execution",
-      "cve": "",
-      "severity": "high",
-      "confidence": "high",
-      "solution": "Update xstream to a version that fixes GHSA-mw36-7c6c-q4q2.",
-      "scanner": {
-        "id": "grype",
-        "name": "Grype"
-      },
-      "location": {
-        "file": "dependency",
-        "dependency": {
-          "package": {
-            "name": "xstream"
-          },
-          "version": "1.4.5"
-        }
-      },
-      "identifiers": [
-        {
-          "type": "cve",
-          "name": "GHSA-mw36-7c6c-q4q2",
-          "value": "GHSA-mw36-7c6c-q4q2",
-          "url": "https://github.com/advisories/GHSA-mw36-7c6c-q4q2"
-        }
       ],
-      "links": [
-        {
-          "url": "https://github.com/advisories/GHSA-mw36-7c6c-q4q2"
-        }
-      ]
+      "category_v2": "dependency"
     },
     {
-      "id": "236846ab-8087-4800-8706-5b01416155e4",
-      "category": "sast",
-      "name": "Dependency: xstream - GHSA-7chv-rrw6-w6fc",
-      "message": "Vulnerable package: xstream 1.4.5",
-      "description": "XStream is vulnerable to a Remote Command Execution attack",
-      "cve": "",
-      "severity": "high",
-      "confidence": "high",
-      "solution": "Update xstream to a version that fixes GHSA-7chv-rrw6-w6fc.",
-      "scanner": {
-        "id": "grype",
-        "name": "Grype"
-      },
-      "location": {
-        "file": "dependency",
-        "dependency": {
-          "package": {
-            "name": "xstream"
-          },
-          "version": "1.4.5"
-        }
-      },
-      "identifiers": [
-        {
-          "type": "cve",
-          "name": "GHSA-7chv-rrw6-w6fc",
-          "value": "GHSA-7chv-rrw6-w6fc",
-          "url": "https://github.com/advisories/GHSA-7chv-rrw6-w6fc"
-        }
-      ],
-      "links": [
-        {
-          "url": "https://github.com/advisories/GHSA-7chv-rrw6-w6fc"
-        }
-      ]
-    },
-    {
-      "id": "b629f0a8-876e-4b32-9b3f-943623798f33",
-      "category": "sast",
-      "name": "Dependency: xstream - GHSA-g5w6-mrj7-75h2",
-      "message": "Vulnerable package: xstream 1.4.5",
-      "description": "XStream is vulnerable to an Arbitrary Code Execution attack",
-      "cve": "",
-      "severity": "high",
-      "confidence": "high",
-      "solution": "Update xstream to a version that fixes GHSA-g5w6-mrj7-75h2.",
-      "scanner": {
-        "id": "grype",
-        "name": "Grype"
-      },
-      "location": {
-        "file": "dependency",
-        "dependency": {
-          "package": {
-            "name": "xstream"
-          },
-          "version": "1.4.5"
-        }
-      },
-      "identifiers": [
-        {
-          "type": "cve",
-          "name": "GHSA-g5w6-mrj7-75h2",
-          "value": "GHSA-g5w6-mrj7-75h2",
-          "url": "https://github.com/advisories/GHSA-g5w6-mrj7-75h2"
-        }
-      ],
-      "links": [
-        {
-          "url": "https://github.com/advisories/GHSA-g5w6-mrj7-75h2"
-        }
-      ]
-    },
-    {
-      "id": "3728ac43-ee4a-4ba5-847f-45e89889d4a1",
-      "category": "sast",
-      "name": "Dependency: xstream - GHSA-4cch-wxpw-8p28",
-      "message": "Vulnerable package: xstream 1.4.5",
-      "description": "Server-Side Forgery Request can be activated unmarshalling with XStream",
-      "cve": "",
-      "severity": "medium",
-      "confidence": "high",
-      "solution": "Update xstream to a version that fixes GHSA-4cch-wxpw-8p28.",
-      "scanner": {
-        "id": "grype",
-        "name": "Grype"
-      },
-      "location": {
-        "file": "dependency",
-        "dependency": {
-          "package": {
-            "name": "xstream"
-          },
-          "version": "1.4.5"
-        }
-      },
-      "identifiers": [
-        {
-          "type": "cve",
-          "name": "GHSA-4cch-wxpw-8p28",
-          "value": "GHSA-4cch-wxpw-8p28",
-          "url": "https://github.com/advisories/GHSA-4cch-wxpw-8p28"
-        }
-      ],
-      "links": [
-        {
-          "url": "https://github.com/advisories/GHSA-4cch-wxpw-8p28"
-        }
-      ]
-    },
-    {
-      "id": "0d36965f-d088-47a4-b475-c5894e53a0a7",
-      "category": "sast",
-      "name": "Dependency: xstream - GHSA-jfvx-7wrx-43fh",
-      "message": "Vulnerable package: xstream 1.4.5",
-      "description": "XStream vulnerable to an Arbitrary File Deletion on the local host when unmarshalling",
-      "cve": "",
-      "severity": "medium",
-      "confidence": "high",
-      "solution": "Update xstream to a version that fixes GHSA-jfvx-7wrx-43fh.",
-      "scanner": {
-        "id": "grype",
-        "name": "Grype"
-      },
-      "location": {
-        "file": "dependency",
-        "dependency": {
-          "package": {
-            "name": "xstream"
-          },
-          "version": "1.4.5"
-        }
-      },
-      "identifiers": [
-        {
-          "type": "cve",
-          "name": "GHSA-jfvx-7wrx-43fh",
-          "value": "GHSA-jfvx-7wrx-43fh",
-          "url": "https://github.com/advisories/GHSA-jfvx-7wrx-43fh"
-        }
-      ],
-      "links": [
-        {
-          "url": "https://github.com/advisories/GHSA-jfvx-7wrx-43fh"
-        }
-      ]
-    },
-    {
-      "id": "1e806cc9-b0ea-4d5a-b940-1a8dab6e979f",
-      "category": "sast",
-      "name": "Dependency: xstream - GHSA-xw4p-crpj-vjx2",
-      "message": "Vulnerable package: xstream 1.4.5",
-      "description": "A Server-Side Forgery Request can be activated unmarshalling with XStream to access data streams from an arbitrary URL referencing a resource in an intranet or the local host",
-      "cve": "",
-      "severity": "high",
-      "confidence": "high",
-      "solution": "Update xstream to a version that fixes GHSA-xw4p-crpj-vjx2.",
-      "scanner": {
-        "id": "grype",
-        "name": "Grype"
-      },
-      "location": {
-        "file": "dependency",
-        "dependency": {
-          "package": {
-            "name": "xstream"
-          },
-          "version": "1.4.5"
-        }
-      },
-      "identifiers": [
-        {
-          "type": "cve",
-          "name": "GHSA-xw4p-crpj-vjx2",
-          "value": "GHSA-xw4p-crpj-vjx2",
-          "url": "https://github.com/advisories/GHSA-xw4p-crpj-vjx2"
-        }
-      ],
-      "links": [
-        {
-          "url": "https://github.com/advisories/GHSA-xw4p-crpj-vjx2"
-        }
-      ]
-    },
-    {
-      "id": "6d367d81-3424-4da9-aaa1-d98e6b01d211",
-      "category": "sast",
-      "name": "Dependency: xstream - GHSA-hrcp-8f3q-4w2c",
-      "message": "Vulnerable package: xstream 1.4.5",
-      "description": "XStream is vulnerable to an Arbitrary Code Execution attack",
-      "cve": "",
-      "severity": "medium",
-      "confidence": "high",
-      "solution": "Update xstream to a version that fixes GHSA-hrcp-8f3q-4w2c.",
-      "scanner": {
-        "id": "grype",
-        "name": "Grype"
-      },
-      "location": {
-        "file": "dependency",
-        "dependency": {
-          "package": {
-            "name": "xstream"
-          },
-          "version": "1.4.5"
-        }
-      },
-      "identifiers": [
-        {
-          "type": "cve",
-          "name": "GHSA-hrcp-8f3q-4w2c",
-          "value": "GHSA-hrcp-8f3q-4w2c",
-          "url": "https://github.com/advisories/GHSA-hrcp-8f3q-4w2c"
-        }
-      ],
-      "links": [
-        {
-          "url": "https://github.com/advisories/GHSA-hrcp-8f3q-4w2c"
-        }
-      ]
-    },
-    {
-      "id": "c132ad9b-35b9-47fa-958e-636c73dfe32d",
-      "category": "sast",
-      "name": "Dependency: xstream - GHSA-hwpc-8xqv-jvj4",
-      "message": "Vulnerable package: xstream 1.4.5",
-      "description": "XStream is vulnerable to a Remote Command Execution attack",
-      "cve": "",
-      "severity": "medium",
-      "confidence": "high",
-      "solution": "Update xstream to a version that fixes GHSA-hwpc-8xqv-jvj4.",
-      "scanner": {
-        "id": "grype",
-        "name": "Grype"
-      },
-      "location": {
-        "file": "dependency",
-        "dependency": {
-          "package": {
-            "name": "xstream"
-          },
-          "version": "1.4.5"
-        }
-      },
-      "identifiers": [
-        {
-          "type": "cve",
-          "name": "GHSA-hwpc-8xqv-jvj4",
-          "value": "GHSA-hwpc-8xqv-jvj4",
-          "url": "https://github.com/advisories/GHSA-hwpc-8xqv-jvj4"
-        }
-      ],
-      "links": [
-        {
-          "url": "https://github.com/advisories/GHSA-hwpc-8xqv-jvj4"
-        }
-      ]
-    },
-    {
-      "id": "5c535faf-ca0f-43a8-949b-3ba1db3df20b",
-      "category": "sast",
-      "name": "Dependency: xstream - GHSA-p8pq-r894-fm8f",
-      "message": "Vulnerable package: xstream 1.4.5",
-      "description": "XStream is vulnerable to an Arbitrary Code Execution attack",
-      "cve": "",
-      "severity": "high",
-      "confidence": "high",
-      "solution": "Update xstream to a version that fixes GHSA-p8pq-r894-fm8f.",
-      "scanner": {
-        "id": "grype",
-        "name": "Grype"
-      },
-      "location": {
-        "file": "dependency",
-        "dependency": {
-          "package": {
-            "name": "xstream"
-          },
-          "version": "1.4.5"
-        }
-      },
-      "identifiers": [
-        {
-          "type": "cve",
-          "name": "GHSA-p8pq-r894-fm8f",
-          "value": "GHSA-p8pq-r894-fm8f",
-          "url": "https://github.com/advisories/GHSA-p8pq-r894-fm8f"
-        }
-      ],
-      "links": [
-        {
-          "url": "https://github.com/advisories/GHSA-p8pq-r894-fm8f"
-        }
-      ]
-    },
-    {
-      "id": "70f0b65c-8156-43b8-9689-0c740297cd47",
-      "category": "sast",
-      "name": "Dependency: xstream - GHSA-2p3x-qw9c-25hh",
-      "message": "Vulnerable package: xstream 1.4.5",
-      "description": "XStream can cause a Denial of Service.",
-      "cve": "",
-      "severity": "high",
-      "confidence": "high",
-      "solution": "Update xstream to a version that fixes GHSA-2p3x-qw9c-25hh.",
-      "scanner": {
-        "id": "grype",
-        "name": "Grype"
-      },
-      "location": {
-        "file": "dependency",
-        "dependency": {
-          "package": {
-            "name": "xstream"
-          },
-          "version": "1.4.5"
-        }
-      },
-      "identifiers": [
-        {
-          "type": "cve",
-          "name": "GHSA-2p3x-qw9c-25hh",
-          "value": "GHSA-2p3x-qw9c-25hh",
-          "url": "https://github.com/advisories/GHSA-2p3x-qw9c-25hh"
-        }
-      ],
-      "links": [
-        {
-          "url": "https://github.com/advisories/GHSA-2p3x-qw9c-25hh"
-        }
-      ]
-    },
-    {
-      "id": "b92dd402-f644-4bdb-84cf-8deb5bb238d4",
-      "category": "sast",
-      "name": "Dependency: xstream - GHSA-59jw-jqf4-3wq3",
-      "message": "Vulnerable package: xstream 1.4.5",
-      "description": "XStream is vulnerable to an Arbitrary Code Execution attack",
-      "cve": "",
-      "severity": "medium",
-      "confidence": "high",
-      "solution": "Update xstream to a version that fixes GHSA-59jw-jqf4-3wq3.",
-      "scanner": {
-        "id": "grype",
-        "name": "Grype"
-      },
-      "location": {
-        "file": "dependency",
-        "dependency": {
-          "package": {
-            "name": "xstream"
-          },
-          "version": "1.4.5"
-        }
-      },
-      "identifiers": [
-        {
-          "type": "cve",
-          "name": "GHSA-59jw-jqf4-3wq3",
-          "value": "GHSA-59jw-jqf4-3wq3",
-          "url": "https://github.com/advisories/GHSA-59jw-jqf4-3wq3"
-        }
-      ],
-      "links": [
-        {
-          "url": "https://github.com/advisories/GHSA-59jw-jqf4-3wq3"
-        }
-      ]
-    },
-    {
-      "id": "2b766730-31fc-4f97-b373-609fd0793b6e",
+      "id": "5fe285f63da7df6c5ee77c10c128c7d8f6ce3fdf3b9e2d119eadb0a5c6b361d7",
       "category": "sast",
       "name": "Dependency: xstream - GHSA-f554-x222-wgf7",
       "message": "Vulnerable package: xstream 1.4.5",
@@ -1240,18 +663,209 @@
         {
           "url": "https://github.com/advisories/GHSA-f554-x222-wgf7"
         }
-      ]
+      ],
+      "category_v2": "dependency"
     },
     {
-      "id": "81d3a04c-4bd7-45ec-b392-396476b4b0b5",
+      "id": "0e9767d6a1193557c07017bfbe8324730544c416a3f68054874bb965c5be2cd4",
       "category": "sast",
-      "name": "Dependency: xstream - GHSA-43gc-mjxg-gvrq",
+      "name": "Dependency: xstream - GHSA-mw36-7c6c-q4q2",
+      "message": "Vulnerable package: xstream 1.4.5",
+      "description": "XStream can be used for Remote Code Execution",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update xstream to a version that fixes GHSA-mw36-7c6c-q4q2.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "xstream"
+          },
+          "version": "1.4.5"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-mw36-7c6c-q4q2",
+          "value": "GHSA-mw36-7c6c-q4q2",
+          "url": "https://github.com/advisories/GHSA-mw36-7c6c-q4q2"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-mw36-7c6c-q4q2"
+        }
+      ],
+      "category_v2": "dependency"
+    },
+    {
+      "id": "ea72ba9bea1a2e73b25d8315c1dcf6437516ccb71afa435e9f77b114499044a1",
+      "category": "sast",
+      "name": "Dependency: xstream - GHSA-2p3x-qw9c-25hh",
+      "message": "Vulnerable package: xstream 1.4.5",
+      "description": "XStream can cause a Denial of Service.",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update xstream to a version that fixes GHSA-2p3x-qw9c-25hh.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "xstream"
+          },
+          "version": "1.4.5"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-2p3x-qw9c-25hh",
+          "value": "GHSA-2p3x-qw9c-25hh",
+          "url": "https://github.com/advisories/GHSA-2p3x-qw9c-25hh"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-2p3x-qw9c-25hh"
+        }
+      ],
+      "category_v2": "dependency"
+    },
+    {
+      "id": "7ffaa9367cd4746d8c9cb09d7b6b9d379480c3e9d5fe692df3a15993c7c2edf5",
+      "category": "sast",
+      "name": "Dependency: xstream - GHSA-7chv-rrw6-w6fc",
+      "message": "Vulnerable package: xstream 1.4.5",
+      "description": "XStream is vulnerable to a Remote Command Execution attack",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update xstream to a version that fixes GHSA-7chv-rrw6-w6fc.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "xstream"
+          },
+          "version": "1.4.5"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-7chv-rrw6-w6fc",
+          "value": "GHSA-7chv-rrw6-w6fc",
+          "url": "https://github.com/advisories/GHSA-7chv-rrw6-w6fc"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-7chv-rrw6-w6fc"
+        }
+      ],
+      "category_v2": "dependency"
+    },
+    {
+      "id": "3af9d876cf126391503bab4ed9432938d86b89b61ebcc13b3541ceefc6161236",
+      "category": "sast",
+      "name": "Dependency: xstream - GHSA-jfvx-7wrx-43fh",
+      "message": "Vulnerable package: xstream 1.4.5",
+      "description": "XStream vulnerable to an Arbitrary File Deletion on the local host when unmarshalling",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "high",
+      "solution": "Update xstream to a version that fixes GHSA-jfvx-7wrx-43fh.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "xstream"
+          },
+          "version": "1.4.5"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-jfvx-7wrx-43fh",
+          "value": "GHSA-jfvx-7wrx-43fh",
+          "url": "https://github.com/advisories/GHSA-jfvx-7wrx-43fh"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-jfvx-7wrx-43fh"
+        }
+      ],
+      "category_v2": "dependency"
+    },
+    {
+      "id": "6321223ae687b9544780e7adadba7753a77ea8584332da8f6fe74e761b9efd0a",
+      "category": "sast",
+      "name": "Dependency: xstream - GHSA-4cch-wxpw-8p28",
+      "message": "Vulnerable package: xstream 1.4.5",
+      "description": "Server-Side Forgery Request can be activated unmarshalling with XStream",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "high",
+      "solution": "Update xstream to a version that fixes GHSA-4cch-wxpw-8p28.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "xstream"
+          },
+          "version": "1.4.5"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-4cch-wxpw-8p28",
+          "value": "GHSA-4cch-wxpw-8p28",
+          "url": "https://github.com/advisories/GHSA-4cch-wxpw-8p28"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-4cch-wxpw-8p28"
+        }
+      ],
+      "category_v2": "dependency"
+    },
+    {
+      "id": "3298e0623f27d09f8f38ed4be73f1a5fa1d5917ecbfce86188c356f11c601383",
+      "category": "sast",
+      "name": "Dependency: xstream - GHSA-hrcp-8f3q-4w2c",
       "message": "Vulnerable package: xstream 1.4.5",
       "description": "XStream is vulnerable to an Arbitrary Code Execution attack",
       "cve": "",
       "severity": "medium",
       "confidence": "high",
-      "solution": "Update xstream to a version that fixes GHSA-43gc-mjxg-gvrq.",
+      "solution": "Update xstream to a version that fixes GHSA-hrcp-8f3q-4w2c.",
       "scanner": {
         "id": "grype",
         "name": "Grype"
@@ -1268,93 +882,20 @@
       "identifiers": [
         {
           "type": "cve",
-          "name": "GHSA-43gc-mjxg-gvrq",
-          "value": "GHSA-43gc-mjxg-gvrq",
-          "url": "https://github.com/advisories/GHSA-43gc-mjxg-gvrq"
+          "name": "GHSA-hrcp-8f3q-4w2c",
+          "value": "GHSA-hrcp-8f3q-4w2c",
+          "url": "https://github.com/advisories/GHSA-hrcp-8f3q-4w2c"
         }
       ],
       "links": [
         {
-          "url": "https://github.com/advisories/GHSA-43gc-mjxg-gvrq"
-        }
-      ]
-    },
-    {
-      "id": "c1b8ca5f-b0ad-4373-810b-4cbe976899b2",
-      "category": "sast",
-      "name": "Dependency: xstream - GHSA-f6hm-88x3-mfjv",
-      "message": "Vulnerable package: xstream 1.4.5",
-      "description": "A Server-Side Forgery Request can be activated unmarshalling with XStream to access data streams from an arbitrary URL referencing a resource in an intranet or the local host",
-      "cve": "",
-      "severity": "medium",
-      "confidence": "high",
-      "solution": "Update xstream to a version that fixes GHSA-f6hm-88x3-mfjv.",
-      "scanner": {
-        "id": "grype",
-        "name": "Grype"
-      },
-      "location": {
-        "file": "dependency",
-        "dependency": {
-          "package": {
-            "name": "xstream"
-          },
-          "version": "1.4.5"
-        }
-      },
-      "identifiers": [
-        {
-          "type": "cve",
-          "name": "GHSA-f6hm-88x3-mfjv",
-          "value": "GHSA-f6hm-88x3-mfjv",
-          "url": "https://github.com/advisories/GHSA-f6hm-88x3-mfjv"
+          "url": "https://github.com/advisories/GHSA-hrcp-8f3q-4w2c"
         }
       ],
-      "links": [
-        {
-          "url": "https://github.com/advisories/GHSA-f6hm-88x3-mfjv"
-        }
-      ]
+      "category_v2": "dependency"
     },
     {
-      "id": "f4f24632-1634-4ad5-b70e-db23cabfe3d1",
-      "category": "sast",
-      "name": "Dependency: xstream - GHSA-rgh3-987h-wpmw",
-      "message": "Vulnerable package: xstream 1.4.5",
-      "description": "XML External Entity Injection in XStream",
-      "cve": "",
-      "severity": "high",
-      "confidence": "high",
-      "solution": "Update xstream to a version that fixes GHSA-rgh3-987h-wpmw.",
-      "scanner": {
-        "id": "grype",
-        "name": "Grype"
-      },
-      "location": {
-        "file": "dependency",
-        "dependency": {
-          "package": {
-            "name": "xstream"
-          },
-          "version": "1.4.5"
-        }
-      },
-      "identifiers": [
-        {
-          "type": "cve",
-          "name": "GHSA-rgh3-987h-wpmw",
-          "value": "GHSA-rgh3-987h-wpmw",
-          "url": "https://github.com/advisories/GHSA-rgh3-987h-wpmw"
-        }
-      ],
-      "links": [
-        {
-          "url": "https://github.com/advisories/GHSA-rgh3-987h-wpmw"
-        }
-      ]
-    },
-    {
-      "id": "c96d1986-88dd-4194-8506-e9f223b631cd",
+      "id": "2b6990609c7fd60876f76a4358a0e24bc3b711c9a1779040b07c8c83dc119cfb",
       "category": "sast",
       "name": "Dependency: xstream - GHSA-4hrm-m67v-5cxr",
       "message": "Vulnerable package: xstream 1.4.5",
@@ -1388,129 +929,19 @@
         {
           "url": "https://github.com/advisories/GHSA-4hrm-m67v-5cxr"
         }
-      ]
-    },
-    {
-      "id": "c6a9def4-ba82-44fc-b25f-32ea2c911c62",
-      "category": "sast",
-      "name": "Dependency: xstream - GHSA-7hwc-46rm-65jh",
-      "message": "Vulnerable package: xstream 1.4.5",
-      "description": "Denial of service in XStream",
-      "cve": "",
-      "severity": "high",
-      "confidence": "high",
-      "solution": "Update xstream to a version that fixes GHSA-7hwc-46rm-65jh.",
-      "scanner": {
-        "id": "grype",
-        "name": "Grype"
-      },
-      "location": {
-        "file": "dependency",
-        "dependency": {
-          "package": {
-            "name": "xstream"
-          },
-          "version": "1.4.5"
-        }
-      },
-      "identifiers": [
-        {
-          "type": "cve",
-          "name": "GHSA-7hwc-46rm-65jh",
-          "value": "GHSA-7hwc-46rm-65jh",
-          "url": "https://github.com/advisories/GHSA-7hwc-46rm-65jh"
-        }
       ],
-      "links": [
-        {
-          "url": "https://github.com/advisories/GHSA-7hwc-46rm-65jh"
-        }
-      ]
+      "category_v2": "dependency"
     },
     {
-      "id": "5dcd4532-22fd-4e23-b515-b12ee6a13d4b",
+      "id": "781a82d637bfd0c1ac064049c7a48e47f77d097a72448c019e7c88aad9ffc707",
       "category": "sast",
-      "name": "Dependency: xstream - GHSA-cxfm-5m4g-x7xp",
-      "message": "Vulnerable package: xstream 1.4.5",
-      "description": "A Server-Side Forgery Request can be activated unmarshalling with XStream to access data streams from an arbitrary URL referencing a resource in an intranet or the local host",
-      "cve": "",
-      "severity": "high",
-      "confidence": "high",
-      "solution": "Update xstream to a version that fixes GHSA-cxfm-5m4g-x7xp.",
-      "scanner": {
-        "id": "grype",
-        "name": "Grype"
-      },
-      "location": {
-        "file": "dependency",
-        "dependency": {
-          "package": {
-            "name": "xstream"
-          },
-          "version": "1.4.5"
-        }
-      },
-      "identifiers": [
-        {
-          "type": "cve",
-          "name": "GHSA-cxfm-5m4g-x7xp",
-          "value": "GHSA-cxfm-5m4g-x7xp",
-          "url": "https://github.com/advisories/GHSA-cxfm-5m4g-x7xp"
-        }
-      ],
-      "links": [
-        {
-          "url": "https://github.com/advisories/GHSA-cxfm-5m4g-x7xp"
-        }
-      ]
-    },
-    {
-      "id": "45893069-5258-4cc0-ad19-49eafdc6fed0",
-      "category": "sast",
-      "name": "Dependency: xstream - GHSA-j563-grx4-pjpv",
-      "message": "Vulnerable package: xstream 1.4.5",
-      "description": "XStream can cause Denial of Service via stack overflow",
-      "cve": "",
-      "severity": "high",
-      "confidence": "high",
-      "solution": "Update xstream to a version that fixes GHSA-j563-grx4-pjpv.",
-      "scanner": {
-        "id": "grype",
-        "name": "Grype"
-      },
-      "location": {
-        "file": "dependency",
-        "dependency": {
-          "package": {
-            "name": "xstream"
-          },
-          "version": "1.4.5"
-        }
-      },
-      "identifiers": [
-        {
-          "type": "cve",
-          "name": "GHSA-j563-grx4-pjpv",
-          "value": "GHSA-j563-grx4-pjpv",
-          "url": "https://github.com/advisories/GHSA-j563-grx4-pjpv"
-        }
-      ],
-      "links": [
-        {
-          "url": "https://github.com/advisories/GHSA-j563-grx4-pjpv"
-        }
-      ]
-    },
-    {
-      "id": "e76bb9fc-f707-4a41-97b3-7f5fa8941d7b",
-      "category": "sast",
-      "name": "Dependency: xstream - GHSA-qpfq-ph7r-qv6f",
+      "name": "Dependency: xstream - GHSA-59jw-jqf4-3wq3",
       "message": "Vulnerable package: xstream 1.4.5",
       "description": "XStream is vulnerable to an Arbitrary Code Execution attack",
       "cve": "",
       "severity": "medium",
       "confidence": "high",
-      "solution": "Update xstream to a version that fixes GHSA-qpfq-ph7r-qv6f.",
+      "solution": "Update xstream to a version that fixes GHSA-59jw-jqf4-3wq3.",
       "scanner": {
         "id": "grype",
         "name": "Grype"
@@ -1527,27 +958,28 @@
       "identifiers": [
         {
           "type": "cve",
-          "name": "GHSA-qpfq-ph7r-qv6f",
-          "value": "GHSA-qpfq-ph7r-qv6f",
-          "url": "https://github.com/advisories/GHSA-qpfq-ph7r-qv6f"
+          "name": "GHSA-59jw-jqf4-3wq3",
+          "value": "GHSA-59jw-jqf4-3wq3",
+          "url": "https://github.com/advisories/GHSA-59jw-jqf4-3wq3"
         }
       ],
       "links": [
         {
-          "url": "https://github.com/advisories/GHSA-qpfq-ph7r-qv6f"
+          "url": "https://github.com/advisories/GHSA-59jw-jqf4-3wq3"
         }
-      ]
+      ],
+      "category_v2": "dependency"
     },
     {
-      "id": "e6e89437-34c7-48c6-9461-0c4583a39d15",
+      "id": "5a048100d4842602369d03b92c42bdec762b52547ed1880e633096a3c7d286dd",
       "category": "sast",
-      "name": "Dependency: xstream - GHSA-rmr5-cpv2-vgjf",
+      "name": "Dependency: xstream - GHSA-hwpc-8xqv-jvj4",
       "message": "Vulnerable package: xstream 1.4.5",
-      "description": "Denial of Service by injecting highly recursive collections or maps in XStream",
+      "description": "XStream is vulnerable to a Remote Command Execution attack",
       "cve": "",
-      "severity": "high",
+      "severity": "medium",
       "confidence": "high",
-      "solution": "Update xstream to a version that fixes GHSA-rmr5-cpv2-vgjf.",
+      "solution": "Update xstream to a version that fixes GHSA-hwpc-8xqv-jvj4.",
       "scanner": {
         "id": "grype",
         "name": "Grype"
@@ -1564,27 +996,28 @@
       "identifiers": [
         {
           "type": "cve",
-          "name": "GHSA-rmr5-cpv2-vgjf",
-          "value": "GHSA-rmr5-cpv2-vgjf",
-          "url": "https://github.com/advisories/GHSA-rmr5-cpv2-vgjf"
+          "name": "GHSA-hwpc-8xqv-jvj4",
+          "value": "GHSA-hwpc-8xqv-jvj4",
+          "url": "https://github.com/advisories/GHSA-hwpc-8xqv-jvj4"
         }
       ],
       "links": [
         {
-          "url": "https://github.com/advisories/GHSA-rmr5-cpv2-vgjf"
+          "url": "https://github.com/advisories/GHSA-hwpc-8xqv-jvj4"
         }
-      ]
+      ],
+      "category_v2": "dependency"
     },
     {
-      "id": "778d19a1-c46a-4d5d-92bf-face2ba6d521",
+      "id": "bb799ffa070062d37ccc0b2f02efb94cb68a505dbf0f384b5d03d867585aa6b0",
       "category": "sast",
-      "name": "Dependency: xstream - GHSA-64xx-cq4q-mf44",
+      "name": "Dependency: xstream - GHSA-f6hm-88x3-mfjv",
       "message": "Vulnerable package: xstream 1.4.5",
-      "description": "XStream is vulnerable to an Arbitrary Code Execution attack",
+      "description": "A Server-Side Forgery Request can be activated unmarshalling with XStream to access data streams from an arbitrary URL referencing a resource in an intranet or the local host",
       "cve": "",
-      "severity": "high",
+      "severity": "medium",
       "confidence": "high",
-      "solution": "Update xstream to a version that fixes GHSA-64xx-cq4q-mf44.",
+      "solution": "Update xstream to a version that fixes GHSA-f6hm-88x3-mfjv.",
       "scanner": {
         "id": "grype",
         "name": "Grype"
@@ -1601,278 +1034,20 @@
       "identifiers": [
         {
           "type": "cve",
-          "name": "GHSA-64xx-cq4q-mf44",
-          "value": "GHSA-64xx-cq4q-mf44",
-          "url": "https://github.com/advisories/GHSA-64xx-cq4q-mf44"
+          "name": "GHSA-f6hm-88x3-mfjv",
+          "value": "GHSA-f6hm-88x3-mfjv",
+          "url": "https://github.com/advisories/GHSA-f6hm-88x3-mfjv"
         }
       ],
       "links": [
         {
-          "url": "https://github.com/advisories/GHSA-64xx-cq4q-mf44"
-        }
-      ]
-    },
-    {
-      "id": "eb55b2b7-e04e-4570-b827-3d996fc808db",
-      "category": "sast",
-      "name": "Dependency: xstream - GHSA-3ccq-5vw3-2p6x",
-      "message": "Vulnerable package: xstream 1.4.5",
-      "description": "XStream is vulnerable to an Arbitrary Code Execution attack",
-      "cve": "",
-      "severity": "high",
-      "confidence": "high",
-      "solution": "Update xstream to a version that fixes GHSA-3ccq-5vw3-2p6x.",
-      "scanner": {
-        "id": "grype",
-        "name": "Grype"
-      },
-      "location": {
-        "file": "dependency",
-        "dependency": {
-          "package": {
-            "name": "xstream"
-          },
-          "version": "1.4.5"
-        }
-      },
-      "identifiers": [
-        {
-          "type": "cve",
-          "name": "GHSA-3ccq-5vw3-2p6x",
-          "value": "GHSA-3ccq-5vw3-2p6x",
-          "url": "https://github.com/advisories/GHSA-3ccq-5vw3-2p6x"
+          "url": "https://github.com/advisories/GHSA-f6hm-88x3-mfjv"
         }
       ],
-      "links": [
-        {
-          "url": "https://github.com/advisories/GHSA-3ccq-5vw3-2p6x"
-        }
-      ]
+      "category_v2": "dependency"
     },
     {
-      "id": "ce641600-88b0-4bb6-8e5e-b983bfe8a03f",
-      "category": "sast",
-      "name": "Dependency: xstream - GHSA-hph2-m3g5-xxv4",
-      "message": "Vulnerable package: xstream 1.4.5",
-      "description": "XStream is vulnerable to an Arbitrary Code Execution attack",
-      "cve": "",
-      "severity": "high",
-      "confidence": "high",
-      "solution": "Update xstream to a version that fixes GHSA-hph2-m3g5-xxv4.",
-      "scanner": {
-        "id": "grype",
-        "name": "Grype"
-      },
-      "location": {
-        "file": "dependency",
-        "dependency": {
-          "package": {
-            "name": "xstream"
-          },
-          "version": "1.4.5"
-        }
-      },
-      "identifiers": [
-        {
-          "type": "cve",
-          "name": "GHSA-hph2-m3g5-xxv4",
-          "value": "GHSA-hph2-m3g5-xxv4",
-          "url": "https://github.com/advisories/GHSA-hph2-m3g5-xxv4"
-        }
-      ],
-      "links": [
-        {
-          "url": "https://github.com/advisories/GHSA-hph2-m3g5-xxv4"
-        }
-      ]
-    },
-    {
-      "id": "c035943b-6841-4b99-9146-0d28629c37de",
-      "category": "sast",
-      "name": "Dependency: xstream - GHSA-2q8x-2p7f-574v",
-      "message": "Vulnerable package: xstream 1.4.5",
-      "description": "XStream is vulnerable to an Arbitrary Code Execution attack",
-      "cve": "",
-      "severity": "high",
-      "confidence": "high",
-      "solution": "Update xstream to a version that fixes GHSA-2q8x-2p7f-574v.",
-      "scanner": {
-        "id": "grype",
-        "name": "Grype"
-      },
-      "location": {
-        "file": "dependency",
-        "dependency": {
-          "package": {
-            "name": "xstream"
-          },
-          "version": "1.4.5"
-        }
-      },
-      "identifiers": [
-        {
-          "type": "cve",
-          "name": "GHSA-2q8x-2p7f-574v",
-          "value": "GHSA-2q8x-2p7f-574v",
-          "url": "https://github.com/advisories/GHSA-2q8x-2p7f-574v"
-        }
-      ],
-      "links": [
-        {
-          "url": "https://github.com/advisories/GHSA-2q8x-2p7f-574v"
-        }
-      ]
-    },
-    {
-      "id": "e660d312-0347-4722-81f4-8cf0f259b031",
-      "category": "sast",
-      "name": "Dependency: xstream - GHSA-6w62-hx7r-mw68",
-      "message": "Vulnerable package: xstream 1.4.5",
-      "description": "XStream is vulnerable to an Arbitrary Code Execution attack",
-      "cve": "",
-      "severity": "high",
-      "confidence": "high",
-      "solution": "Update xstream to a version that fixes GHSA-6w62-hx7r-mw68.",
-      "scanner": {
-        "id": "grype",
-        "name": "Grype"
-      },
-      "location": {
-        "file": "dependency",
-        "dependency": {
-          "package": {
-            "name": "xstream"
-          },
-          "version": "1.4.5"
-        }
-      },
-      "identifiers": [
-        {
-          "type": "cve",
-          "name": "GHSA-6w62-hx7r-mw68",
-          "value": "GHSA-6w62-hx7r-mw68",
-          "url": "https://github.com/advisories/GHSA-6w62-hx7r-mw68"
-        }
-      ],
-      "links": [
-        {
-          "url": "https://github.com/advisories/GHSA-6w62-hx7r-mw68"
-        }
-      ]
-    },
-    {
-      "id": "2055c6a0-b219-4e43-b539-0660edf46e25",
-      "category": "sast",
-      "name": "Dependency: xstream - GHSA-h7v4-7xg3-hxcc",
-      "message": "Vulnerable package: xstream 1.4.5",
-      "description": "XStream is vulnerable to an Arbitrary Code Execution attack",
-      "cve": "",
-      "severity": "high",
-      "confidence": "high",
-      "solution": "Update xstream to a version that fixes GHSA-h7v4-7xg3-hxcc.",
-      "scanner": {
-        "id": "grype",
-        "name": "Grype"
-      },
-      "location": {
-        "file": "dependency",
-        "dependency": {
-          "package": {
-            "name": "xstream"
-          },
-          "version": "1.4.5"
-        }
-      },
-      "identifiers": [
-        {
-          "type": "cve",
-          "name": "GHSA-h7v4-7xg3-hxcc",
-          "value": "GHSA-h7v4-7xg3-hxcc",
-          "url": "https://github.com/advisories/GHSA-h7v4-7xg3-hxcc"
-        }
-      ],
-      "links": [
-        {
-          "url": "https://github.com/advisories/GHSA-h7v4-7xg3-hxcc"
-        }
-      ]
-    },
-    {
-      "id": "bb21f48c-c2ef-4092-8db3-637247b2f91b",
-      "category": "sast",
-      "name": "Dependency: xstream - GHSA-qrx8-8545-4wg2",
-      "message": "Vulnerable package: xstream 1.4.5",
-      "description": "XStream is vulnerable to an Arbitrary Code Execution attack",
-      "cve": "",
-      "severity": "high",
-      "confidence": "high",
-      "solution": "Update xstream to a version that fixes GHSA-qrx8-8545-4wg2.",
-      "scanner": {
-        "id": "grype",
-        "name": "Grype"
-      },
-      "location": {
-        "file": "dependency",
-        "dependency": {
-          "package": {
-            "name": "xstream"
-          },
-          "version": "1.4.5"
-        }
-      },
-      "identifiers": [
-        {
-          "type": "cve",
-          "name": "GHSA-qrx8-8545-4wg2",
-          "value": "GHSA-qrx8-8545-4wg2",
-          "url": "https://github.com/advisories/GHSA-qrx8-8545-4wg2"
-        }
-      ],
-      "links": [
-        {
-          "url": "https://github.com/advisories/GHSA-qrx8-8545-4wg2"
-        }
-      ]
-    },
-    {
-      "id": "d65b4194-028c-452c-a087-511127a3fa80",
-      "category": "sast",
-      "name": "Dependency: xstream - GHSA-8jrj-525p-826v",
-      "message": "Vulnerable package: xstream 1.4.5",
-      "description": "XStream is vulnerable to an Arbitrary Code Execution attack",
-      "cve": "",
-      "severity": "high",
-      "confidence": "high",
-      "solution": "Update xstream to a version that fixes GHSA-8jrj-525p-826v.",
-      "scanner": {
-        "id": "grype",
-        "name": "Grype"
-      },
-      "location": {
-        "file": "dependency",
-        "dependency": {
-          "package": {
-            "name": "xstream"
-          },
-          "version": "1.4.5"
-        }
-      },
-      "identifiers": [
-        {
-          "type": "cve",
-          "name": "GHSA-8jrj-525p-826v",
-          "value": "GHSA-8jrj-525p-826v",
-          "url": "https://github.com/advisories/GHSA-8jrj-525p-826v"
-        }
-      ],
-      "links": [
-        {
-          "url": "https://github.com/advisories/GHSA-8jrj-525p-826v"
-        }
-      ]
-    },
-    {
-      "id": "2297cce6-d81f-44c2-9aa6-ed12f2496764",
+      "id": "6c090d8755db7b11f13fd5041a66ced784d3f27994b22c86a71676e64031b84a",
       "category": "sast",
       "name": "Dependency: xstream - GHSA-hvv8-336g-rx3m",
       "message": "Vulnerable package: xstream 1.4.5",
@@ -1906,10 +1081,11 @@
         {
           "url": "https://github.com/advisories/GHSA-hvv8-336g-rx3m"
         }
-      ]
+      ],
+      "category_v2": "dependency"
     },
     {
-      "id": "7dd8aefd-59ca-4d6d-bf63-ab3f1d21037a",
+      "id": "dc3e067a816692ade868eba17ba8f6112d8c65e7df471e8ded15bffefec13868",
       "category": "sast",
       "name": "Dependency: xstream - GHSA-74cv-f58x-f9wf",
       "message": "Vulnerable package: xstream 1.4.5",
@@ -1943,55 +1119,133 @@
         {
           "url": "https://github.com/advisories/GHSA-74cv-f58x-f9wf"
         }
-      ]
+      ],
+      "category_v2": "dependency"
     },
     {
-      "id": "fe2e7d61-81db-472c-9133-5383ddf79197",
+      "id": "1de8d0f631dcadff5b032a20bc3f5b7364d02f4deca1e7d211d8d062d1fe1e8f",
       "category": "sast",
-      "name": "Dependency: jose4j - GHSA-6qvw-249j-h44c",
-      "message": "Vulnerable package: jose4j 0.9.3",
-      "description": "jose4j denial of service via specifically crafted JWE",
+      "name": "Dependency: xstream - GHSA-g5w6-mrj7-75h2",
+      "message": "Vulnerable package: xstream 1.4.5",
+      "description": "XStream is vulnerable to an Arbitrary Code Execution attack",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update xstream to a version that fixes GHSA-g5w6-mrj7-75h2.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "xstream"
+          },
+          "version": "1.4.5"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-g5w6-mrj7-75h2",
+          "value": "GHSA-g5w6-mrj7-75h2",
+          "url": "https://github.com/advisories/GHSA-g5w6-mrj7-75h2"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-g5w6-mrj7-75h2"
+        }
+      ],
+      "category_v2": "dependency"
+    },
+    {
+      "id": "920f7c9e11ae93c2f80fe3676660fa6f033faa6cf0542fbd1021d138d6c8a483",
+      "category": "sast",
+      "name": "Dependency: xstream - GHSA-p8pq-r894-fm8f",
+      "message": "Vulnerable package: xstream 1.4.5",
+      "description": "XStream is vulnerable to an Arbitrary Code Execution attack",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update xstream to a version that fixes GHSA-p8pq-r894-fm8f.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "xstream"
+          },
+          "version": "1.4.5"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-p8pq-r894-fm8f",
+          "value": "GHSA-p8pq-r894-fm8f",
+          "url": "https://github.com/advisories/GHSA-p8pq-r894-fm8f"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-p8pq-r894-fm8f"
+        }
+      ],
+      "category_v2": "dependency"
+    },
+    {
+      "id": "f879a4de1bfbb8e16f065fc9d16984fd21f174c23028cf4aff8c2d701eb578a2",
+      "category": "sast",
+      "name": "Dependency: xstream - GHSA-xw4p-crpj-vjx2",
+      "message": "Vulnerable package: xstream 1.4.5",
+      "description": "A Server-Side Forgery Request can be activated unmarshalling with XStream to access data streams from an arbitrary URL referencing a resource in an intranet or the local host",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update xstream to a version that fixes GHSA-xw4p-crpj-vjx2.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "xstream"
+          },
+          "version": "1.4.5"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-xw4p-crpj-vjx2",
+          "value": "GHSA-xw4p-crpj-vjx2",
+          "url": "https://github.com/advisories/GHSA-xw4p-crpj-vjx2"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-xw4p-crpj-vjx2"
+        }
+      ],
+      "category_v2": "dependency"
+    },
+    {
+      "id": "ce129a67f63a85acdd0bcc5d033ee023e9482b0f93976a2eaa7584a9ce8a41a2",
+      "category": "sast",
+      "name": "Dependency: xstream - GHSA-qpfq-ph7r-qv6f",
+      "message": "Vulnerable package: xstream 1.4.5",
+      "description": "XStream is vulnerable to an Arbitrary Code Execution attack",
       "cve": "",
       "severity": "medium",
       "confidence": "high",
-      "solution": "Update jose4j to a version that fixes GHSA-6qvw-249j-h44c.",
-      "scanner": {
-        "id": "grype",
-        "name": "Grype"
-      },
-      "location": {
-        "file": "dependency",
-        "dependency": {
-          "package": {
-            "name": "jose4j"
-          },
-          "version": "0.9.3"
-        }
-      },
-      "identifiers": [
-        {
-          "type": "cve",
-          "name": "GHSA-6qvw-249j-h44c",
-          "value": "GHSA-6qvw-249j-h44c",
-          "url": "https://github.com/advisories/GHSA-6qvw-249j-h44c"
-        }
-      ],
-      "links": [
-        {
-          "url": "https://github.com/advisories/GHSA-6qvw-249j-h44c"
-        }
-      ]
-    },
-    {
-      "id": "edec2d1c-fd6a-4248-be85-03c605ef0c05",
-      "category": "sast",
-      "name": "Dependency: xstream - GHSA-hfq9-hggm-c56q",
-      "message": "Vulnerable package: xstream 1.4.5",
-      "description": "XStream is vulnerable to a Denial of Service attack due to stack overflow from a manipulated binary input stream",
-      "cve": "",
-      "severity": "high",
-      "confidence": "high",
-      "solution": "Update xstream to a version that fixes GHSA-hfq9-hggm-c56q.",
+      "solution": "Update xstream to a version that fixes GHSA-qpfq-ph7r-qv6f.",
       "scanner": {
         "id": "grype",
         "name": "Grype"
@@ -2008,27 +1262,28 @@
       "identifiers": [
         {
           "type": "cve",
-          "name": "GHSA-hfq9-hggm-c56q",
-          "value": "GHSA-hfq9-hggm-c56q",
-          "url": "https://github.com/advisories/GHSA-hfq9-hggm-c56q"
+          "name": "GHSA-qpfq-ph7r-qv6f",
+          "value": "GHSA-qpfq-ph7r-qv6f",
+          "url": "https://github.com/advisories/GHSA-qpfq-ph7r-qv6f"
         }
       ],
       "links": [
         {
-          "url": "https://github.com/advisories/GHSA-hfq9-hggm-c56q"
+          "url": "https://github.com/advisories/GHSA-qpfq-ph7r-qv6f"
         }
-      ]
+      ],
+      "category_v2": "dependency"
     },
     {
-      "id": "cfaf1008-1f61-45de-863e-2657f6e7c9b5",
+      "id": "b0b05aa6e9e7db97d77e432ba022c3acf1795f7efd868486d30fc54bd8321927",
       "category": "sast",
-      "name": "Dependency: xstream - GHSA-f8cc-g7j8-xxpm",
+      "name": "Dependency: xstream - GHSA-43gc-mjxg-gvrq",
       "message": "Vulnerable package: xstream 1.4.5",
-      "description": "XStream can cause a Denial of Service by injecting deeply nested objects raising a stack overflow",
+      "description": "XStream is vulnerable to an Arbitrary Code Execution attack",
       "cve": "",
-      "severity": "high",
+      "severity": "medium",
       "confidence": "high",
-      "solution": "Update xstream to a version that fixes GHSA-f8cc-g7j8-xxpm.",
+      "solution": "Update xstream to a version that fixes GHSA-43gc-mjxg-gvrq.",
       "scanner": {
         "id": "grype",
         "name": "Grype"
@@ -2045,19 +1300,20 @@
       "identifiers": [
         {
           "type": "cve",
-          "name": "GHSA-f8cc-g7j8-xxpm",
-          "value": "GHSA-f8cc-g7j8-xxpm",
-          "url": "https://github.com/advisories/GHSA-f8cc-g7j8-xxpm"
+          "name": "GHSA-43gc-mjxg-gvrq",
+          "value": "GHSA-43gc-mjxg-gvrq",
+          "url": "https://github.com/advisories/GHSA-43gc-mjxg-gvrq"
         }
       ],
       "links": [
         {
-          "url": "https://github.com/advisories/GHSA-f8cc-g7j8-xxpm"
+          "url": "https://github.com/advisories/GHSA-43gc-mjxg-gvrq"
         }
-      ]
+      ],
+      "category_v2": "dependency"
     },
     {
-      "id": "45b5152c-8663-4ad3-b1a7-8ca2126e37b5",
+      "id": "10bb7ab5941f47e74601867a770393bf919d7c5cdf0f72c7abb1c26230a7b6f2",
       "category": "sast",
       "name": "Dependency: xstream - GHSA-56p8-3fh9-4cvq",
       "message": "Vulnerable package: xstream 1.4.5",
@@ -2091,10 +1347,429 @@
         {
           "url": "https://github.com/advisories/GHSA-56p8-3fh9-4cvq"
         }
-      ]
+      ],
+      "category_v2": "dependency"
     },
     {
-      "id": "25443186-b4b3-42e4-8a53-c8a38bb38645",
+      "id": "68197fdbab1be132f0f7fbbfb6ee1f4e7373456dfbf6732e2971caeee13ae837",
+      "category": "sast",
+      "name": "Dependency: xstream - GHSA-j563-grx4-pjpv",
+      "message": "Vulnerable package: xstream 1.4.5",
+      "description": "XStream can cause Denial of Service via stack overflow",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update xstream to a version that fixes GHSA-j563-grx4-pjpv.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "xstream"
+          },
+          "version": "1.4.5"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-j563-grx4-pjpv",
+          "value": "GHSA-j563-grx4-pjpv",
+          "url": "https://github.com/advisories/GHSA-j563-grx4-pjpv"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-j563-grx4-pjpv"
+        }
+      ],
+      "category_v2": "dependency"
+    },
+    {
+      "id": "617e075ee532bdada99b2f4288acd4e3ba6f865a6a1cead3462610f08aaf6aa5",
+      "category": "sast",
+      "name": "Dependency: xstream - GHSA-rgh3-987h-wpmw",
+      "message": "Vulnerable package: xstream 1.4.5",
+      "description": "XML External Entity Injection in XStream",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update xstream to a version that fixes GHSA-rgh3-987h-wpmw.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "xstream"
+          },
+          "version": "1.4.5"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-rgh3-987h-wpmw",
+          "value": "GHSA-rgh3-987h-wpmw",
+          "url": "https://github.com/advisories/GHSA-rgh3-987h-wpmw"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-rgh3-987h-wpmw"
+        }
+      ],
+      "category_v2": "dependency"
+    },
+    {
+      "id": "d387a6e785025f49339ea0d93fa32bdf3e4f412a4a50a70fa21e4ef7405bc5b3",
+      "category": "sast",
+      "name": "Dependency: xstream - GHSA-rmr5-cpv2-vgjf",
+      "message": "Vulnerable package: xstream 1.4.5",
+      "description": "Denial of Service by injecting highly recursive collections or maps in XStream",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update xstream to a version that fixes GHSA-rmr5-cpv2-vgjf.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "xstream"
+          },
+          "version": "1.4.5"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-rmr5-cpv2-vgjf",
+          "value": "GHSA-rmr5-cpv2-vgjf",
+          "url": "https://github.com/advisories/GHSA-rmr5-cpv2-vgjf"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-rmr5-cpv2-vgjf"
+        }
+      ],
+      "category_v2": "dependency"
+    },
+    {
+      "id": "683e0e32a3a2e995ec7b784e37c653cf37849e954c649a653d84008733b93ff0",
+      "category": "sast",
+      "name": "Dependency: xstream - GHSA-6w62-hx7r-mw68",
+      "message": "Vulnerable package: xstream 1.4.5",
+      "description": "XStream is vulnerable to an Arbitrary Code Execution attack",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update xstream to a version that fixes GHSA-6w62-hx7r-mw68.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "xstream"
+          },
+          "version": "1.4.5"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-6w62-hx7r-mw68",
+          "value": "GHSA-6w62-hx7r-mw68",
+          "url": "https://github.com/advisories/GHSA-6w62-hx7r-mw68"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-6w62-hx7r-mw68"
+        }
+      ],
+      "category_v2": "dependency"
+    },
+    {
+      "id": "3e19deb60d9a8ff5953fbf81440c3ac03507ea240ccf8b53ad4a7d7897a73bd8",
+      "category": "sast",
+      "name": "Dependency: xstream - GHSA-h7v4-7xg3-hxcc",
+      "message": "Vulnerable package: xstream 1.4.5",
+      "description": "XStream is vulnerable to an Arbitrary Code Execution attack",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update xstream to a version that fixes GHSA-h7v4-7xg3-hxcc.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "xstream"
+          },
+          "version": "1.4.5"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-h7v4-7xg3-hxcc",
+          "value": "GHSA-h7v4-7xg3-hxcc",
+          "url": "https://github.com/advisories/GHSA-h7v4-7xg3-hxcc"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-h7v4-7xg3-hxcc"
+        }
+      ],
+      "category_v2": "dependency"
+    },
+    {
+      "id": "132ee90e5f98ef3ac52e5b33f2086d478360ac39967f3e5568afd36dae1da288",
+      "category": "sast",
+      "name": "Dependency: xstream - GHSA-qrx8-8545-4wg2",
+      "message": "Vulnerable package: xstream 1.4.5",
+      "description": "XStream is vulnerable to an Arbitrary Code Execution attack",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update xstream to a version that fixes GHSA-qrx8-8545-4wg2.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "xstream"
+          },
+          "version": "1.4.5"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-qrx8-8545-4wg2",
+          "value": "GHSA-qrx8-8545-4wg2",
+          "url": "https://github.com/advisories/GHSA-qrx8-8545-4wg2"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-qrx8-8545-4wg2"
+        }
+      ],
+      "category_v2": "dependency"
+    },
+    {
+      "id": "fcf935e4d814e746fda389add14bd83dadf2183d8173273b2aa8551205af93ed",
+      "category": "sast",
+      "name": "Dependency: xstream - GHSA-3ccq-5vw3-2p6x",
+      "message": "Vulnerable package: xstream 1.4.5",
+      "description": "XStream is vulnerable to an Arbitrary Code Execution attack",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update xstream to a version that fixes GHSA-3ccq-5vw3-2p6x.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "xstream"
+          },
+          "version": "1.4.5"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-3ccq-5vw3-2p6x",
+          "value": "GHSA-3ccq-5vw3-2p6x",
+          "url": "https://github.com/advisories/GHSA-3ccq-5vw3-2p6x"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-3ccq-5vw3-2p6x"
+        }
+      ],
+      "category_v2": "dependency"
+    },
+    {
+      "id": "9c415fc92794c046dd1b7f753aa4c67bcad5b3933c64ccb289cb45c8fbffdc55",
+      "category": "sast",
+      "name": "Dependency: xstream - GHSA-hph2-m3g5-xxv4",
+      "message": "Vulnerable package: xstream 1.4.5",
+      "description": "XStream is vulnerable to an Arbitrary Code Execution attack",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update xstream to a version that fixes GHSA-hph2-m3g5-xxv4.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "xstream"
+          },
+          "version": "1.4.5"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-hph2-m3g5-xxv4",
+          "value": "GHSA-hph2-m3g5-xxv4",
+          "url": "https://github.com/advisories/GHSA-hph2-m3g5-xxv4"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-hph2-m3g5-xxv4"
+        }
+      ],
+      "category_v2": "dependency"
+    },
+    {
+      "id": "b95a357621d25c0a2203fe33bd06f131fd5b804826d28475908a35a7a6420991",
+      "category": "sast",
+      "name": "Dependency: xstream - GHSA-7hwc-46rm-65jh",
+      "message": "Vulnerable package: xstream 1.4.5",
+      "description": "Denial of service in XStream",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update xstream to a version that fixes GHSA-7hwc-46rm-65jh.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "xstream"
+          },
+          "version": "1.4.5"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-7hwc-46rm-65jh",
+          "value": "GHSA-7hwc-46rm-65jh",
+          "url": "https://github.com/advisories/GHSA-7hwc-46rm-65jh"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-7hwc-46rm-65jh"
+        }
+      ],
+      "category_v2": "dependency"
+    },
+    {
+      "id": "6804955beadd61a14a93cd90b1a6f45f0088bc3f7015c0bc898885b5025d18a6",
+      "category": "sast",
+      "name": "Dependency: xstream - GHSA-64xx-cq4q-mf44",
+      "message": "Vulnerable package: xstream 1.4.5",
+      "description": "XStream is vulnerable to an Arbitrary Code Execution attack",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update xstream to a version that fixes GHSA-64xx-cq4q-mf44.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "xstream"
+          },
+          "version": "1.4.5"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-64xx-cq4q-mf44",
+          "value": "GHSA-64xx-cq4q-mf44",
+          "url": "https://github.com/advisories/GHSA-64xx-cq4q-mf44"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-64xx-cq4q-mf44"
+        }
+      ],
+      "category_v2": "dependency"
+    },
+    {
+      "id": "c3e2f2f4fd047c920a6c95304d233de86611728f20e0c159915623e6b0dbf50f",
+      "category": "sast",
+      "name": "Dependency: xstream - GHSA-2q8x-2p7f-574v",
+      "message": "Vulnerable package: xstream 1.4.5",
+      "description": "XStream is vulnerable to an Arbitrary Code Execution attack",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update xstream to a version that fixes GHSA-2q8x-2p7f-574v.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "xstream"
+          },
+          "version": "1.4.5"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-2q8x-2p7f-574v",
+          "value": "GHSA-2q8x-2p7f-574v",
+          "url": "https://github.com/advisories/GHSA-2q8x-2p7f-574v"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-2q8x-2p7f-574v"
+        }
+      ],
+      "category_v2": "dependency"
+    },
+    {
+      "id": "a249625c4ff67e5dcf48c3ec3d814d202cc5617abd5b1c9728962540a6090543",
       "category": "sast",
       "name": "Dependency: xstream - GHSA-6wf9-jmg9-vxcc",
       "message": "Vulnerable package: xstream 1.4.5",
@@ -2128,10 +1803,201 @@
         {
           "url": "https://github.com/advisories/GHSA-6wf9-jmg9-vxcc"
         }
-      ]
+      ],
+      "category_v2": "dependency"
     },
     {
-      "id": "44e7e577-e184-4c4e-989e-ccb47f647b02",
+      "id": "b9f8cac5963cdb4247bf99ff11aa1ef712697e647a6a94ca5729030a3ccde16c",
+      "category": "sast",
+      "name": "Dependency: xstream - GHSA-8jrj-525p-826v",
+      "message": "Vulnerable package: xstream 1.4.5",
+      "description": "XStream is vulnerable to an Arbitrary Code Execution attack",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update xstream to a version that fixes GHSA-8jrj-525p-826v.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "xstream"
+          },
+          "version": "1.4.5"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-8jrj-525p-826v",
+          "value": "GHSA-8jrj-525p-826v",
+          "url": "https://github.com/advisories/GHSA-8jrj-525p-826v"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-8jrj-525p-826v"
+        }
+      ],
+      "category_v2": "dependency"
+    },
+    {
+      "id": "b07f7ba5bdc17af104e4a26c7c9b040e3a67407739afdc25ffdd334c4f919a88",
+      "category": "sast",
+      "name": "Dependency: xstream - GHSA-cxfm-5m4g-x7xp",
+      "message": "Vulnerable package: xstream 1.4.5",
+      "description": "A Server-Side Forgery Request can be activated unmarshalling with XStream to access data streams from an arbitrary URL referencing a resource in an intranet or the local host",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update xstream to a version that fixes GHSA-cxfm-5m4g-x7xp.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "xstream"
+          },
+          "version": "1.4.5"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-cxfm-5m4g-x7xp",
+          "value": "GHSA-cxfm-5m4g-x7xp",
+          "url": "https://github.com/advisories/GHSA-cxfm-5m4g-x7xp"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-cxfm-5m4g-x7xp"
+        }
+      ],
+      "category_v2": "dependency"
+    },
+    {
+      "id": "bfeaeb691bc417e1debe85317af787816cb68d3ff0c35cc1bca180929dfb01d6",
+      "category": "sast",
+      "name": "Dependency: xstream - GHSA-hfq9-hggm-c56q",
+      "message": "Vulnerable package: xstream 1.4.5",
+      "description": "XStream is vulnerable to a Denial of Service attack due to stack overflow from a manipulated binary input stream",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update xstream to a version that fixes GHSA-hfq9-hggm-c56q.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "xstream"
+          },
+          "version": "1.4.5"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-hfq9-hggm-c56q",
+          "value": "GHSA-hfq9-hggm-c56q",
+          "url": "https://github.com/advisories/GHSA-hfq9-hggm-c56q"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-hfq9-hggm-c56q"
+        }
+      ],
+      "category_v2": "dependency"
+    },
+    {
+      "id": "e3803dbfbd056795806c45491c483c735c464b8326784f6e22b792ffb03ebcd3",
+      "category": "sast",
+      "name": "Dependency: xstream - GHSA-f8cc-g7j8-xxpm",
+      "message": "Vulnerable package: xstream 1.4.5",
+      "description": "XStream can cause a Denial of Service by injecting deeply nested objects raising a stack overflow",
+      "cve": "",
+      "severity": "high",
+      "confidence": "high",
+      "solution": "Update xstream to a version that fixes GHSA-f8cc-g7j8-xxpm.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "xstream"
+          },
+          "version": "1.4.5"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-f8cc-g7j8-xxpm",
+          "value": "GHSA-f8cc-g7j8-xxpm",
+          "url": "https://github.com/advisories/GHSA-f8cc-g7j8-xxpm"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-f8cc-g7j8-xxpm"
+        }
+      ],
+      "category_v2": "dependency"
+    },
+    {
+      "id": "3de4b334e748890d0283a7762d32c6bee76b38d5c6d10d37caff96cf6ab90b29",
+      "category": "sast",
+      "name": "Dependency: jose4j - GHSA-6qvw-249j-h44c",
+      "message": "Vulnerable package: jose4j 0.9.3",
+      "description": "jose4j denial of service via specifically crafted JWE",
+      "cve": "",
+      "severity": "medium",
+      "confidence": "high",
+      "solution": "Update jose4j to a version that fixes GHSA-6qvw-249j-h44c.",
+      "scanner": {
+        "id": "grype",
+        "name": "Grype"
+      },
+      "location": {
+        "file": "dependency",
+        "dependency": {
+          "package": {
+            "name": "jose4j"
+          },
+          "version": "0.9.3"
+        }
+      },
+      "identifiers": [
+        {
+          "type": "cve",
+          "name": "GHSA-6qvw-249j-h44c",
+          "value": "GHSA-6qvw-249j-h44c",
+          "url": "https://github.com/advisories/GHSA-6qvw-249j-h44c"
+        }
+      ],
+      "links": [
+        {
+          "url": "https://github.com/advisories/GHSA-6qvw-249j-h44c"
+        }
+      ],
+      "category_v2": "dependency"
+    },
+    {
+      "id": "9572b5f73920b3faaa22c06a14181bb2237a17568573dfd454e7e2ce27416e4b",
       "category": "sast",
       "name": "Dependency: jose4j - GHSA-3677-xxcr-wjqv",
       "message": "Vulnerable package: jose4j 0.9.3",
@@ -2165,12 +2031,14 @@
         {
           "url": "https://github.com/advisories/GHSA-3677-xxcr-wjqv"
         }
-      ]
+      ],
+      "category_v2": "dependency"
     }
   ],
   "remediations": [],
+  "suppressed_count": 0,
   "project_name": "webgoat",
   "project_path": "ez-appsec/webgoat",
   "github_url": "https://github.com/ez-appsec/webgoat",
-  "scan_date": "2026-04-14T03:27:52Z"
+  "scan_date": "2026-07-12T07:30:23Z"
 }
