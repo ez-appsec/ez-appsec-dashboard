@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-13T10:54:04.447708Z",
+  "last_updated": "2026-07-13T10:56:07.011582Z",
   "projects": [
     {
       "slug": "bwapp",
@@ -37,7 +37,7 @@
       "path": "vulnerabilities/ez-appsec-dashboard.json",
       "project_path": "ez-appsec/ez-appsec-dashboard",
       "github_url": "https://github.com/ez-appsec/ez-appsec-dashboard",
-      "last_updated": "2026-07-13T10:54:03Z",
+      "last_updated": "2026-07-13T10:56:06Z",
       "summary": {
         "total": 1,
         "critical": 0,
